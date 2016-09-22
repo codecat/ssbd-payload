@@ -1,0 +1,160 @@
+<unit slot="actor" netsync="position">
+	<behavior class="PayloadBehavior">
+		<string name="anim-idle">idle 8</string>
+		<string name="anim-walk">walk 8</string>
+	</behavior>
+
+	<scenes start="idle-2">
+		<scene name="shared">
+			<collision static="false">
+				<circle offset="0 -12" aim-through="true" radius="32" />
+				<circle offset="0 0" sensor="true" radius="100" />
+			</collision>
+
+			<minimap_sprite src="menus/minimap.xml:enemy" />
+			<shadow>
+				<sprite origin="38 38" texture="doodads/special/shadows.png">
+					<frame>50 51 76 76</frame>
+				</sprite>
+			</shadow>
+		</scene>
+
+		<scene name="walk-0">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="100">0 256 256 256</frame>
+				<frame time="100">0 512 256 256</frame>
+				<frame time="100">0 768 256 256</frame>
+				<frame time="100">0 1024 256 256</frame>
+				<frame time="100">0 1280 256 256</frame>
+				<frame time="100">0 1536 256 256</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-1">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="100">1782 256 256 256</frame>
+				<frame time="100">1782 512 256 256</frame>
+				<frame time="100">1782 768 256 256</frame>
+				<frame time="100">1782 1024 256 256</frame>
+				<frame time="100">1782 1280 256 256</frame>
+				<frame time="100">1782 1536 256 256</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-2">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="100">1536 256 256 256</frame>
+				<frame time="100">1536 512 256 256</frame>
+				<frame time="100">1536 768 256 256</frame>
+				<frame time="100">1536 1024 256 256</frame>
+				<frame time="100">1536 1280 256 256</frame>
+				<frame time="100">1536 1536 256 256</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-3">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="100">1280 256 256 256</frame>
+				<frame time="100">1280 512 256 256</frame>
+				<frame time="100">1280 768 256 256</frame>
+				<frame time="100">1280 1024 256 256</frame>
+				<frame time="100">1280 1280 256 256</frame>
+				<frame time="100">1280 1536 256 256</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-4">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="100">1024 256 256 256</frame>
+				<frame time="100">1024 512 256 256</frame>
+				<frame time="100">1024 768 256 256</frame>
+				<frame time="100">1024 1024 256 256</frame>
+				<frame time="100">1024 1280 256 256</frame>
+				<frame time="100">1024 1536 256 256</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-5">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="100">768 256 256 256</frame>
+				<frame time="100">768 512 256 256</frame>
+				<frame time="100">768 768 256 256</frame>
+				<frame time="100">768 1024 256 256</frame>
+				<frame time="100">768 1280 256 256</frame>
+				<frame time="100">768 1536 256 256</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-6">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="100">512 256 256 256</frame>
+				<frame time="100">512 512 256 256</frame>
+				<frame time="100">512 768 256 256</frame>
+				<frame time="100">512 1024 256 256</frame>
+				<frame time="100">512 1280 256 256</frame>
+				<frame time="100">512 1536 256 256</frame>
+			</sprite>
+		</scene>
+		<scene name="walk-7">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="100">256 256 256 256</frame>
+				<frame time="100">256 512 256 256</frame>
+				<frame time="100">256 768 256 256</frame>
+				<frame time="100">256 1024 256 256</frame>
+				<frame time="100">256 1280 256 256</frame>
+				<frame time="100">256 1536 256 256</frame>
+			</sprite>
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="300">0 0 256 256</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="300">1792 0 256 256</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="300">1536 0 256 256</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="300">1280 0 256 256</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="300">1024 0 256 256</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="300">768 0 256 256</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="300">512 0 256 256</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite origin="128 150" texture="actors/bosses/mech_gnaar/mech_gnaar_idle_walk.png" material="system/default.mats:enemy">
+				<frame time="300">256 0 256 256</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

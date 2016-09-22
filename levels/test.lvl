@@ -1,0 +1,2264 @@
+<dict>
+	<array name="scripts">
+		<array><string>TeamLevelStart</string><int>225</int><vec3>-640 120 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array><string>TeamLevelStart</string><int>226</int><vec3>-184 -776 0</vec3><bool>f</bool><int>-1</int><bool>f</bool></array>
+		<array><string>TeamLevelStart</string><int>227</int><vec3>-600 120 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array><string>TeamLevelStart</string><int>228</int><vec3>-184 -816 0</vec3><bool>f</bool><int>-1</int><bool>f</bool></array>
+		<array><string>TeamLevelStart</string><int>229</int><vec3>-560 120 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array><string>TeamLevelStart</string><int>230</int><vec3>-184 -856 0</vec3><bool>f</bool><int>-1</int><bool>f</bool></array>
+		<array><string>TeamLevelStart</string><int>231</int><vec3>-520 120 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>232</int>
+			<vec3>-616 -808 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>270</int><int>271</int><int>274</int><int>273</int><int>272</int></array>
+			</dict>
+			<array><int>269</int><int>0</int></array>
+		</array>
+		<array><string>TeamLevelStart</string><int>233</int><vec3>-480 120 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array><string>PayloadNode</string><int>234</int><vec3>-520 -48 0</vec3><bool>t</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>235</int>
+			<vec3>-1224 -688 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>236</int>
+			<vec3>-1224 -648 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>237</int>
+			<vec3>-288 -120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>242</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>238</int>
+			<vec3>-184 -48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>237</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>239</int>
+			<vec3>-1224 -608 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>240</int>
+			<vec3>-1224 -568 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>241</int>
+			<vec3>-112 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>238</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>242</int>
+			<vec3>-416 -120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>234</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>243</int>
+			<vec3>-1224 -528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>244</int>
+			<vec3>-16 152 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>241</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>245</int>
+			<vec3>-808 -728 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>246</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>246</int>
+			<vec3>-808 -936 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>247</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>247</int>
+			<vec3>-768 -1032 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>248</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>248</int>
+			<vec3>-696 -1072 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>249</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>249</int>
+			<vec3>-544 -1112 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>250</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>250</int>
+			<vec3>-408 -1120 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>251</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>251</int>
+			<vec3>-296 -1144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>252</int></array>
+				<bool name="Checkpoint">t</bool>
+			</dict>
+			<array><int>232</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>252</int>
+			<vec3>-200 -1144 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>253</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>253</int>
+			<vec3>-56 -1136 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>254</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>254</int>
+			<vec3>40 -1080 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>255</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>255</int>
+			<vec3>72 -960 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>256</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>256</int>
+			<vec3>80 -784 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>257</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>257</int>
+			<vec3>128 -688 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>258</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>258</int>
+			<vec3>232 -616 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>259</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>259</int>
+			<vec3>328 -512 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>260</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>260</int>
+			<vec3>360 -352 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>261</int></array>
+				<bool name="Checkpoint">t</bool>
+			</dict>
+			<array><int>279</int><int>0</int><int>282</int><int>0</int><int>290</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>261</int>
+			<vec3>320 -192 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>262</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>262</int>
+			<vec3>352 -80 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>263</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>263</int>
+			<vec3>352 48 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>264</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>264</int>
+			<vec3>248 184 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>265</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadNode</string>
+			<int>265</int>
+			<vec3>120 208 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="NextNode"><int>244</int></array>
+			</dict>
+		</array>
+		<array><string>TeamLevelStart</string><int>266</int><vec3>-184 -736 0</vec3><bool>f</bool><int>-1</int><bool>f</bool></array>
+		<array><string>TeamLevelStart</string><int>267</int><vec3>-184 -696 0</vec3><bool>f</bool><int>-1</int><bool>f</bool></array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>268</int>
+			<vec3>-480 -16 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>225</int><int>227</int><int>229</int><int>231</int><int>233</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>269</int>
+			<vec3>-1104 -728 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>235</int><int>236</int><int>239</int><int>240</int><int>243</int></array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>270</int>
+			<vec3>-416 -872 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>271</int>
+			<vec3>-472 -872 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>272</int>
+			<vec3>-520 -672 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>273</int>
+			<vec3>-520 -728 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>274</int>
+			<vec3>-520 -784 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>275</int>
+			<vec3>576 -392 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>276</int>
+			<vec3>576 -432 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>277</int>
+			<vec3>576 -472 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>278</int>
+			<vec3>576 -512 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>279</int>
+			<vec3>-416 0 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>233</int><int>231</int><int>229</int><int>227</int><int>225</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>TeamLevelStart</string>
+			<int>280</int>
+			<vec3>576 -352 0</vec3>
+			<bool>f</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Team">player_1</string>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>281</int>
+			<vec3>-320 -680 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts">
+					<int>270</int>
+					<int>271</int>
+					<int>274</int>
+					<int>273</int>
+					<int>272</int>
+					<int>230</int>
+					<int>228</int>
+					<int>226</int>
+					<int>266</int>
+					<int>267</int>
+				</array>
+				<int name="State">2</int>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>282</int>
+			<vec3>496 -432 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>278</int><int>277</int><int>276</int><int>275</int><int>280</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>ToggleScripts</string>
+			<int>283</int>
+			<vec3>-312 -912 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Scripts"><int>230</int><int>228</int><int>226</int><int>266</int><int>267</int></array>
+			</dict>
+		</array>
+		<array>
+			<string>AreaTrigger</string>
+			<int>284</int>
+			<vec3>-352 -1000 0</vec3>
+			<bool>t</bool>
+			<int>1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Areas"><int>99</int></array>
+			</dict>
+			<array><int>283</int><int>0</int><int>268</int><int>0</int></array>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>285</int>
+			<vec3>-1128 -528 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>36</int><int>34</int></array>
+				<string name="State">open</string>
+			</dict>
+		</array>
+		<array>
+			<string>PayloadBeginTrigger</string>
+			<int>286</int>
+			<vec3>-1056 -488 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>285</int><int>0</int><int>287</int><int>0</int><int>321</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>287</int>
+			<vec3>-1096 -640 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/misc/gate</string>
+			</dict>
+		</array>
+		<array>
+			<string>SetUnitScene</string>
+			<int>288</int>
+			<vec3>-32 -832 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<array name="Units"><int>37</int></array>
+				<string name="State">open</string>
+			</dict>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>289</int>
+			<vec3>-88 -896 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/misc/gate</string>
+			</dict>
+		</array>
+		<array>
+			<string>ScriptLink</string>
+			<int>290</int>
+			<vec3>-120 -568 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<array><int>288</int><int>0</int><int>289</int><int>0</int><int>281</int><int>0</int></array>
+		</array>
+		<array>
+			<string>PlaySound</string>
+			<int>321</int>
+			<vec3>-1240 -464 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>f</bool>
+			<dict>
+				<string name="Sound">event:/misc/gate</string>
+			</dict>
+		</array>
+	</array>
+	<dict name="units">
+		<array name="doodads/generic/door_egypt_fancy_h.unit"><vec3>-88 -896 0</vec3><int>37</int><vec3>-1096 -640 0</vec3><int>36</int><vec3>-1240 -464 0</vec3><int>34</int></array>
+		<array name="doodads/generic/statue_egypt_sw.unit"><vec3>336 176 0</vec3><int>326</int><vec3>240 104 0</vec3><int>329</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_h_16.unit">
+			<vec3>-184 -648 0</vec3>
+			<int>186</int>
+			<vec3>624 -288 0</vec3>
+			<int>325</int>
+			<vec3>512 -288 0</vec3>
+			<int>324</int>
+			<vec3>-624 56 0</vec3>
+			<int>185</int>
+			<vec3>-512 56 0</vec3>
+			<int>184</int>
+			<vec3>-56 -896 0</vec3>
+			<int>183</int>
+		</array>
+		<array name="doodads/cliff/sand/sand_s_cap_l.unit"><vec3>-512 -952 0</vec3><int>1</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_deco_door.unit"><vec3>-1224 -720 0</vec3><int>21</int><vec3>576 -544 0</vec3><int>22</int></array>
+		<array name="doodads/cliff/sand/sand_nw_i.unit"><vec3>-568 -960 0</vec3><int>200</int><vec3>-352 -792 0</vec3><int>201</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_v_128.unit">
+			<vec3>-1304 -608 0</vec3>
+			<int>198</int>
+			<vec3>640 -560 0</vec3>
+			<int>192</int>
+			<vec3>640 -432 0</vec3>
+			<int>193</int>
+			<vec3>-1304 -736 0</vec3>
+			<int>194</int>
+			<vec3>-704 56 0</vec3>
+			<int>195</int>
+			<vec3>-496 -800 0</vec3>
+			<int>196</int>
+			<vec3>-232 -896 0</vec3>
+			<int>197</int>
+			<vec3>-432 56 0</vec3>
+			<int>199</int>
+		</array>
+		<array name="doodads/cliff/sand/sand_ne_i.unit"><vec3>32 -544 0</vec3><int>2</int><vec3>-72 -960 0</vec3><int>3</int><vec3>-72 -592 0</vec3><int>4</int><vec3>-256 -648 0</vec3><int>5</int></array>
+		<array name="doodads/generic/statue_egypt_s.unit">
+			<vec3>296 -48 0</vec3>
+			<int>328</int>
+			<vec3>-744 -744 0</vec3>
+			<int>335</int>
+			<vec3>416 -48 0</vec3>
+			<int>330</int>
+			<vec3>-1032 -744 0</vec3>
+			<int>332</int>
+			<vec3>-952 -744 0</vec3>
+			<int>333</int>
+			<vec3>-872 -744 0</vec3>
+			<int>334</int>
+		</array>
+		<array name="doodads/generic/debris_egypt_fancy.unit"><vec3>464 -176 0</vec3><int>327</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_cap_w.unit">
+			<vec3>-528 56 0</vec3>
+			<int>164</int>
+			<vec3>608 -288 0</vec3>
+			<int>32</int>
+			<vec3>-448 200 0</vec3>
+			<int>322</int>
+			<vec3>-1208 -464 0</vec3>
+			<int>318</int>
+			<vec3>-1064 -640 0</vec3>
+			<int>166</int>
+			<vec3>-472 -912 0</vec3>
+			<int>165</int>
+		</array>
+		<array name="doodads/cliff/sand/sand_n_cap_l.unit"><vec3>-272 -1008 0</vec3><int>162</int><vec3>-728 -928 0</vec3><int>163</int></array>
+		<array name="doodads/cliff/sand/sand_se.unit"><vec3>-40 -656 0</vec3><int>20</int></array>
+		<array name="doodads/cliff/sand/sand_w.unit">
+			<vec3>-416 -648 0</vec3>
+			<int>135</int>
+			<vec3>-456 -712 0</vec3>
+			<int>131</int>
+			<vec3>-624 -688 0</vec3>
+			<int>132</int>
+			<vec3>-352 -888 0</vec3>
+			<int>133</int>
+			<vec3>-456 -744 0</vec3>
+			<int>130</int>
+			<vec3>-624 -624 0</vec3>
+			<int>134</int>
+			<vec3>-568 -992 0</vec3>
+			<int>136</int>
+			<vec3>-624 -592 0</vec3>
+			<int>137</int>
+			<vec3>-416 -616 0</vec3>
+			<int>138</int>
+			<vec3>-664 -752 0</vec3>
+			<int>139</int>
+			<vec3>-352 -920 0</vec3>
+			<int>128</int>
+			<vec3>-352 -824 0</vec3>
+			<int>127</int>
+			<vec3>-664 -784 0</vec3>
+			<int>126</int>
+			<vec3>-352 -856 0</vec3>
+			<int>125</int>
+			<vec3>-624 -656 0</vec3>
+			<int>129</int>
+		</array>
+		<array name="doodads/wall/egypt_fancy/fancy_h.unit">
+			<vec3>-456 -800 0</vec3>
+			<int>155</int>
+			<vec3>-1192 -464 0</vec3>
+			<int>319</int>
+			<vec3>-1080 -560 0</vec3>
+			<int>157</int>
+			<vec3>-464 56 0</vec3>
+			<int>156</int>
+			<vec3>-216 -648 0</vec3>
+			<int>142</int>
+			<vec3>-424 -800 0</vec3>
+			<int>154</int>
+			<vec3>-480 -800 0</vec3>
+			<int>153</int>
+			<vec3>-216 -896 0</vec3>
+			<int>152</int>
+			<vec3>-152 -896 0</vec3>
+			<int>151</int>
+			<vec3>-184 -896 0</vec3>
+			<int>150</int>
+			<vec3>-424 -912 0</vec3>
+			<int>149</int>
+			<vec3>-456 -912 0</vec3>
+			<int>148</int>
+			<vec3>-656 56 0</vec3>
+			<int>147</int>
+			<vec3>-496 56 0</vec3>
+			<int>146</int>
+			<vec3>-688 56 0</vec3>
+			<int>145</int>
+			<vec3>-1112 -560 0</vec3>
+			<int>144</int>
+			<vec3>-1144 -560 0</vec3>
+			<int>143</int>
+		</array>
+		<array name="doodads/cliff/sand/sand_n_cap_r.unit"><vec3>-400 -1008 0</vec3><int>140</int></array>
+		<array name="doodads/cliff/sand/sand_e_cap_up.unit"><vec3>-32 -720 0</vec3><int>141</int></array>
+		<array name="doodads/cliff/sand/sand_sw_i.unit"><vec3>-656 -720 0</vec3><int>158</int><vec3>-696 -816 0</vec3><int>159</int><vec3>-384 -952 0</vec3><int>160</int><vec3>-448 -680 0</vec3><int>161</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_crn_nw.unit">
+			<vec3>-1160 -560 0</vec3>
+			<int>105</int>
+			<vec3>-1304 -736 0</vec3>
+			<int>104</int>
+			<vec3>-496 -800 0</vec3>
+			<int>103</int>
+			<vec3>496 -560 0</vec3>
+			<int>102</int>
+			<vec3>-704 56 0</vec3>
+			<int>101</int>
+			<vec3>-232 -896 0</vec3>
+			<int>100</int>
+		</array>
+		<array name="doodads/wall/egypt_fancy/fancy_v.unit">
+			<vec3>-1160 -512 0</vec3>
+			<int>180</int>
+			<vec3>496 -336 0</vec3>
+			<int>168</int>
+			<vec3>-392 -848 0</vec3>
+			<int>169</int>
+			<vec3>496 -528 0</vec3>
+			<int>170</int>
+			<vec3>-392 -912 0</vec3>
+			<int>167</int>
+			<vec3>-1048 -640 0</vec3>
+			<int>182</int>
+			<vec3>-232 -704 0</vec3>
+			<int>171</int>
+			<vec3>-232 -736 0</vec3>
+			<int>172</int>
+			<vec3>-1160 -544 0</vec3>
+			<int>181</int>
+			<vec3>-1048 -608 0</vec3>
+			<int>173</int>
+			<vec3>-392 -880 0</vec3>
+			<int>174</int>
+			<vec3>-232 -768 0</vec3>
+			<int>175</int>
+			<vec3>496 -560 0</vec3>
+			<int>176</int>
+			<vec3>496 -368 0</vec3>
+			<int>177</int>
+			<vec3>-1160 -704 0</vec3>
+			<int>178</int>
+			<vec3>-1160 -736 0</vec3>
+			<int>179</int>
+		</array>
+		<array name="doodads/wall/egypt_fancy/fancy_cap_n.unit"><vec3>496 -384 0</vec3><int>124</int></array>
+		<array name="doodads/cliff/sand/sand_s_cap_r.unit"><vec3>-160 -936 0</vec3><int>106</int></array>
+		<array name="doodads/cliff/sand/sand_e.unit">
+			<vec3>-256 -840 0</vec3>
+			<int>6</int>
+			<vec3>-256 -872 0</vec3>
+			<int>17</int>
+			<vec3>-256 -808 0</vec3>
+			<int>7</int>
+			<vec3>-32 -688 0</vec3>
+			<int>8</int>
+			<vec3>-256 -744 0</vec3>
+			<int>9</int>
+			<vec3>136 -496 0</vec3>
+			<int>10</int>
+			<vec3>-256 -904 0</vec3>
+			<int>11</int>
+			<vec3>-32 -912 0</vec3>
+			<int>12</int>
+			<vec3>-256 -680 0</vec3>
+			<int>13</int>
+			<vec3>-32 -880 0</vec3>
+			<int>14</int>
+			<vec3>-72 -992 0</vec3>
+			<int>15</int>
+			<vec3>-256 -776 0</vec3>
+			<int>19</int>
+			<vec3>-72 -624 0</vec3>
+			<int>18</int>
+			<vec3>-256 -712 0</vec3>
+			<int>16</int>
+		</array>
+		<array name="doodads/wall/egypt_fancy/fancy_cap_e.unit">
+			<vec3>-168 -648 0</vec3>
+			<int>204</int>
+			<vec3>528 -288 0</vec3>
+			<int>323</int>
+			<vec3>-560 200 0</vec3>
+			<int>31</int>
+			<vec3>-1288 -464 0</vec3>
+			<int>320</int>
+			<vec3>-1144 -640 0</vec3>
+			<int>203</int>
+			<vec3>-608 56 0</vec3>
+			<int>202</int>
+			<vec3>-48 -896 0</vec3>
+			<int>205</int>
+		</array>
+		<array name="doodads/cliff/sand/sand_sw.unit"><vec3>-456 -680 0</vec3><int>96</int><vec3>-704 -816 0</vec3><int>97</int><vec3>-664 -720 0</vec3><int>98</int></array>
+		<array name=":Physics_Rectangle">
+			<array>
+				<vec3>-320 -1264 0</vec3>
+				<int>99</int>
+				<dict>
+					<vec2 name="size">192 500</vec2>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/wall/egypt_fancy/fancy_cap_s.unit"><vec3>496 -464 0</vec3><int>94</int><vec3>-496 -656 0</vec3><int>95</int></array>
+		<array name="doodads/cliff/sand/sand_s.unit">
+			<vec3>-448 -952 0</vec3>
+			<int>210</int>
+			<vec3>-224 -936 0</vec3>
+			<int>209</int>
+			<vec3>-192 -936 0</vec3>
+			<int>208</int>
+			<vec3>-480 -952 0</vec3>
+			<int>207</int>
+			<vec3>-416 -952 0</vec3>
+			<int>206</int>
+		</array>
+		<array name="doodads/wall/egypt_fancy/fancy_crn_se.unit">
+			<vec3>-392 -800 0</vec3>
+			<int>215</int>
+			<vec3>-432 200 0</vec3>
+			<int>214</int>
+			<vec3>-1160 -464 0</vec3>
+			<int>213</int>
+			<vec3>640 -288 0</vec3>
+			<int>212</int>
+			<vec3>-1048 -560 0</vec3>
+			<int>211</int>
+		</array>
+		<array name="doodads/wall/egypt_fancy/fancy_crn_sw.unit">
+			<vec3>496 -288 0</vec3>
+			<int>119</int>
+			<vec3>-704 200 0</vec3>
+			<int>120</int>
+			<vec3>-1304 -464 0</vec3>
+			<int>121</int>
+			<vec3>-232 -648 0</vec3>
+			<int>122</int>
+			<vec3>-1160 -640 0</vec3>
+			<int>123</int>
+		</array>
+		<array name="doodads/cliff/sand/sand_nw.unit"><vec3>-560 -1008 0</vec3><int>108</int><vec3>-448 -760 0</vec3><int>107</int></array>
+		<array name=":Physics_Freeform">
+			<array>
+				<vec3>-792 -320 0</vec3>
+				<int>112</int>
+				<dict>
+					<array name="points"><vec2>-120 16</vec2><vec2>112 -120</vec2><vec2>112 0</vec2><vec2>-40 200</vec2><vec2>-48 384</vec2><vec2>16 488</vec2><vec2>-40 536</vec2><vec2>-128 496</vec2><vec2>-200 264</vec2></array>
+					<int name="decompose">2</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec3>-648 -488 0</vec3>
+				<int>111</int>
+				<dict>
+					<array name="points"><vec2>224 -72</vec2><vec2>240 -16</vec2><vec2>152 16</vec2><vec2>-32 48</vec2><vec2>8 -48</vec2></array>
+					<int name="decompose">0</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec3>352 -1248 0</vec3>
+				<int>110</int>
+				<dict>
+					<array name="points">
+						<vec2>376 216</vec2>
+						<vec2>560 648</vec2>
+						<vec2>696 1040</vec2>
+						<vec2>704 1360</vec2>
+						<vec2>656 1512</vec2>
+						<vec2>376 1616</vec2>
+						<vec2>528 1328</vec2>
+						<vec2>560 1032</vec2>
+						<vec2>496 952</vec2>
+						<vec2>416 672</vec2>
+						<vec2>272 536</vec2>
+						<vec2>152 240</vec2>
+						<vec2>-72 48</vec2>
+						<vec2>0 -136</vec2>
+					</array>
+					<int name="decompose">2</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec3>-216 -432 0</vec3>
+				<int>109</int>
+				<dict>
+					<array name="points"><vec2>112 -72</vec2><vec2>264 56</vec2><vec2>96 80</vec2><vec2>-104 48</vec2><vec2>-232 40</vec2><vec2>-464 112</vec2><vec2>-464 -8</vec2><vec2>-280 -40</vec2><vec2>-192 -72</vec2></array>
+					<int name="decompose">2</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec3>-1048 -64 0</vec3>
+				<int>113</int>
+				<dict>
+					<array name="points">
+						<vec2>-64 -24</vec2>
+						<vec2>80 -64</vec2>
+						<vec2>56 8</vec2>
+						<vec2>-72 88</vec2>
+						<vec2>-240 40</vec2>
+						<vec2>-520 -224</vec2>
+						<vec2>-512 -488</vec2>
+						<vec2>-368 -704</vec2>
+						<vec2>-328 -336</vec2>
+						<vec2>-200 -100</vec2>
+					</array>
+					<int name="decompose">2</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec3>96 -64 0</vec3>
+				<int>114</int>
+				<dict>
+					<array name="points"><vec2>-48 -312</vec2><vec2>56 -144</vec2><vec2>72 88</vec2><vec2>-24 88</vec2><vec2>-96 -72</vec2><vec2>-136 -232</vec2><vec2>-216 -288</vec2></array>
+					<int name="decompose">2</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec3>-280 -544 0</vec3>
+				<int>115</int>
+				<dict>
+					<array name="points"><vec2>112 -32</vec2><vec2>224 -24</vec2><vec2>176 40</vec2><vec2>-128 40</vec2><vec2>-144 -16</vec2></array>
+					<int name="decompose">2</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec3>56 -456 0</vec3>
+				<int>116</int>
+				<dict>
+					<array name="points"><vec2>-160 -48</vec2><vec2>-112 -112</vec2><vec2>-16 -112</vec2><vec2>-16 -64</vec2><vec2>88 -64</vec2><vec2>88 24</vec2><vec2>-8 80</vec2></array>
+					<int name="decompose">2</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec3>-1416 -816 0</vec3>
+				<int>117</int>
+				<dict>
+					<array name="points">
+						<vec2>264 -424</vec2>
+						<vec2>512 -680</vec2>
+						<vec2>680 -808</vec2>
+						<vec2>1128 -816</vec2>
+						<vec2>1600 -752</vec2>
+						<vec2>1768 -568</vec2>
+						<vec2>1696 -384</vec2>
+						<vec2>1384 -632</vec2>
+						<vec2>1016 -696</vec2>
+						<vec2>704 -640</vec2>
+						<vec2>648 -568</vec2>
+						<vec2>472 -416</vec2>
+						<vec2>400 -216</vec2>
+						<vec2>280 -32</vec2>
+						<vec2>88 0</vec2>
+						<vec2>0 48</vec2>
+						<vec2>-144 264</vec2>
+						<vec2>-144 -232</vec2>
+					</array>
+					<int name="decompose">2</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+				</dict>
+			</array>
+			<array>
+				<vec3>840 504 0</vec3>
+				<int>118</int>
+				<dict>
+					<array name="points">
+						<vec2>168 -240</vec2>
+						<vec2>-8 112</vec2>
+						<vec2>-576 264</vec2>
+						<vec2>-1464 304</vec2>
+						<vec2>-1744 16</vec2>
+						<vec2>-1728 -192</vec2>
+						<vec2>-1672 -288</vec2>
+						<vec2>-1616 -336</vec2>
+						<vec2>-1672 -224</vec2>
+						<vec2>-1672 -184</vec2>
+						<vec2>-1480 40</vec2>
+						<vec2>-1248 112</vec2>
+						<vec2>-1016 72</vec2>
+						<vec2>-880 136</vec2>
+						<vec2>-552 136</vec2>
+						<vec2>-448 80</vec2>
+						<vec2>-264 40</vec2>
+						<vec2>-112 -136</vec2>
+					</array>
+					<int name="decompose">2</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">t</bool>
+				</dict>
+			</array>
+		</array>
+		<array name="doodads/wall/egypt_fancy/fancy_crn_ne.unit">
+			<vec3>-392 -912 0</vec3>
+			<int>220</int>
+			<vec3>-1048 -640 0</vec3>
+			<int>219</int>
+			<vec3>-1160 -736 0</vec3>
+			<int>218</int>
+			<vec3>640 -560 0</vec3>
+			<int>217</int>
+			<vec3>-432 56 0</vec3>
+			<int>216</int>
+		</array>
+		<array name="actors/mech_payload.unit"><vec3>-888 -592 0</vec3><int>221</int></array>
+		<array name="doodads/cliff/sand/sand_e_cap_dn.unit"><vec3>-32 -848 0</vec3><int>224</int><vec3>-184 -600 0</vec3><int>223</int><vec3>136 -464 0</vec3><int>222</int></array>
+		<array name="doodads/cliff/sand/sand_n.unit">
+			<vec3>-464 -1008 0</vec3>
+			<int>76</int>
+			<vec3>-176 -1008 0</vec3>
+			<int>72</int>
+			<vec3>-696 -928 0</vec3>
+			<int>91</int>
+			<vec3>-496 -1008 0</vec3>
+			<int>90</int>
+			<vec3>-8 -560 0</vec3>
+			<int>89</int>
+			<vec3>-112 -1008 0</vec3>
+			<int>88</int>
+			<vec3>-224 -616 0</vec3>
+			<int>87</int>
+			<vec3>-416 -760 0</vec3>
+			<int>86</int>
+			<vec3>-240 -1008 0</vec3>
+			<int>85</int>
+			<vec3>64 -512 0</vec3>
+			<int>84</int>
+			<vec3>-208 -1008 0</vec3>
+			<int>83</int>
+			<vec3>96 -512 0</vec3>
+			<int>82</int>
+			<vec3>-632 -928 0</vec3>
+			<int>81</int>
+			<vec3>-40 -560 0</vec3>
+			<int>80</int>
+			<vec3>-448 -760 0</vec3>
+			<int>79</int>
+			<vec3>-432 -1008 0</vec3>
+			<int>78</int>
+			<vec3>-664 -928 0</vec3>
+			<int>77</int>
+			<vec3>-144 -1008 0</vec3>
+			<int>75</int>
+			<vec3>-528 -1008 0</vec3>
+			<int>74</int>
+			<vec3>-560 -1008 0</vec3>
+			<int>73</int>
+		</array>
+		<array name="doodads/cliff/sand/sand_se_i.unit"><vec3>-224 -936 0</vec3><int>93</int><vec3>-40 -656 0</vec3><int>92</int></array>
+		<array name="doodads/cliff/sand/sand_w_cap_up.unit"><vec3>-704 -848 0</vec3><int>71</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_h_128.unit"><vec3>512 -560 0</vec3><int>35</int><vec3>-688 200 0</vec3><int>33</int><vec3>-1288 -736 0</vec3><int>30</int></array>
+		<array name="doodads/terrain/tree_palm.unit">
+			<vec3>-528 -144 0</vec3>
+			<int>67</int>
+			<vec3>-688 32 0</vec3>
+			<int>62</int>
+			<vec3>-280 -192 0</vec3>
+			<int>68</int>
+			<vec3>-608 -64 0</vec3>
+			<int>69</int>
+			<vec3>-336 -248 0</vec3>
+			<int>70</int>
+			<vec3>-360 -192 0</vec3>
+			<int>41</int>
+			<vec3>-504 -160 0</vec3>
+			<int>40</int>
+			<vec3>-680 -16 0</vec3>
+			<int>39</int>
+			<vec3>-616 -24 0</vec3>
+			<int>38</int>
+			<vec3>-472 -168 0</vec3>
+			<int>54</int>
+			<vec3>-432 -176 0</vec3>
+			<int>42</int>
+			<vec3>-608 -168 0</vec3>
+			<int>43</int>
+			<vec3>-104 -128 0</vec3>
+			<int>44</int>
+			<vec3>-656 -56 0</vec3>
+			<int>45</int>
+			<vec3>-200 -160 0</vec3>
+			<int>46</int>
+			<vec3>-320 -200 0</vec3>
+			<int>47</int>
+			<vec3>-184 -200 0</vec3>
+			<int>48</int>
+			<vec3>-552 -128 0</vec3>
+			<int>49</int>
+			<vec3>-504 -248 0</vec3>
+			<int>50</int>
+			<vec3>-176 -136 0</vec3>
+			<int>51</int>
+			<vec3>-584 -112 0</vec3>
+			<int>52</int>
+			<vec3>-144 -168 0</vec3>
+			<int>53</int>
+			<vec3>-280 -248 0</vec3>
+			<int>66</int>
+			<vec3>-624 0 0</vec3>
+			<int>55</int>
+			<vec3>-632 40 0</vec3>
+			<int>56</int>
+			<vec3>-448 -248 0</vec3>
+			<int>57</int>
+			<vec3>-400 -192 0</vec3>
+			<int>58</int>
+			<vec3>-560 -200 0</vec3>
+			<int>59</int>
+			<vec3>-240 -240 0</vec3>
+			<int>60</int>
+			<vec3>-136 -104 0</vec3>
+			<int>61</int>
+			<vec3>96 -408 0</vec3>
+			<int>292</int>
+			<vec3>-640 -128 0</vec3>
+			<int>63</int>
+			<vec3>-232 -176 0</vec3>
+			<int>64</int>
+			<vec3>-400 -240 0</vec3>
+			<int>65</int>
+			<vec3>-424 -1240 0</vec3>
+			<int>317</int>
+			<vec3>-152 -552 0</vec3>
+			<int>294</int>
+			<vec3>-96 -544 0</vec3>
+			<int>295</int>
+			<vec3>-416 -544 0</vec3>
+			<int>296</int>
+			<vec3>-456 -560 0</vec3>
+			<int>297</int>
+			<vec3>-568 -528 0</vec3>
+			<int>301</int>
+			<vec3>-536 -536 0</vec3>
+			<int>302</int>
+			<vec3>-592 -512 0</vec3>
+			<int>303</int>
+			<vec3>-552 -512 0</vec3>
+			<int>304</int>
+			<vec3>-384 -576 0</vec3>
+			<int>305</int>
+			<vec3>-192 -1248 0</vec3>
+			<int>316</int>
+			<vec3>-488 -544 0</vec3>
+			<int>298</int>
+			<vec3>-616 -528 0</vec3>
+			<int>299</int>
+			<vec3>-200 -576 0</vec3>
+			<int>306</int>
+			<vec3>-248 -608 0</vec3>
+			<int>307</int>
+			<vec3>-440 -744 0</vec3>
+			<int>308</int>
+			<vec3>-424 -1168 0</vec3>
+			<int>309</int>
+			<vec3>-384 -1280 0</vec3>
+			<int>310</int>
+			<vec3>-344 -1304 0</vec3>
+			<int>311</int>
+			<vec3>-192 -1200 0</vec3>
+			<int>315</int>
+			<vec3>-224 -1288 0</vec3>
+			<int>314</int>
+			<vec3>-264 -1280 0</vec3>
+			<int>313</int>
+			<vec3>-312 -1288 0</vec3>
+			<int>312</int>
+			<vec3>48 -480 0</vec3>
+			<int>293</int>
+			<vec3>-648 -512 0</vec3>
+			<int>300</int>
+			<vec3>128 -424 0</vec3>
+			<int>291</int>
+		</array>
+		<array name="doodads/wall/egypt_fancy/fancy_v_16.unit">
+			<vec3>496 -496 0</vec3>
+			<int>25</int>
+			<vec3>496 -384 0</vec3>
+			<int>26</int>
+			<vec3>-1160 -672 0</vec3>
+			<int>27</int>
+			<vec3>-1160 -560 0</vec3>
+			<int>28</int>
+			<vec3>-232 -680 0</vec3>
+			<int>29</int>
+		</array>
+		<array name="doodads/cliff/sand/sand_w_cap_dn.unit"><vec3>-624 -560 0</vec3><int>23</int><vec3>-416 -584 0</vec3><int>24</int></array>
+		<array name="doodads/cliff/sand/sand_ne.unit">
+			<vec3>-192 -616 0</vec3>
+			<int>191</int>
+			<vec3>-40 -928 0</vec3>
+			<int>190</int>
+			<vec3>-80 -1008 0</vec3>
+			<int>189</int>
+			<vec3>24 -560 0</vec3>
+			<int>188</int>
+			<vec3>128 -512 0</vec3>
+			<int>187</int>
+		</array>
+	</dict>
+	<dict name="lighting">
+		<string name="environment">effects/env/egypt_outside.env</string>
+	</dict>
+	<int name="version">1</int>
+	<dict name="game-mode">
+		<array name="PayloadUnit"><int>221</int></array>
+		<array name="FirstNode"><int>221</int></array>
+		<string name="Class">Payload</string>
+		<string name="CreatorName">Scratch</string>
+		<string name="MapName">Egypt</string>
+	</dict>
+	<array name="tiles">
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017770000000000000000000000000039373d0000000000000000000000003d08735d0000000000000000000000616670214400000000000000000000294517335c14</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-2048 -2048</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000580000000000000000000000007e5f1659000000000000000000000003556b73760000000000000000000068173d1f3d530000000000000000237a3f6765434e3800000000000026241f6d38120b7b412c00000016235a2d1a732731095f65032b611d725568143039525d7e53727c71333c157a7568577d3032647d0a5e473b605c3c26752e1b35404e582d04373069517d0a5d0f6c2256216c1c730f0a633f5d1f7723574b787d50166051743750222b175c6e4b7112500d60122157555a7839</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1536 -2048</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d5b535e5b240633115d1a67262d56123e6b2e3732377104020f4e1e61644c691e25693f47257e703a1e49770c2424547c714a3465582e6841377d2b2b0d567e5b7c0c155c0a0e347b026240763929221d636727677d252b6627111453641e3e2d6c363963371a256c562c277b0b30461740511267390228196f786d153f08654b5239403c531a2b12163b5f0b2d4a0e5d40796426550b110b23414f14353a53443e142c40515173055a763a79561d1548531419775204070122566f52450836153c320c20625b1b28012269394a5636</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1024 -2048</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002e79543616217c797c6b535f72757e575569317371037b451a3a530a152c093523256b4a13385229642a172e7d777611560c2e2731230739120c5301281a256e4d792c0e2f104a6c294a153a614e115c1746727161702a1e436a7b3b1a5d200325521a4f163e7868276c316b0b397b674e022c05207009674d0f5322143758740e061a451c3e383062183353366d3c667538493d40645c442a7a5c3b2f3f0258761c04240742255a4d1e751079337b6c4241212f326765240f78426411705f6d0e17462d462f486273093a6b012b4a2b</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 -2048</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000507d3a4a6d58757859520e3c1f1d6758745d413e506b36700355115c31563208763d110d4d7c4c0f39210451490a052c321c216d693e7b54450219735f493e4b2f340774462c6336396e53027673791d222d352907767c110b3b1b725b541b16314c1d04201e0e1738727e1f0d5a180e0713181746504e0f19037410652f40721d1408723a0b6a455028252f2e670e22312d64125d7e623d044273580b226115473b0628446c3c1545324305137e25474c17125a777221036d0835441b20385c2176697d5c7601566641795a1c6c2b2f</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 -2048</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000069573b5b545f3e551e41730d574b11460f441c1c787b196234460874783c0c294550210c3a1e251844106268460b164570786a57393d720b233d05425f0c787a67157c020f6f0914642f75286d5e011e6a50102e03403605234c147c1b751407236b2b2b10570b5c7d427565165e58076f48720b1b43235a5622562e5b7b4a28332b670761480755040c4a4033066a530b17275f663e0650450e76031a557c1b20777a582b074b34400d7d64074c31776b63361c377c1f1a7b066660500a322a7a03074e6a3c4770633e7e49052b1a697d5b52252b6d756b16454c213f</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 -2048</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000003a2946591b2f65000000000000000000261a081164755d4f5c7663335b11102d672c12024b0c03535a1114722a37675f0504084278107d7979711b255d7d6c340f0e3e2f56117b05191c173b7a4877653c0c0d6b744c5a0e7646010331576d2e651f791f224c3b391f0c1a19596d17593652777033626c7c5c4b230454252a576f041f09770d2a19193b2e4b5d774b313a591b0a727c51540f60645111373e37387c0b2f6a314470426514064c043e57533f33355e20143b4f554b4b7d6b235365082f070b69377347706d0959303c1f22293801266a567e0634686171120609</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1024 -2048</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000003b616e00000000000000000000001c4a781e5d4c7463000000000000000055467e0c3408160f48000000000000001319253f11651b6057040000000000004b54624e1966290251061300000000004514714708530a21664c7176000000005f32385b6267744f3817325e000000006a0c21671854545b641428755d0000003d4c1a0d166b274702493174780000003b384a2d0c643c493f16760e3b000000141974311b4c4f731d6d4c3431000000350c0d3b311f6c7c0e4774772c00000055046c41697d0b5a4a7a6a250000000041504a644270275b57385c0900000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1536 -2048</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000043165b7003700000000000000000002e1e46782a5b400000000000000000007d3a2b4a522a1c00000000000000000040163a6a061009000000000000000000096d563944224c0000000000000000533e7b056133366900000000000000004d780b794f04534f00000000000000007c4f41213446571d00000000000000007c3e6f39703e510500000000000000301641134144626e220000000000002141074338476131020a00000000003227797526364b71704a05000000004e5e120221624f10262f703f00000000723045122e473314347447710000004d1818074b472608624d65084800000007330b62012b6d3b7225554f7c</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-2048 -1536</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000130b703979204a2900000000000000004210186b31592501000000000000001c5f08475b4e7d3660000000000000344e5d07156a591c0b16000000000000367375176b5f2a334d300000000000001831571c23202629572900000000000033263432252d30577e6c00000000000031660467776959141620000000000000287b6172510e520c29410000000000000e5e11417832194c7111000000000000041f34265b29577a396b000000000000585240664d0a3a775d7e</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">5f21743d5e36022a041a7b23551d70116028771b6d2e1a210f061b29163e5531677d137016721a44276b18574d480c387a0d076006242c54605f1e412e657d296a113e2075465f10074e2f41402e5a41524a2c34613c05304d38646d6b497e30057113123221360c3061244a5c6a654e6b1a205b660b33625e79321e55645c061e506a414b054d197d6b6577576f2e77713e640b16092b6c7c7508381e742961416115194d2b4b3c246e2754333a1a56646507122651620312436b6c3b6a7359267a50380212517d7c6070563b49211253607e560672794d1b690e5e0c3704293320461a73440733372e121d0c1b3f0c0152107a27071c0f2c1f40526e137c3e</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1536 -1536</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000346d1d4b6b5a3212062b2d2d46103578224e12050a1c52420b777c2c7c2f7539766356163e2546473436282d0378423964027e54180601114a27615b341467223c1a093d0a1c270b744c48595a447739710213106942425013634b19366c091b4f6a261d31153c2a6571434e2f2a7d047c7a516504305e3d58662f554c256a126b6e55725d22464f011b336f70362f6a09102f78774333015f3a16195b3a721d3875150d0a326e194871791f4c641431187641142a3f447c6a6e5c05361f6624</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003240000000000000000000000000006e4021000000000000000000000000520b1c220000000000000000000000175c7d692800000000000000000000220b4a3402210000000000000000004a361b7a035e770000000000000000346825282a484e1b</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">22072e10310d78333d4b35111940462d055c4e3f6560241c7e6806512e05622e1615083f53180f357d1f20463a27435c1775785c4961277d2a790a674d425d1a0a375630130f1e6b667d21735509471e31724b685101683a7b1603590a1c180930290f6f3f2a270949303b5f11123673383e2e4e60546a54594c45372a666f04303d3c3f591d1e171239335231470468165424760a06553d6b19412b336c5c6b54523e0350564e0b4b2c3a52330c4712426d187977326d2e79526419034f746a77047863510f7e3e525c74172b1c042d73507e1846131f62173456713d2b6a24575e5627287561506a2f2b1e283a00002f1c59293d486a1f5c55093b23000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1024 -1536</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015034a34024d102c21351e7b507b3b7c6f4d65147e55135c6d7474741f0a1e7d1a27163f0f622b42062b143e0d2f502c161a724c7017024735750232520164576a435141774a7e6e437c42742605275d2b73437b721c7c355839273e381f515b102163440b4c733f6356316f5c40315e760e0414701a713a2e1720566c502b26347d7756515e5819327527203d1c794b4c696d6c193877320342097c335736132f7a52605a340241036d5a2d0c2a257346122a3f435b0c1f01427a7e11225843</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004224312a000000</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000066395556055e6e1c47233c0d151c665f12391e7242380a6b085227503a790e183f1f7337180a0c683d425e2430270c054b616403583a077a5040122d7d2a5f031e551702502c1a3939247073546128426c186c03147d1c734f5c084b110743591e4100000000000000000000002e417d6d00000000000000000000000077693600000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">7153774a39451d661017361722706c3278401060763770755c7e723c436a5943716e3c253719501f7b455e3e08235d4a1f1438104a6f652611442b732c480716655d542f3e5d1a33451b12575a5f2b1a6a48111b25031b165c135f42276235772a4c32207927427a233f70707648110f2d6f1f4b0b253a551109752b687c4b4c675545760e1629562c67525513667a76341f5d3939613a493b27000000006d6f2f157e196100000000000000000000004a00000000000000000000000000000022000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 -1536</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014d402d310f346943640c740a32235c7a671922523f241c4d523167045b3d0716352f36562b46765b0e5c2f077514632f730f2b65171e6003104a18153c462953295276121d4e0c3f0e4643506d3d5719515b6d2d4a3d015906151557770c472113584b4e0636284b1a4911415b5239456f6178406c0412641d574b740868142a0a730d035a230f34260104350756582a56766455774345472e412b5b0e1e5c2616012e483e23773230546b656c6671697d7373315918373c21193c275e6738</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016b6d5d0000000000000000000000006c4d2a3f2e3e4739450000000000000042417e411474756133300000000000006f4f667c507e4f0754487675420500004148366e717b4635594f4a250e167400625514230e735f3d406542224e71230c00006161654b222c7d100b6e0f755867000000240f2b040f2003770c10765c160000000058524e335e66725d475f1f0f</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">335d2a6a056a631d0e7e473f4e513c040961200f41473c4b206a067c166c146c6d176e060205584375183d202d27460624016d7338366349685a7277590a19140c224d24101052034267374c6d247e2701271c360a5d3e582a595e467035357d641a51274d497e791f103851726230431d0e1014513a455c462d1d3f7d77014e273e5a1948765b3c2916152d14266c153f305e41213c7b0629596312210627080000004d5f3d3c7922492412042d1e3700000000000000002c311835590f6c210000000000000000000075481b5653670000000000000000000000461d6e090a0000000000000000000000006649670c00000000000000000000000000515d78</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 -1536</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004c672b3a28690c184a530b5d4c36595d555d407e6c320b083e4d6875705e28415656574105010a5d78243f7443122a676376364b547c24053f102d192622573e1a1b236631313b351d36627c4e433c43462e7b5e754d2b575b260d5577073b760c5a31056e0845127252622401037d194065082666682c4e30432f7c411136145176452c117d54343f0c4c04321f2477513906383f222a3423587374171752762b3a25185711785f3e73021d21382d5e652e301717541a437e1c125475213e47</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007900000000000000000000000000000060365d00000000000000000000000000636a3732000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">73355d46565f26291e2d6c445e734d5127381b640f0461614b4f0f1633583c3a04386802316334742d5336254a3752014d0a462d04072b1d416734385e09470a105b3f304a334a62684a266a023978171519091103134f1834055a6b5a751f6c404268121b27785865326a200562222e415f58241c3c43620338433c58552f63545d5a63601f385013701a7c513d4b7e7b272a217431381c404a480f121b721424493c1c41336e69167d2f23292e752651795b3f747716721a1d4450655c2d21190c3b2930374c2a236e1f5e4b16470f5e66601f647046585c0e1a7a6c15393c0a6a0f487b573a7c7a1c566305660d5f6f5626371a1c415512622631460a154b</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 -1536</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000066084e000000000000000000000000001c5d646a5e0000000000000000000000376d6451487b000000000000000000002b210d7d26124f0000000000000000002b0e67097e19400000000000000000006c2d5808147d350000000000000000007208351765140f0000000000000000004c7c246a4621240000000000000000000b775812562d00000000000000000000372b703b4a5a00000000000000000000124f4c7c7a4c000000000000000000005e383b0d593b00000000000000000000</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">07230a46374f4f033149592c494a671a3633661a3011572a593a0d045c105313274773155b471f1f18124058433f270e2c6e4733232826686363031e3f0952672b6d42480d4830396737310401173910787837027b35043850215914553c5263516e56467828095b44664f79240d66603b530d6c303b33174b21247a756345221d5a496c501d0578412a74666e6d443b3309584724210a356d721e752b2e5d481355754d650b1a1d2e6879701a0d5c350f2316774e186a581a2262484619536237747e7c7a2f20377d365c64581016686b042739121c3f0e625a7b46271d54250d4121370358737020210e62055a2245436d7d51292a06432275034c5a274f25</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1024 -1536</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">1a23584e751c115b66647722000000003f357e426f3b5c5e0b7b6938000000001b6c767b7e4a4a5a49026403520000000f7a275e661d0e0544201a3e260000001f021c6275320b6220121629180000007629284478427523716c3a10400a00001f416d2e57305217373c3c62110800000f3d777177492b4b5b3c397b020000006b3c51257d264573797571182f000000555079722306292d56513b5c7800000042095a28605450311f2d0163000000002b7b0d356f1f372f4b496b3d000000000255036a336a633640497a08000000000461337439181d7137624c3a0000000076191f5a417659650c0673510000000062373e0803115e1b1541157000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1536 -1536</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000070000000000000000000000000000004c000000000000000000000000000019700000000000000000000000000000762f0000000000000000000000000000172b0000000000000000000000000000151a0000000000000000000000000000191e00000000000000000000000000000d4b00000000000000000000000000000029000000000000000000000000000000230000000000000000000000000000004f0000000000000000000000000000000e</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-2560 -1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000690b49690000000000000000000040093f1c3e75000000000000000000000a1662775c20000000000000000000765f2167186f3e00000000000000000065783209503e6a00000000000000000012297822745d15000000000000000000527d41275e1d540000000000000000001c267b4d0a3d0e0000000000000000007d2d4a7a0a6b49000000000000000000720d59374426310000000000000000007d485e5a39475b</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00006e2e427139736c143e354c5b417d002b4d211b682c2b2c41510913424c4b0048726f2d06062401217b5d485f71545d7c13254f1e0b1a72765d383b7a4f0c1339715054663c523c55302f2f7a643a68644111025c3a30701a47680140385e646a55642f50086d53537c3e3975507d6e097b7e153e66113f0810252f287e283d632741374c2448765d306706117a451076575c1c3d090b5a48071a2463054e72166113191316071864733e237d3415636b235910133e0e626f5654606f3a33541920114d7e496512313372015c710a1d2f1041676b321355750149256b6c22542d31704c1e6e70796b553e784a224f236e1848194f0a3871365d4c48130d69</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-2048 -1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000004b02441f57413f43552000000000000041325020266c4967247a000000000000282b0407036408252244000000000000380e0e557705375e0c4d3e39535f646d527b6777452a1254395f307b4a65306b6775103d363e1b5c7d0817685d68243d760a02724e283a192e772c3d66321f7a2a603e58271a2e505538527e0c502a156131023018492d253f33514b6c413d16484e756d5101685475693f544d4b3a486b523a6965087373077644090338236c0c303a061f42582e3f480b542358170e6c7e602d562422250f21041739511605486b39162d2d213134743a16433c394913202b223d0f333648205e010b5e790b1a3715014e5f3a7c3f52</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006f31120000000000000000000000003a0a7066</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">66682a7c544e261461570b7614753b543a62140411662d1459135c316e382453531e345a740867286517073f524e741a454d531a446c610d3a34460b60261b6675486a71153a5d305c391f783112066c177a6619037b267c2b70636854484b231c6d7475555b5f32430b5c356f7c77530950655c4b3543777d0652515519146632262d3a521e301c1439306e12452c53727a5b05381037103a54576a3d2a4c391f120c591a54080853206360171e754e0a203b5e6d54350a17187c11461c4d3f193f39300d2f4b703267110f233e3f18362956404e730c0504325b34295d23480745185315163f1a397a720328341e21160c226815594e3f7052520a60000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1536 -1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">082b274a5b05201133113f0361510b2e463f6124191d6961334b1c5e161246382d61125309686e406370571b646c0a340d0c404c6e3a0e607e7d793e73384d5230605f676d6841551d61366a474b1d7940466511325a5a6961527b03292c7723643230032b18766276386a30330a1c0d634a440957196f622552011b1c73283f1457107255056b173017307b7d75521b702b5e5f124a695d7a47424a133530595a21706a5a24347e6e37176b756d1f391d0c356e761f027a082e776f12224477421c092a4a1b1c325f2158453d793b76551e144a2b541c471a234c215f124f283c090860261859186c730b0225201269423e2a0a3b78703306321c7d234e1f10</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004f620000000000000000000000000000470000000000000000000000000000546600000000000000000000000000004400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000670000000000000000000000000000004900000000000000000000000000007e00000000000000000000000000005e640000000000000000000000000000000d00000000</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005a000000000000000000000000000000000000000000000000000000000000783d000000000000000000000000000000000000000000000000000000000000631d00000000000000000000000000000000000000000000000000000000005b130d00000000000000000000000000000000000000000000000000000000002c574900000000000000000000000000000000000000000000000000000000642d2778000000000000000000000000000000000000000000000000000000006923340a00000000000000000000000000000000000000000000000000000000734f4a15000000000000000000000000000000000000000000000000000000450e1e226d00000000000000000000000000000000000000000000000000000048490a7752000000000000000000000000000000000000000000000000000000447645437d0000000000000000000000000000000000000000000000000000000a7e697132000000000000000000000000000000000000000000000000000000384b034963000000000000000000000000000000000000000000000000000000300e2c04470000000000000000000000000000000000000000000000000000002c6a2409660000000000000000000000000000000000000000000000000000006d1d76043900000000000000000000000000000000000000000000000000000077506b5c2a000000000000000000000000000000000000000000000000000000326027465b0000000000000000000000000000000000000000000000000000000d504e62330000000000000000000000000000000000000000000000000000003429457158</bytes>
+					<string name="tileset">tilesets/desert_path.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000005570400b6e3f382d2e00000000000041333c77113f242e450f000000000000354a122d36424e692f120000000000414468601f4a2517734000000000000004621233466c584510000000000000006d233842130e5d070000000000000000265f56400f6b2a0000000000000000142c7320533d5173000000000000004b61064606703b6c0a000000000000003b13216c3c773f1100000000000000613628490116212b2100000000000013244f4b451b4403360000000000007d18682d142456061754000000000000283d081d6f6a092b73000000000000002a106d1a0f52150900000000000000005865594c326371000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">43472d0a6e306c4d1d657a6a000000001f5e671b78691d763a2b615b000000000a13367e187c08123d5c6d00000000002d1c3c2755595d2a66280000000000006b64073250443850645900000000000032184c4e1362327c7025000000000000172263166c7727396f000000000000004c374757583e3d4d7900000000000000650c3c1b7d2b025a000000000000000049603f3c0c6b5177000000000000000011313757774440000000000000000000225020760e6f4e0000000000000000007d39295c4e7400000000000000000000150c5a211700000000000000000000005a60000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1024 -1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">2f587814704c7325791b410d161e33551b0a6f2f790f6d516d41401938122e4c4c4e58466d6133543a6836127c47517a1f2b4b1827260428466d4d7e072d3a1972677c582b2e334a722d0d7e4c017d5d6e612b64700b593672293a40534d594470191318732a73641f52765a5b684f1b0e01022613772678171a55166d1a3e720b58380a220150274414633909336d103b3d5f7d51522f3f586701632e495b311d4b1c1e372e704d212b270a4a397b1c145351600520601c371c795b744a794565236c44123a026d5960180c18747a69533d496e7a5a403d5d4b496b7604421570454f636f3541201f783d0b425061260f20711f3c017467120265095d070a38</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000004f546e0000000000000000000000584669226400000000000000000000586d7026673b00000000000000005a48005d043000000000000000003b1a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004209200264437664520000000000000000000000000000000000000000000000722f1a0c7a3a3c2e5a00000000000000000000000000000000000000000000000441184e4717545b7a0000000000000000000000000000000000000000000000601d5e540d4b0a2b090000000000000000000000000000000000000000000000395a52447502306a2c00000000000000000000000000000000000000000000000915115d67551202460000000000000000000000000000000000000000000000775d0c47395c485a18000000000000000000000000007054327d6a2d4c011551567c60741908244a0100000000000000001c1c0601111606316405573b41052e5427605e63550c6f03000000001e37792a0b303e5f22660f4f795b57114c7c19447728641a2a4752663377387b4f7a634f60326442606654320956355035255f591e172614492343784c617735076d05016a323c6f0e236376471741396a2255675b3c27236736414e377d234b33151f093a460c404310372d3974374160721a7d4d6652260f34764d771e6a5d68165f30052741272072742100000000000000620b79234266486c20735e401231060f4d187800000000000000000000000000565d312a3f2802273b3e0f574122600000000000000000000000000000000000000000007b035f7d00014a32000000000000000000000000000000000000000000000000292f684a003b1b590000000000000000000000000000000000000000000000004b322c7d005c2100000000000000000000000000000000000000000000000000500f1c5a004809000000000000000000000000000000000000000000000000003b23563a004144000000000000000000000000000000000000000000000000002e0f3563006360000000000000000000000000000000000000000000000000000244041500760c624004603b7d6a1c780b39232b63434a4700004f000000000023545010004032380646170d417c1a094b764c061c706131095b1712640000000105015d002f2e48126834656424553711600429466e65324b65710870000000355b4171007c42164e12703f795a7a086e4743146650241461753c61050000003334774f002915000000517b613f291f7e17041b6b7764145f4b394b3b0000007b161c7b0018000000000000227b7463481072037741223f23642b55610000002869697800060000000000000000001c7401496c1217632621093500000000003d2a3129002300000000000000000000617261624a6d4200000000000000000077040344002c0000000000000000000010621b1f3b4d09000000000000000000061b2a6100</bytes>
+					<string name="tileset">tilesets/desert_path.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">4b1900000000000000000000000000007c7100000000000000000000000000007a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 -1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">132b245313560f60164175776474030a092376401e310820317235051c3b522261242853312b431929662e036c45056b1c44323b487c0d683d012a3276415c3f035d1d3f0b731e6d6146257853626b7715163b573d151e19736f5b7e1f471006646943072a4a6b3b2c426b2b0f4e0835023734391d1e251b020a6e3445617027524975053e31165122210e68240a5a4c1d2e56397a141156475d7424244a47361006654c7d0c753f685e504a5416327b1c7a78736517056e54414e464b29036e662954197340292f407b0a58373907052c2c12702f78050249391114164f21601a727c4e41153c357c584a6001064816102f506c545c16497d791d61190d2554</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000262c1c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005b171b00000000000000000000000000000000000000000000000000000011444900000000000000000000000000003b65380000000000000000000000000000000b6600000000000000000000000000000026280000000000000000000000000000337400000000000006003e000000000000000000000000002d005c00000000000000000000000000001234</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000135d7e6c000000000000000000000000000000000000000000000000000000007b470630000000000000000000000000000000000000000000000000000000001f03627e000000000000000000000000000000000000000000000000000000004b20264a000000000000000000000000000000000000000000000000000000003841077c00000000000000000000000000000000000000000000000000000000562e437c78583009692637763e000000000000000000000000000000000000002406112b3d66234711752827695d35706a0000000000000000000000000000001d5d400f3505494b793f06633628537c08537800000000000000000000000000583271071e7d166936134f33455a093967782b5900000000000000000000000009682b0c710a6d277d61797e7d585d4a10142458710000000000000000000000340e6e767d120a26641761472c47355016545c606743000000000000000000003e0401120000000000002e641108251e371117715041000000000000000000004244332d000000000000000000000036200f0b78697e3900000000000000000060174930000000000000000000000000076314477e533000000000000000000063701d7300000000000000000000000000792a321a50642f0000000000000000000000000000000000000000000000000058320c1702274900000000000000000000000000000000000000000000000000005e42155f7909000000000000000000000000000000000000000000000000000002795f49393300000000000000000000000000000000000000000000000000007e4f585b440201000000000000000000000000000000000000000000000000002c5e2b29212f67000000000000000000000000000000000000000000000000000356074e65482c00000000000000000000000000000000000000000000000000550e7b497b5c5f000000000000000000000000000000000000000000000000001d186c76124b5f000000000000000000000000000000000000000000000000007a10034e1b2c3c000000000000000000006304105c706c18694a07390000000010636c284e7800000000000000000000004e4f410c2e592f695f490c00000053774d16465406000000000000000000002c2913013a0f607d53486e58000000401b614d0d5c420000000000000000000066721d41367a544159094e03000000403d78296d3e5a0000000000000000000000093d3d503506793f5c11130000005261146b6b6b0a18000000000000000000004a643f0f5237397c7530085d0d100f12376f53536f570000000000000000000071147272676f6c6a1524162b250e203c74736566484000000000000000</bytes>
+					<string name="tileset">tilesets/desert_path.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000007d4c467d466b4b310000000000000000000000775f336554000000000000000000000000006c374500000000000000000000000000001977000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000059000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 -1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">14571d254a0a2d131b3d1e682a13712f1b631b275c520838673823350b5564301e345b2e4c0a782223275266674b7974657c5e657d27381e3d561120540803090805713d2835310772160228063b5037722605185f116103146f424d0d2352291d1a507538064c4e115c154169403f336303696e5e70370b54573e7c301e775c1a1b6172715d114f232d1b46274d6c2e1d641c0241732f2141052a701b74735176093e3f290f54043c150404491f785d6b0e7558423b3d685e565a16714d56515c5f5637094115551147310f672d53241a635767093f65231f0a250440723c080b7b16673b020c585e3e6d4903413670651d6d02481820437c38661455675030</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004f0066000000000000000000000000000c000d000000000000000000000000002e007a04000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">6c576a473200000000000000000000005717495b11032a0c00000000000000002660575a1f27546521000000000000000a4c6d162847484c7900000000000000455144631912131e3e5e000000000000002c4a762c4d1e36201b1d0a0000000000001b76113410461576225100000000000067574a557a0c255a62623f00000000002d701009546d5e046d290c0700000000002f1f251774584542674f6b000000000000005578162f38300e592d0000000000000039744f341c17533419075b0000000000180c765a6a406b690f32010000000000005c4a1a2a6e3544045461000000000000795f7e1c7759461332660000000000005f69234b3d4514523e2a</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">7a4d695c1e17777a550556755641416f01343a7e75133a33661162733b3e3770000f53400e776e4d2b620905387a62290000001d013b2666626a19176c17661b0000000046770b4734622227603256250000000000630244452c1a43271b5f1b000000000000270a6504026d6c3f303700000000000000082d311d4d18327c2200000000000000004f6527664b0526400000000000000000003c345e24107b3d0000000000000000007b0b3510375317000000000000000000006f2e20312f3200000000000000000000527763730e50000000000000000000000029626e152500000000000000000000007c37735b7700000000000000000000005a447d631e</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 -1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">261f244e547a000000000000000000000a4571365f69000000000000000000005c6a61235245000000000000000000002f740e642d08030000000000000000003d34256d784c09000000000000000000341c562b0269000000000000000000001269181c496600000000000000000000611e282c1e1e0000000000000000000059015a25320000000000000000000000035666676e00000000000000000000006a7c7e567d000000000000000000000072054e516e00000000000000000000003b1f3a7020000000000000000000000016542a6f69000000000000000000000049535e486f00000000000000000000000466654a6e0000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050000000000000000000000000000000212000000000000000000000000000060723c0000000000000000000000000035401179000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">32351533484e666d3b68491e0b2d49580d7621146330476e2d2c6c6567505a5e63620d08290d462a75272b744f0c140e3c0e356f572c52543b025d76304c56362b041e6e517b6d110c5e473c434218490c107a541e4930453c7421561136390e6f643665483d2855374c01763422063d653802182f6e542d0d4b400a69010a7b62384d551d5459511d76135132060e515923250d0e3e662e0a1b6a7923701b104d5d310b010b507e4f235a5f721f583305690f652e701b0271641c6f315706521f3f456c54374c024241766a4b14791b64300c31225e586d5626317a0c621b6d5c05573a2b331d7c663c5f7b7a2612141e17291b29534c54712f1139371f637b</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1024 -1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">32143556325b0d34263d5b5400000000075578442a4c5a4b6e69071800000000611270411e72304841034e15000000005c584b445078360a21461e000000000042675f44471d101b5b554e00000000006f4f7b110c724b5e3e744455000000005a5e5c4b404a5a20491d630c00000000021a7e06652e0e6c46082b180000000076250e2b431e482178624a410000000026722e4252104332764c5f16000000002f69452f1b4b2a684e3a7a720000000073507776400a06450d7b77510000000079590f07702f48453d5b6a1000000000565d52160350296f5f3d782e000000000a45256e1a5c08577962230d00000000101d0b300c58371e5b56593c00000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1536 -1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000000000410000000000000000000000000000063e0000000000000000000000000000155b00000000000000000000000000004c520000000000000000000000000000557b0000000000000000000000000000643e0000000000000000000000000000776d00000000000000000000000000001a04000000000000000000000000000f5e4700000000000000000000000000646221000000000000000000000000007071330000000000000000000000000012504500000000000000000000000000587c1d000000000000000000000000002e7b340000000000000000000000000000524f00000000000000000000000000002c55</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-2560 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000f0c72392a290d0000000000000000002236654104251c0000000000000000001f4f427e244215000000000000000000557b554b0627750000000000000000007a241a3f7126420000000000000000003703183e08345d0000000000000000000006210c7c373b000000000000000000006f1a053b4b6e0000000000000000000015787c783f610000000000000000000031733e745d03000000000000000000000a5b386d706c000000000000000000000a65437b6b67000000000000000000002c0c4111407400000000000000000000176460462e18000000000000000000004c51170d6739000000000000000000005e0963582e04</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">437c210c3511700c1505462b0b76026f4f3a4f2604567d134c6b0d2a4c74221c53452b244704256f3e124b2f1c36361404402a525827574f61511e2375307b7848365c354c215e101e3320074f6a68714e66566e79317a253877771258197c06775e60224d516b71576f2e58682950382e4f60481c321208633f541a270b606217626542772b302e307c620858301e75422442717c6b28420b370f111c2d67396b423c6a2e23532b2760420c275f6e650f35487e0f076c197355484f5b01395b52231f7d5c414516514b7546261c5d135c1b1634132d617d3d2715582c383d08563378030b5a0f671461414d07694d5c73516d4c1f630d0a3d32177c31503841</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-2048 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0c2b5321435d3e190d70073e48175b6d5d116c753b4a393f5e752f79525d2a345437482f05506761266a450762155b7801110a5e4928382f7b3c0f720e601d2668526963034e7c7d2a0c73797c7d456d23297c050f7c726554153b5e46490f422c3d686d61135076024f7510305e150d0c43137d2a427a367c7e4e2f0d3724256d213a4e3f375918190b4a1b143327545b46591d15743c4b6f5a763a512a494d6e182f5236397d18756a3d040a446d41590f787d553d602e406d5b286f3a4e4b7408511d5910264a25282345191e7e3b6f253a0f0604741c2e3b203a7657465b6e1a5d3f5a3262485635332d233e2e1f6a27697b0e330a077924770c5776165a</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000029000000000000000000000000000000000000000000000000000000000000005f00000000000000000000000000000000000000000000000000000000000000250000000000000000000000000000000000000000000000000000000000000057000000000000000000000000000000000000000000000000000000000000004a000000000000000000000000000000000000000000000000000000000000004a000000000000000000000000000000000000000000000000000000000000002d000000000000000000000000000000000000000000000000000000000000003f000000000000000000000000000000000000000000000000000000000000001800000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000059000000000000000000000000000000000000000000000000000000000000005e000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_path.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000e1279506200000000000000000000005b1a780000000000000000000000000074312b0000000000000000000000000009505e0000000000000000000000000031500c00000000000000000000000000440673000000000000000000000000003e0209000000000000000000000000002465785a00000000000000000000000000706e070000000000000000000000000045054b000000000000000000000000003c1c43000000000000000000000000004c7602000000000000000000000000007c626b00000000000000000000000000742f5676000000000000000000000000006e0731000000000000000000000000002d3a50</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">1c7c1a600c475f110e2a093a0000000047333666766c711e3f68057600000000574f3b1b3d46053d1e0a09300000000035315d48493f3a025f496a4200000000770c2b4e520e432221010f7b000000006c2f2e7956641e0d66483c1e7b0000000678164c742c4c1c2e3e4e382c0000000640294c462f5a5a1f5d4340100000006c760a6a6058515f2c7812303f00000065623d573637315f082d2d7a10000000431a773e6d117c6548767a2d520000000421156e08200815327e39633800000034331a701371750151515d72275f000006781e6426261234663c5f52473000005173421f2831717d5a654f63166100000b346a482d1746482e6918170e6d0000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1536 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">6c7a33416762442b2b432a466a56693d2d0f26686165021f0d1013774e1322415f6c6c79413d442c36486061307c68670612546a6c35496a1e12571177116910432c077234045a6d744f626c4c7a7230610f0f02791d147b094866710b3665244e17170a38132f4b3e605b5e1952414d73300c49366d216634460b347e2a540a24726117356f1b1a6f494a07533a434112022b343b3b2b4c445442347e3d08740849331f6e1829704e372015796d4e66147e5b2e0c66295a3b144473780b592814343c5c0f492b6877506b4a22717938184c7109025764016e0c235d2c6f4c7d4b157e3c0878761121251c043411350a7c2c043a15787b42324864073e624216</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000001366500000000000000000000000000510c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006d5900000000007e240000000000001c193a00000000003032005c0000440b723d000000000000005e650c664179685c00000000000000001a547b106437760000000000000000000000464756000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000003d5a3d3f420000000000000000000000000000000000000000000000000000007e5e2c621e002c39000000722c440000000000000000000000000000000000002201263a6a20696b162f51556929000000443660181a29424d0760257c704f78614a752654553b506c3e76651c0a000047732b7226102a3e797c34517b3e1c3c61353f7b2d03662b287059742f4500261f465303200e25474b455e314c7b50443f034028770c15284034796779680051710b6b49300932304a1d16415d314f6b56096543321e5c4863766d0f0453416f21702166692d4151216312602f296e035d74484d091f59462e2d616f231b00085b5f0000177675304640623b3a4c107e382350350d392519612e7a347a6b165f1b1d1870700f0627535e396e245d594176261e072a222464126a7a21110b7c7e3e7e0b415c661701050276737d0c5a0d61335128752a12793c225822090d411740136940170c623151390933385a64170b673c3732282b7b41422c115f4f5458595e46550934083a5a033e4c21010a617617057b301414086e784254043131033c6b1a051b61326a6a620e413a621b26784d06162c5f44444f410f2949250000000000000030576041625f5237524f3a0d655c780f7c3d07514976772e1c0000000000000058667b4661200e7b0f663c0d121437095101016639430c036600000000000000276930045b707905424f67442e2c7069442a2a1a5f29056d6a000000000000006e2d2f1f62373f3b582b1e685642063e2b212047367e2c510000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_path.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">5d4953280b6a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007917000000000000000000000000194061510000000000000000000000131e164e003c000000000000000000774a1e340000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007d3400000000000000000000000036607b11</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1024 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">67132b5866311e1d4e786a3f3d5e3a3e38632e64517c206b793e17550102463f77365c4c043a4e374735660f04617d764d67636d650259233b0305014d2929203f3a41050d421f412f7b105602386168497b1a353b155a2e19661c0c704d2b7071730f461e14092902352324073b394d1417552f4b190f447463256839785c1524736f4a517c655a64662836315946756a78754b2e5e3b3d382e2e7442126e1f2542185b42137a3445794274185d48645618132073325605034a35263a4e703d2d3e56757464772406182921380810526e4a784b3120450a457c24077b410f0e0d525c371b0a35260a1015525c7d645530420f64315f5a4b7a6b760d664a276f</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000460000000000000000000000000000000066000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012003c1a00000000000000000000000038004a49001475000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">5300000000000000000000372b3f732f09760000000000000000007b3116720017000000000000000000000c3c2c282c282e00000000000000000051577d27004000000000000000000000414470574b1c4f0000004a203e421d0b20101676004a10423a00000000000000721f734d563b100000001e14426501212b5544420063315c5d0000000000000064033d115d1e750000005a395f6a5e121c4e2b4764692c631d0000000000000000193836080571000000006a7924332d403b0e2a2d6c053f330000000000000000387d212b4d0500000000005e5f4f061e481e17070b601e180000000000000000006962087b240000000000312206412b4750124b106021440000000000000000000f7c031d7a0000000000596b527b6c6f7133566d054e3d0000000000000000000000000000000000000000155d5e6a49752f003725545b000000000000000000000000000000000000000025362c09761d00005c67393a000000000000000000000000000000000000000000000010450000003e14551f000000000000000000000000000000000000000000000000000000007714117400000000000000000000000000000000000000000000000000000000414e437e000000000000000000000000000000000000000000000000000000003a36630600000000000000000000000000000000000000000000000000000000066a78160000000000000000000000000000000000000000000000000000000032404e780000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_path.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000238635f00000000000000004f49541f39283315000000002b4e42154756460d0d3c13620004297418061e0f3e4d1000000000006e0126352d373400000000000000000035445d000000002c1155591a261c0418620000697b7e6c365a7568471b38594c00006905243a1725460c6e022264010e4b602133462a614c0000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000555a2104000000000000001c562f33023643032b000000000e422d31702e07307a302949003f723a220c1f7a46150000000000750e6d0a546863000000000000000000007e5c10000000000000000000000000004a150000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">4652247c1a69192c714d252373552201665a5d745b567b77662112092f58042e61765f5d706e6c3a35265c5f2d7c60595027467d7c255d05093e7d4825384c725523627b32013e551d53792b584c2e154a5d6d52452a7d08290a0a70011f37092d6b70551045086e3e47381c0e78257d120d1f455b7341115558680622235b4a18053b58010c42127a481e79477920565f1634440929595033733f1a1b734d2202755366757c1553487c39456e1c4b661838764555271b3b6555346665547e20037b014710546a600c1849351d3b4e385a3c6c2e162d3c306450231b6d020b4157115a130d0b306c624424291250164d102f1624036046522b475d3503384a61</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000053520000000000000000000000000000003900000000000000000074000000000000000000007a560000005d0000000000000000000054100000002a0000000000003c2c00002b000000005052620000000046000000250000000000601d5a0000000000000000000000000000001d0700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000473095c2029436e7102540c02040b1a4b284b44300d000000000000000000000a58030c3f4d68203f4458250b361659536263684c4f4f0000000000000000007b7d3d594478696d4c00000000000000112a155a546e6f3b000000000000000436613c510e543519000000000000000000791c166f4c3c7100000000000000226c543f121b38036c000000000000000000536f2d53113c64640000000000002a5750205b3c6d5d000000000000000000000021627e1e3077562c7300000000000731444f3d124500000000000000000000000061697d4757056c043509000000281a7d276d78000000000000000000000000001028363f6e03724e461200000000000000000000000000000000000000000000007b3512683e7329462500000000000000000000000000000000000000000000000000310c3428454b0600000000000000000000000000000000000000000000000000000022731b0b2b000000000000000000000000000000000000000000000000000000006775602c0000000000000000000000000000000000000000000000000000000000161542000000000000000000000000000000000000000000000000000000000000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002d374400000000000000000000000000000000000000000000000000000000003c152100000000000000000000000000000000000000000000000000000000000436130000000000000000000000000000000000000000000000000000000000047b5200000000000000000000000000000000000000000000000000000000007c233500000000000000000000000000000000000000000000000000000000002c747100000000000000000000000000000000000000000000000000000000007c3738000000000000000000000000000000000000000000000000000000000051711b00000000000000000000000000000000000000000000000000000000004c0b69000000000000000000000000000000000000000000000000000000000060773000000000000000000000000000000000000000000000000000000000001f5233000000000000000000000000000000000000000000000000000000000037626d00000000000000000000000000000000000000000000000000000000000a0c0400000000000000000000000000000000000000000000000000000000004b522500000000000000000000000000000000000000000000000000000000003f3b4a</bytes>
+					<string name="tileset">tilesets/desert_path.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000443c1700000000000000000000000000166b0304396f2f0000000000000000006f7e5c365b2250765b000000000000000000740f2f4a12285468000000000000000000000000084e727b01000000000049270e56530000174c4e7b0000000000320805611b2e51070c4e3516000000007350197d35095f470b5c7c18000000000000154d4a271c5c0a57690648000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004e013409730000000000000000000000686211540c5a000000000000000000003b584e6461584e0e68000000000000003a613679534b1f3d68000000000000000000000000465f2d142c00000000000000000000000000242d70540000000000000000000000000048027d0000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">5a766b29351c1854363602607d19554504182c50343078080408596f083552145f580f5d663633674e7e4c633a727033761964336b534c235e711925280f2d3b54661a08380e6c59525f27146b45285d545c5d33672307401f790632183f2674351e087528796c053065474d0739664f7e516d7d052c271b7260702d16704a5c2b21770658244d7366560a1f280d2c60607d0b6f19341e6b4b5a2b2e171356154f256a56144a6e1243680c0c0c2e01484114653950537d392077672013105a531b3e72455b2e543f4a6e64113472055b367d674e795f7a05451901675748763e78545219661b3d2d503714557d2d61317d0f16117c7609580c420229541e3719</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">585300270000000000000000000000004100246b0000000000000000000000003a71656c60000000000000000000000000350000370000000000000000000000000000563100000000000000000000000000003a39530000000000000000000000000000007800000000000000000000000000000030000017002c000000000000000000000000000000005e00000000000000000000000000000066000000000000000000000000000000555c0000000000000000000000000000000000000000000000000000000000001200000000000000000000000000000003000000000000000000000000000000714d00000000000000000000000000004370000000</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037000000000000000000000000000000000000000000000000000000000000007e57420000000000000000000000000000000000000000000000000000000000447b6624000000000000000000000000000000000000000000000000000000006e276f065900000000000000000000000000000000000000000000000000000024210e0c18120000000000000000000000000000000000000000000000000000243d776f11643c0000000000000000000000000000000000000000000000000070705f1c6744086e000000000000000000000000000000000000000000000000275c4550075342530000000000000000135c457b3d6f6c740900000000000000002658051f24652f2c0000000000000009651c362e0649032f0000000000000000007b66292a285b5b000000000000004e7e2d42374a06582f000000000000003c4e011b6472136b71541b2907716c0f106c0f787d6308611a000000000000007c51463b19610f5846257c4664391636741033402438040a4f00000000000000102c7c2b12020e302e562c01515a6b216e5f433d724341281e00000000000000583913236855370f591766107b6566506324483d24107e754e000000000000000d497864374f531d164d0f3b11345055553e5229486c3f3107000000000000001f11524f1a1a3b7c784263683a315d4446332776351a09152a000000000000000b1030153c040d041438641a772b34697116455b6a73624850000000000000005f5b770c1e707d695d3d562c757e7940537e794d45692a0b5f0000000000000048401c130c2d0715273a335224166a592663357d6f44104c530000000000000077212d426e6825754e543e684c566b0350504d19555b1d16100000000000000032285664171b6368123a7830764c323c1e257d290a0e3b356f0000000000000046473f3612696450415c752d28265537540d0f1b523a341f1f00000000000000252e040f7b5b2c2b3e1a7d6a6f313a792358561a274b435000000000000000005a092f252b763b5b29030719694a4179061c68770000000000000000000000000909086a14660418177d66686536503000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_path.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000555d067645193d76017700000000000000661a6b7a180e1a222a0000000000000000737329021e55691f00000000000000005a4c32463340337b000000000000000000621b0f1e292e41000000000000000000004e1d064d416500000000000000000000000000570a7600000000000000000000000000004a5800000000000000000000000000000b40000000000000000000000000000000240000000000000000000000000000001b00000000000000000000000000000009000000000000000000000000000000290000000000000000000000000000001e0000000000000000000000000000007200000000000000000000000000000017</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000002d1e14300000000000000000000000002466643c0000000000000000000000000011475700000000000000000000000000002c6d000000000000000000000000000000450000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">3062635e1100000000000000000000001e39673d6100000000000000000000003a080c5d3e000000000000000000000018411712220000000000000000000000202f21010200000000000000000000005c2573230d00000000000000000000001c0113092b00000000000000000000002d276c442a0000000000000000000000634e722d6a0000000000000000000000715b76253d00000000000000000000006a614c2a200000000000000000000000524d5f40480000000000000000000000061f4e56090000000000000000000000242366422d0000000000000000000000586b1e65200000000000000000000000496b5a427c0000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">50595a6300000000000000000000000035524b1e00000000000000000000000026631a6d610000000000000000000000384b3c7d27230000000000000000000026786540085774000000000000000000574c575955157500000000000000000034724c55664244000000000000000000446d222f4b4b5e00000000000000000058280c554957180000000000000000001d2f2e30486f360000000000000000002205146651681800000000000000000029270d2d47475d00000000000000000037586b5d5b0f6e0000000000000000002f4d4a4843022b0000000000000000000825266875114f00000000000000000037370e1b654a46000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0724432a1b285626655844083d0358271c014932464b0f717c122660154944543a28703b292761156522041a76587b01551353690b457a3c41380d0a29182e7b7921394a31055818733460305e795b724f5d060c7d20291c1a6e676617261a2f00132c54561e016266331559521b287b0032047b23227333443a752211655944003b65615a30785d794115205c350c1c005d061475750352180f2b2a4607381a00004d423c07597d7a5a03430a302b6d000058694b490e52595c2668470c787100000c563e62781e532a705b6214321c0000003a2f30030f750d396b12297c590000007d021153173545166164057d13000000000b2d2b7c2f794e31017d254e</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1024 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">1a012360066a792d42722b6800000000144615073f5547333757494c000000003f4f0b395916481c5132112a000000000d2667150d165a244c4d162000000000573c620727745c2a0b154e2100000000157e5f7a23571c4b127c252f000000005171502f37622650434d7b710000000004632668602c460d046b1b02000000000b1537462c0e6a1b094d26470000000019016a511d1f6e35342575215f00000020265c646e7d412f4d78176a4500000019721c7730195673556b06021400000070042a06287b4d2755755a396f00000039465775505051491c125d013b0000001f6d2b777710773711315f1e36090000484b6c5e3b7a0a3444134f335d080000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1536 -512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">00000000000000000000000000003a620000000000000000000000000000235500000000000000000000000000002f2500000000000000000000000000000057000000000000000000000000000000060000000000000000000000000000004200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-2560 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000007d56647a625a0000000000000000000059281809771e0000000000000000000045604e385d2d000000000000000000003b0d430c6a1a00000000000000000000124d4a31600a00000000000000000000006a29776e0900000000000000000000000000007243000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">512671195707477b0977512d6662715120694a1e1a4c5248666948530229553f25787a55625e3b12462c510431741778337e393144755b030d47470608701a476b222e594b2257035b426f0f6b5b146c645f1855284573285c777d234b280e11274b3c2921215b521a59224c4e1634183a690f3d2678783f75291f546f1778413b04261436301a7a585c255476593974000f3e71551e274f30181d745a2f06150049687e4a2b176b361a727c167b2a100000077812566f361c7705584975300f000010132f3468335671401b541f10380000344c4935106a382f7a26796a1053000000261b3a6511030c5019630c3e540000005162261931071f6d7e0d112e19</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-2048 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0b1c020b11425d662b685d1f5f0c6b5a605a73204f4741280569384b2f2f5a620d7d091d450a13730e4e1d46705b756319295a23217b24142d78507313120603175d5575210826481e14160710057b740649142847386a55056019051a0756580000000000004875160f733f081116610000000000004f49744970056f3b2b74000000000000384d2f181a313764630d0000000000001154336f630a686a28780000000000006b5d3032756d456803020000000000004c0a714e5c7b6d3063270000000000002b017704284a266c5a51000000000000747344275257184161190000000000004b0b0e685f4101331a55000000000000655a3a64032543114d38</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000095f4e00000000000000000000000000003e0f0000000000000000000000000000326e00000000000000000000000000000073000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">527738793a723f4b4c4f7660375e41004a487c454c1f224c727b107b7d39734006484d2a3c2f5241554c112121481773252027147369674e241f35650659684c2a590f304b4c2c73626363021d7532352a66297e4a670f75087b0a6f585f7c704578416853545b7b1f1015552462070e07501911441f7d770f3f272361517e24607b770e2d591e2007281b725240700d3663374404646360687d3f78125e5c7d0826690844296b3477036b4d502a2137492459130171287770782c78506f534c030b115d0554634b58206e2817180410551a0f3e736676196d305070126f2849393d0b02324b213d75613905773f6e54606f6f56631e3b2c1154621e7e597b2f</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1536 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">653f1c446e5528183b0a2470193b48387b697120705174447443152141456601677d6c3e6423202d0a7a775e7a674a020e6a594c531c6c60637d5b1a002c715856512213422e337923507e1f006a3a26265e756327620b3e4f5f0b3f004e243f2f6433527a444f374b1f700a0c29151640484d74354c100448162434703b6a172d4c2a31191b703a2c3817340412124f47482f770b6d150931166c5b70753e6c4220624a227956134617601033614f4c4b4942457e0a1024791d241228160f53146b66670a0a0a6232357e4f5b4f5b0516341a7579780171534e623457300c58557d5f343c432a5539376667537e1c7d1b251c13326726326a30324b0f3e2142</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">5929000000000000004a051c4c0000552243140000000000001007550000680635517c0000000000005e7c4f00000c440639025e000000006007613700060d2f2977696b496667417a015d000866331c005e4d255a3212036d296300471c4c180000001c56490c2b0b4e5d0f28250e4c0000000000017c1d357144787978326b00000000000000002d7a3e2f173512010000000000000000596051000069056000000000000000007a735421002e471900000000000000002238584f000b075800000000000000000000297c695b3c6a000000000000000000005d637d00000f0000000000000000000000052136037e00000000000000000000006c102b4c6a</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000776e743c000000000000000000000000733a280f00000000000000000000006e263e050050500000000000000000001828015400674e1200000000000000005f755c00005901174e00000000196c3230403b000042567d681c282c1e3626601a103c000035235e3f68090f704a4a1a3416160000415c31024a481a76383c574b41150000511c5d35096f707e78634017656d0000616218610d5b715f67067b5f150b0000023a68354e7d6a2313614e3b71196700412f2a0b261c681d27522f285b5e4d007d2d4c1305235650393f4a5b0b223e547231253b6e5d0707160943073330384e3c483e59706a730c5563074f75653500</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1024 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">2d716f7464431c0e3f272d0c332912253313785d035b4013567026566d7d7639293b5e7e076151652825594a45392966187e580961251b3e78386268082a487c33315d1c493f5c096b64112f0a091e143e0a6971302f4450193c1e600d6d0d3a0a744b567c2f290270571854705b587862383a365959027102707c342e37490d6c3d6c150a131d6011647119513f29785c1a084c4655462a2b317e70281b15316616356e0f5d172e3131050c7708262471582c4c1e0177205b7233421f39222d0821617c182a03604328447c1f7e6f0f795754243f77392573281b4f485d0d2214583f2b1d2e4e0a63654c500e2926772e594b4e39374e40515a210a685b6433</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000060200000000000000000000000000004e67000f0000000000000000000000195d000065000000000000000000000069270000000000000000000000000000395572207e000000000000000000000054625b400000000000000000000000003a217500000000000000000000000000005679000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000304f5d7533000000000000000000000000000000000000000000007b5913281f504c576f3d370000000000000000000000000000000000001b550f7645413f675e23421b4112000000000000000000000000000000006a2266695c463e0e185a79431d2e3f190000000000000000000000000000007d03050562675c3e53594179631e06750700000000000000000000000000004c7a5522432b73454416015411247a74746a000000000000000000000000007d13391c3e6f62656d0a0b71061a1f4307236900000000000000000000000000384964555f096b2453760000000000000000420000000000000000000000002d10155f272a0a0156000000000000000000000000000000000000000000000043785e2e666424630000000000000000000000000000000000000000000000506c68264a120f050000000000000000000000000000000000000000000000005e5c2801052a3a0000000000000000000000000000000000000000000000000077695419104f000000000000000000000000000000000000000000000000000014561671792400000000000000000000000000000000000000000000000000001a4d7e1068000000000000000000000000000000000000000000004b0922000065070d3c4b0000000000000000000000000000000000000000002e3b7159346c073b3c660e2f4a2c23190c0000000000000000000000000000002e645f125c5562272e0f5e6547232b7e4000000000000000000000000000000009424f3f48267e1d645146795d584211690000000000000000000000000000007a32041b19212f04067c25546d0d4356510000000000000000000000000000001e513333395a73384363370c2c5a6b677b00000000000000000006000000000007556250442e4a71164c2921425734167400000000000000000009000000000004380e51666d026e19346154153f205c0000000000000000003f03000000000000006d0a220000000001465470114b2f0000000000000000721e1100000000000000000000000000003f70035e347222000000000000003603470b00000000000000000000000000006857040b725f260000000000005e0845333600000000000000000000000000000e19740865042e00000000002c264e253f7d</bytes>
+					<string name="tileset">tilesets/desert_path.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">62230e2b0a00000000000000000000002c496500000000000000000000000000116a0000000000000000000000000000094000000000000000000000000000006f0000000000000000000000000000004b00000000000000000000000000000029000000000000000000000000000000530000000000000000000000000000006300000000000000000000000000000007000000000000000000000000000000236300000000000000000000000000004f2900000000000000000000000000005a1600000000000000000000000000003a7600000000000000000000000000006f30000000000000000000000000000038090000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">2c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">4f77644f3e3a3120286d7b1973053957604d4721047e7775222a682c714b2335091963475571360d1b0c17205807445b2b1e260b767e35193f72122e757c35130309392b1b515622335f486d2a24086266023b1d255677600b63721a6d202878243328292708042e4771570b6e022833610e461816180b7c47622d7a58372c4d131e1f56414f5d0b47562c0c0757070f747341684e1015795463534751353f3b382f097d53184a1f7815127263401162735f413678316a2330372c50681d613c45790739412f1a0c27262d15266a68564921240d2f585850670317760c507a3a592720553923343b774c0c03010914101e3f6c5e5e75106c4b134b172616526d</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000391a000000000000000000000000000077027a7d0000000000000000000000007a503a2875000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000000000000000000000000000000000000000380a1600000000000000000000000000000000000000000000000000000000001e062d0000000000000000000000000000000000000000000000000000000000314523000000000000000000000000000000000000000000000000000000000001211c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006a6a0000000000000000000000000000000000000000000000000000000000002c0712040000000000000000000000000000000000000000000000000000000014787a69740000000000000000000000000000000000000000000000000000003654246a1b13000000000000000000000000000000000000000000000000000028553b7e795e780000000000000000000000000000000000000000000000000078651a0d764d50450000000000000000000000000000000000000000000000002528123c1e1a2b360000000000000000000000000000000000000000000000005f3516301f2d095463000000000000000000000000000000000000000000000000004358351451624d27000000000000000000000000000000000000000000000000000d0555173f2445000000000000000000000000000000000000000000000000005d1f473a4a03555c00000000000000000000000000000000000000000000000c7b5a454d687563487500000000000000000000000000000000000000000000297a0d284063781a534c72000000000000000000000000000000000000000000260a6f59453c5851562f047200000000000000000000000000000000000000000f10531c45311f632506204d5b000000000000000000000000000000000000741218640f5f65534005180225333500000000000000000000000000000000007e114721232b004a72147a7d1a231f4200000000000000000000000000000000712d33426c000000765c0a241a79795d3800000000000000000000000000007e5b75423f19000000660e3146224d0d3b1433160000000000000000000000792b22271b3e00000000001f0a0f40312e495d2c5b2a51000000000000000077673976122c6d0000000000001d544b5463561f171751071b02010d214b615754661206655741000000000000000e1e53755d147a562264693b3741402a51543645115f4c58000000000000000000256a5237654c641b3b65547b630c187512566c39343e00000000000000000000000001371e4006316b0c040c3f46784e64267159340c00000000000000000000000000007916581d58352b36254e031d3a696b64200000000000000000000000000000000000005a7907364b1142080a672806</bytes>
+					<string name="tileset">tilesets/desert_path.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000014117756743d6d71266300000000000000007b3c522d5b4e62500000000000000000781b0b7411771548000000000000000057555651146d4e616200000000000000001e1b3377152c665a00000000000000007c372f2c362901560000000000000000007d051730046023000000000000000000455e663e1a6505000000000000000000544e3a06417b19000000000000000000002168532647530000000000000000000000551d1c4d5e000000000000000000000000004600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000003610324c0000000000000000000000007262260800000000000000000000000058121553540000000000000000000000004e4c5b5b0000000000000000000000003d061b070000000000000000000000000859707900000000000000000000000000661b79000000000000000000000000006905314f00000000000000000000000000027200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">5e447617086c203d43601e6029281070781f6d261f16111c1f0f243d6e7153593a2a632a7434291b674d430f4e0b4c6c4b713d34537572502e216a75572c3d5564715e4464311521433b3b38384c0e280f701843226c240815465e62070f3b183e23651b5d71177122316e0f376364431d0e40781b13490b4b160306506f444f2a7e444c164936756235597a675c241f7c56636d611b75584b3b0f7c2b2c1965170d3f14626e690c2a65390b5d474803233027494c45457a171b5278507a1b7e4a661b66273404254c383433767c3b385b7c524e4130265f08572c6f39661f6e774b2e6168204f5d5b637a53101a5b7b7076674b626e1b283908011e545a6101</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000005a6e31004400000000000000000000000e006a002b00000000000000000000000e000000400000000000000000001b383b2b00000000000000000000000002545833576700000000000000000000005867251800000000000000000000610041550000000000000000000000007100284f0000000000000000000000692f00125c00000000000000000000000800772e0000000000000000000000000000310000000000000000000000000000367e000000000000000000000000000d2b000000000000000000000000004463070000000000000000000000007502020500000000000000000000007b50024800000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">6b622c157e52211c18160c55552f0c1500000000000000000000000000000000095d7a064e710d792225374b6e116a7d00000000000000000000000000000000171f4664592e082e6c2b31053b4a313c000000000000000000000000000000000666241a567a366f3e7a752067100c5d00000000000000000000000000000000000b644e7d7a7534000000000000000000000000000000000000000000000000002a34337563577e000000000000000000000000000000000000000000000000000f037a116a530e000000000000000000000000000000000000000000000000003c314c087a46793500000000000000000000000000000000000000000000000000635a1405325d09000000000000000000000000000000000000000000000000006d6c2856227958400000000000000000000000000000000000000000000000005341511378674c74000000000000000000000000000000000000000000000000005b410e2b0a200c0000000000000000000000000000000000000000000000000032303c2a744172000000000000000000000000000000000000000000000000000030507a28183000000000000000000000000000000000000000000000000000006341202d072700000000000000000000000000000000000000000000000000005778622a1302000000000000000000000000000000000000000000000000000052502e017e460000000000000000000000000000000000000000000000000000226f5b2e17190000000000000000000000000000000000000000000000000001674218720706000000000000000000000000000000000000000000000000006b4a3f046a3b170000000000000000000000000000000000000000000000004e667c321a4675000000000000000000000000000000000000000000000000405152505555110c0000000000000000000000000000000000000000000000001d444743796f426a000000000000000000000000000000000000000000000006696d1220133f3b0000000000000000000000000000000000000000000000002c714b3e441a770000000000000000000000000000000000000000000000000070564b1141600000000000000000000000000000000000000000000000000000280f3d6a737b000000000000000000000000000000000000000000000000000004110e0d41000000000000000000000000000000000000000000000000000000044b4d770000000000000000000000000000000000000000000000000000000048356800000000000000000000000000000000000000000000000000000000002c5f0000000000000000000000000000000000000000000000000000000000003b00000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_path.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000000390000000000000000000000000000005400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000d0400000000000000000000000000001413</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">4a1c6d584b00000000000000000000003f4e21342b00000000000000000000000e42134b5300000000000000000000002e10607025000000000000000000000002784e162b000000000000000000000062612e32542300000000000000000000762e593c265500000000000000000000152e2e32200f000000000000000000001a55085b7564000000000000000000004f680e69337b000000000000000000002c4c5311740a000000000000000000003a4d12567400000000000000000000001409480f2d00000000000000000000000b7236471c0000000000000000000000107660575700000000000000000000005d613a2b372d00000000000000000000</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">1c023a33217120000000000000000000491f2957654d13000000000000000000230f5455505826000000000000000000003241253c0b3700000000000000000000742843737d24380000000000000000000d591e59737435000000000000000000002a253778026100000000000000000000482d3d271d00000000000000000000001218141f3a000000000000000000002b706d2f2f2c00000000000000000000230b4527543c00000000000000000000636b145163350000000000000000000b1b292f136f5f00000000000000000035240f082a232f000000000000000000566f3b603f4100000000000000000000416f7841067e00000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000003b755d6f231c43090c3d443b0000000000472d3320666e0420331a7c00000000001e0854671c7b6c2b7d06310000000000416b53101b6e022805790c00000000000649660101734d51057a320000000000640c0f327879414c08245a00000000001e54347c063b6e7b3e7137000000000053131c440b2863571f6c740000000000693c395f593b72364b367600000000004b176e444a23316d4d1d32000000004e287544552649193976056100000000076674017b32446a5a20230e0000004148431d6a760a50630963642b000000124e3932705a7d0972500a7051000000483c5f4344440f585c1c766520000014765c1c7017661c3b5d66070f43</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1024 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">4e66324f4727365569692f20564100004b350774707c6b3d5f7d5e505e2a000027417a134a7b23482b7077467d256500734d7e6a5d3427033a1c20525a4701002a137a6a6a6868445b6a68016677550042454b6c386c520e57247d157d105b0011102038533c577a275369617e634200391d28347d1b144325316a2b460e320018244a32560652567c0e565b761f52005a282e62643e1b171409740940452000210115340c600d5a631e51315f255e003c08400f0b1c7b73321e2f7c064800001b2b3051113f4009754853390e340000500e19514616262e42734a15773800003a7c30794865091b4556432c621300002b55793a29243c4562497d456e5a0000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1536 0</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000003d3a3e096271167a274e6f7200000000044e30071072613f37452713000000000a2c4e3e223503641914765b00000000006b741d1f03755a72081b0200000000007029515f6b436146695367000000000000294a323b0f0a0919412d000000000000042b7d116a4a6a096823000000000000495d147610632602181b0000000000003550594337357d44071500000000000064730f785071317a2e3200000000000005534f19466874784f0700000000000000267b6b5e257a73480200000000000000635e306a3a13302b070000000000000000561e654913743450000000000000000058063e63187e3769000000000000000000362a556946405a</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-2048 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000007a5d2e2a10435b6919070000000000001b27051906487935482d000000000000225a5b681c5f600556010000000000003e30394244445602326a000000000000522c2a6c580976345176000000000000475706626a232c10123b0000000000005a0773121755430345180000000000005b030d33086d0e09022f00000000000013580f15492b4f7e6f210000000000003a0263216b0c2463630600000000000067155e21763d053754580000000000000025391204617e7d6e2400000000000000005d61486300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">547d07701c6a436e2a0572367b62730e0e27534f2b4d7d692a5f33476a450733132950043a117d6e49712b6d0b4450186715504641705b60081f56091d4a5a57280c054c406a280f66345838132f394c3b69534c03340a653f10666174517152366a5c4217774535404e37715c35524453745a49114a0901725d3e61355d1f183a1d43263f5153317b5154600a3a4663415d3d7b4b136b456357360c251b5023662110210154512c686f745824520609132a6a7a595020774e75683f7e0d55267c7048280210316e49623d7c0870122a7b1d5059600f384d695e1c331f0d5114613601090e6275732f393b6044734f196c1f065e794848795b0e733c34611c31</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1536 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">2f4a2963117b217621082f29702c5a024d5010134754464a2f533502486e1133341b3b3b4478721e461d2e4b44425a1a76562126272f720d651a2a0d256c181f6d1b6d631c5d0971440b05391055211217160d6444331a6b222b074b6a64374250696b2b6a5a253b0239071231017a3f642e417c271c79436c42337e3b6e7e324d345959161d212e7d2f232e7e5d6e40792a6f0113583d535d697a2b325c517d7b54255e7b521b2f40416f530b342b105c231d71396f150e09564e502a00000000000000000000001f520f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000000000000000000000003a67773300000000000000000000007a674c7e13000000000000000000000b520f1e3d36000000000000000000000d16180c524a000000000000000000007525416b154800000000000000000000000042576a2b0000000000000000000000002a2d3b6900000000000000000000000000050a4a0000000000000000000000000000343f00000000000000000000000000000050000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">1770544262754d336d5b607b2a4215007e1e646b6163386e706d3d45361d00000c065b56084b312627207d603b4f00007a236034192c496b2b110d370b32140037496831101b3e613e1529372a4a5e2136222f1d06444f2a4264366368485a037b2c5032086d52072e35250319501c0722472e5c223a572d346757195c5734785b276a2b603f5364195c404d636d1c4e710f4a56410b4f600a221e0a2521587d5621033164684f3c6f5a6c281f073620554b46717634230414460b601a020e0b2a3c28392c2a195351426f78041f794527012b7413187b0b391725022517396d52177426064d3f270632407d0b2e2767793f24570c19274c014c3a14526f5655</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1024 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">3a610f3f5102364229597b083d6d0e646066163848440f15112a580a1a75500c616d614b382e3a670f5f223b0214395549410f524b754b0532320d1f2e637c7421134d2a125e7b63425a0f0d6e530a0312477772641c484109381e643d7b605653774c7664384a780c5d3e37577b0461143549734e407e2659513e1f4849773f466f4a5b49516047217b417c1b23431f396153716d02770a6d07274c242a323a6c041c677216473e1b18790e3d1d12000000000958331f10371500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000286600000000000000000000000000006b18300000000000000000000000000000000026000000000000000000000000000000231a396c303200007e4000000000000000181e2c20340000006d000000000000002c4e0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000007621e5d410a183a506f6d50704f4f2265000000000000000000000000000000667b4570277b6f357d393d6a772b14417d0000000000000000000000000000000041685c4f082c283b2f380e3c017b325900000000000000000000000000000000005e4903656c360f3d6d480367176e0000000000000000000000000000000000000068090f0a574056062d02551c000000000000000000000000000000000000000000655d117214640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_path.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">385b0000000000000000000000000000646e0000000000000000000000000000336f25000000000000000000000000002c6c4300000000000000000000000000090352170000000000000000000000002e7925382b000000000000000000000016664c456b100000000000000000000068120b0277256400000000000000000044591643097609566f000000000062622018602f0f6e1d03656652596d014b4726786037304843370440375d5f7d776f000000000000005419454e1f3c48697500000000000000006526510000513e7700000000000000000000000000000d580000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000059000000000000000000000000000000482e00000000000000000000000000004c5172000000000000000000000000004b7954140000000000000000000000004d285e0e496b010000000000000000000d1f425f794d6b5f5e00000000000000451e772e47522319377904067e720a1d37290a7d4e695f734a262e4f474954425b110a104e4a166b750e4a141b3d702261792721755f26571c5d420245380240</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">211f6652111c730943777a640572614a456d0f78090826315e0e1261124b531045224641453a32065f3756532d122a7955357730014d27056a21305d695d0742067e417561454820130a69777e5a6e68125827242c52781526475156421c1a75713d0f17280337683a20390d3b7e4e651f37574777233f146475156724106f5c685b285b30510e5e10742c756467724300000f761d165801516208483f0e532c000000000000000000001d1d14770e240000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">004c1818570001700000000000000000007d4b001160116f00000000002c5e7539477d0012420a536000004b2c03120a261b030000006f330c6415125e33593800631c00000000000000000000000000002e550000000000360000000000000000130000003b56420d00000000000000000000000046000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">1368000000000000000000000000000000000000003b3f1209260000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_path.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004a2e697b000000000000000000000000605b1425185504694f382c0000000000772b3c2f4e587d595b5c16383861030e26451e344350732e3c0d5c1e0e093f4f34381c0000003b5a74480e381e440f7b220615000000007a66783e3e77476b2f77270000000000000000004913524c0000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000038510c730000000000000000000000071b1d084e75340000000000000000006b0e610a2a1c682a4a0f764a4022064e19752f50244f58507272171b043e6d423d3a2f720234301002143934115b7333</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">206b5f045c361a0f45015d481a4b061b1f6026514a1e20723f4d440b053859640f1f117a58052865101d3a312f5f741276236e5d526e4359747c42377a37040248201e6f0b763008103f6e457372086d105a230b072d33197d1c3362427608654a010c59721c7b32105b797e2a7d7e13026942301f5c28697a784c1631427116276a4c7d47696f093c007b45561f14585c735b592f4d5844150000000000000044717d75125c291600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000123a5b00600000000000000000001000004d40000b0000000000000000000e002e6d00000000000000000000000036000042480000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert_fine.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">000000000000000000000000000a3b400000000000000000000000000063563c0000000000000000000000000a56155e000000000000000000000000375c2570000000000000000000000000126b4246000000000000000000000005161a2e25000000000000000000001934405b5545000000000000371c06383517724f1d2800000000410d275420263078245c3300000047101e1a415c391a07523a00000075500c602e0b3f414f0914000000000004190c4e2a6a0a384826000000000000295e56036a4f0000000000000000000029666b6e5f0000000000000000000000667056570000000000000000000000003c601700000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000790000000000000000000000000000003700000000000000000000000000003f5700000000000000000000000000645633000000000000000000000000436d6634000000000000000000000074197c2b260000000000004536440f47120f7a0c280000000049146c13317b3b5449321568000056087113540b333202304747613c081839251a6c315824462a3d5f344b0d4a5f7e3c44223118337b471d324d035a553069690158286e1f5e496447646b5e</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">02720e42196c000000000000000000003c1741596709000000000000000000005d494434296b000000000000000000005d2e3f635f2d00000000000000000000450f29066f00000000000000000000002d4f5b45090000000000000000000000255f475200000000000000000000000074381b000000000000000000000000006818000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/desert.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">364e2e712500000000000000000000000b7c5a495c000000000000000000000025655e29000000000000000000000000515b276e0000000000000000000000007632410000000000000000000000000044267e0000000000000000000000000025730000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_coast.tileset</string>
+				</dict>
+				<dict>
+					<bytes name="data">0000354b7a1a06757a243e1e1d3a5217003164487177680b5c127e2505413d1500475027272a383277475537691156214f602c0c7d3851652d660d02127d2905122e37273c14217b797d505304055264503f206f10586c774707412b6f230971223c3b0f5e61242c31704b227e4d041b7b6c6d393b4557743a614c36477b0470780f74711730242249110d64455a354e6423226909772f2635134038680765701945406d11080329267a6d223212466f7e2d0b78133f40316d4f6369064e5f3c292f6655426d750227360f7c5a0b2713433d4258254f43592d3748300224562172636f3b56625b0e1328270f61340925720d187c411c646b323f0a2026245d7b</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1024 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">3d662e630c6016457b041f30593200006e6b6b313355682875333f54107900001a1b607e47597a750773166b2a0c000057485e231d5173215a0e6d6b1c000000590d732747253c174a5a1d282e000000234d33452d5b5a320952165b190000003d175311561f322f795835286e0000003b64712f2557664354652444330000001d3f76344f5c55304c0b3266690000007330235418014061172a47741c0000007b71745e75101a6e07213b02760000004b4d0845774d0f3e581a363d62000000462f662e39394c6a62033d46580000005a424d482c4c2b347615211809000000320a0a3e75205b59734f630d4b00000060563e7a7436094e6f314e5249000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1536 512</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">0000000000000000000000680443565c000000000000000000000000196e78250000000000000000000000000d037702000000000000000000000000001f174a00000000000000000000000000343d4a0000000000000000000000000000561a00000000000000000000000000000073000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-2048 1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">7e111765465268572d7156270c1b401115747d1b521c172c352d7731585539701a5779360d726b39053d17250114664b4a362d5859340a421658271439026805401a4b1f065a650746173a0f235e4c23225c0c436360511e1d78017c517079625e1c0442372d71133d787c757e1d5601566b4c5e5e327c59161a7b513d2a7942000922012d7429667d38430129050f6e000017781d111b5f7c140a0e0c6213530000003c131367655146272e4d27174700000000001c544376452563270b661a000000000000007156101b324a6722050000000000000000004c631d2a7d502900000000000000000000583c6a4c580c0000000000000000000000346547762a</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1536 1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">7b0b3c781d4e29262c6a46670363715b55217e1f3d4f560a19732f1960297c0d604c620a7c382d2e50555c257a54525f41364d17373d51452956023d157a5824553e0f3e1922174d511704115f545a68286c03033475291657020a61703e346a1d76612779314e5d1d3741444258112b5d677e78397361412a781d33482b154e6a1c39325d1932370a7c34717a7b2371621c5a73643261322e3c5e09012c3c630b19276176215c514f5c193f38406b47051c5409424b7a126944393728416e751c05445d3d664f4e634a47270f514b085b7362094c59070c54231666210141414b755971666958121e1c1a461d425d78120e7a09543d6c58310c5c2f22453e24</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1024 1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">774a5104092d723b4e253f254e586d69580b5f79497e6c62034d136f7c362e43686f3063172d45220f435c034f3924514b235e3d6c65147942513f024309786d53752145203d42257e0b5a40605261423b14422f0c404f4f3b0d4378691a2663016d4b45644c1b5a0b7e2e5c14683346270d6b1f1d0f162f30180d3617037a4c120c32414034582530021c78207e45470b384f5c683c080e1e75346b73763e013b0b1c7d732d3a4a4145396c476939245a5b093a7b3b0f552d2109617d67684e652e3a331c704c597a01616947487562106e4b1d530c0e2d1454561e79512854565f22316e1f3c1a7602260b76772e2038300136142777794e62024f394e7c3c</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">6b02736b383c4c583769085a07756f7e3c2007643773481957133554465b66280322656d45314f0e44200f710808142a745076250c7d1f677d53211a2c0e232e57613b120271246c5e4456127d547b302068454473622e202848580f5277111f5f553e4a70353145621b524b764f7d013c446c666877224b103b0872073a4756251372777e16453167714421753b53385f5d6b683a234e6761175e29401c46183d55474e312b7271521539171d37344301235346186c0a160d402d6f4e78214f5e2b366a2203357c0e7d5b3d7c4e3c25091205127a13785b66207e0d40672d0b1b776b1968104c2c29160356495911345e175a242e527a75052c1f6e1b230779</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">29361234334b39053e035a5b17646708722e212440584e1b2204321d0658021c405c3d06720478457450547267102316792a7218191960450e5f5a44351c04766c5a246a402640790c756037757970076a701976134c524e72701d52550e4449592d25723f6c24744c2716401449411553015f247d77152a655f3628451c792a2b226740574e53650b5f13657850070d50516a1e365f5e25397b3b263e6b771a1e242d763d540e10421521173e5e0212051d537e7a27786e4a3b0f4f2e5e252a39253a25186a18131e16781a417934325e462e2b312c3f4c27660206032e223b707564654d28244f5750326c3c770f3e617d6d79513e45075c7538116f062657</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">054d0957730b5431535f2d3a7a036a2a27724e26442f236f721f7714382e7e437d11543f580c2b2e08682244761c18326144336d6d7220282e62627915186603087313116c2a2d613b384b17731d02614a554827756f6f4c04575b2952311b7b486e251a40127335384747751b66020c30732f35501d591e5e673615514d6c6e655c2757786e6048346215565312463e627b37427d48533a0c7215364e03771d1e14221a462a4e0a5a066c307d2d326e2c1c186b2845632825274c59345e351b207b24353b7760191f2d0a7a512e503701181d756f643b197c42182e7a6558275a7e53723b570b641e1a45692b6e3c46153e320157413d2237000000001c0f71</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1024 1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">3947744f4525325235584d4c7100000011703d6634676b0267754e56200000000c785812017c6a350d6b411c7507000046180c1a3359526a380952473a5600002041242024642501162f666f217e00004924622876642721154b0a113d0900007b7d2e4f256f412c311f024f074900001f17146138574f112039014072550000323a0771610c762948151537366600003e3d5f0b650c11684147576d7b450000126050605a797a1c5b32576e69460000703316030f535263400f5c745e5000005a443d4a6e2a2b3a262d136f6b000000593b26204f294f7342324a6e460000004544230d361d3d7774352a0f00000000056c6d0000274b4f1c5d7d0000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">1536 1024</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">000000000000000000000000004f2714000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1536 1536</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">7c451943522139130b094c282b065a393c5467675643484c275e5f6b0a4271700000001c390522513b0b524d10424c20000000000000007c4e0848571226487900000000000000000000005b2a3533430000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-1024 1536</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">5a49521d5a5e09010a2452266a73774f6e374b7e2c507e12531a1d5b7a636d01322f045d137b1e4f500b36404b506f2f7c4b7937785618110459434b17552875045a212326633b671820617a176a17120000001b3f200d74140a20061e4a130300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">-512 1536</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">19426c2a1a3245582105721c7d305d6e3079625045083d1447400d7a41747e342f3f4d1b3f0330705d4330181d4d745b345b5d032f5846161f792e1901260d1c18686f5b0d7b14662e6c6917235f0a496e00134600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">0 1536</vec2>
+		</dict>
+		<dict>
+			<array name="datasets">
+				<dict>
+					<bytes name="data">62075b0e75560d58484402585c79451a75783364430c4348340f5c3f5274400024276a06372b054a3963692d0000000029690c225672760e0000000000000000560000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</bytes>
+					<string name="tileset">tilesets/water_ocean.tileset</string>
+				</dict>
+			</array>
+			<vec2 name="pos">512 1536</vec2>
+		</dict>
+	</array>
+</dict>

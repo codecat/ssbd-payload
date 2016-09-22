@@ -1,0 +1,13 @@
+<info>
+	<name>Payload</name>
+	<description>Bring the payload to the other side.</description>
+	
+	<start>
+		<level name="Test" lvl="levels/test.lvl" />
+	</starT>
+	
+	<modifiers>
+		<modifier forced="true" id="DEATHMATCH" />
+		<modifier forced="true" id="PICKUP_RESPAWN" />
+	</modifiers>
+</info>
