@@ -2,14 +2,21 @@ class PayloadBehavior
 {
 	UnitPtr m_unit;
 
+	PhysicsBody@ m_body;
+
 	AnimString@ m_animIdle;
 	AnimString@ m_animWalk;
 
 	array<PlayerBase@> m_playersInside;
 
+	WorldScript::PayloadNode@ m_prevNode;
+	WorldScript::PayloadNode@ m_targetNode;
+
 	PayloadBehavior(UnitPtr unit, SValue& params)
 	{
 		m_unit = unit;
+
+		@m_body = m_unit.GetPhysicsBody();
 
 		@m_animIdle = AnimString(GetParamString(unit, params, "anim-idle"));
 		@m_animWalk = AnimString(GetParamString(unit, params, "anim-walk"));
@@ -82,6 +89,6 @@ class PayloadBehavior
 		else if (defenders > 0)
 			print("< 1");
 		else
-			print("idle");
+			m_body.SetLinearVelocity(vec2(0, 0));
 	}
 }
