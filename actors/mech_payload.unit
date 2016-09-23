@@ -2,6 +2,9 @@
 	<behavior class="PayloadBehavior">
 		<string name="anim-idle">idle 8</string>
 		<string name="anim-walk">walk 8</string>
+
+		<float name="speed-forward">1.25</float>
+		<float name="speed-backward">0.5</float>
 	</behavior>
 
 	<scenes start="idle-2">

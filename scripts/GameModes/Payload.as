@@ -35,6 +35,8 @@ class Payload : TeamVersusGameMode
 		else
 			PrintError("First target node was not set!");
 
+		WorldScript::PayloadNode@ prevNode;
+
 		UnitPtr unitNode = unitFirstNode;
 		while (unitNode.IsValid())
 		{
@@ -44,6 +46,9 @@ class Payload : TeamVersusGameMode
 
 			m_nodeCount++;
 			unitNode = node.NextNode.FetchFirst();
+
+			@node.m_prevNode = prevNode;
+			@node.m_nextNode = cast<WorldScript::PayloadNode>(unitNode.GetScriptBehavior());
 		}
 	}
 }

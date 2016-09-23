@@ -11,6 +11,9 @@ namespace WorldScript
 		[Editable]
 		bool Checkpoint;
 
+		PayloadNode@ m_prevNode;
+		PayloadNode@ m_nextNode;
+
 		SValue@ ServerExecute()
 		{
 			return null;

@@ -7,10 +7,15 @@ class PayloadBehavior
 	AnimString@ m_animIdle;
 	AnimString@ m_animWalk;
 
+	float m_speedForward;
+	float m_speedBackward;
+
 	array<PlayerBase@> m_playersInside;
 
 	WorldScript::PayloadNode@ m_prevNode;
 	WorldScript::PayloadNode@ m_targetNode;
+
+	float m_dir;
 
 	PayloadBehavior(UnitPtr unit, SValue& params)
 	{
@@ -20,6 +25,9 @@ class PayloadBehavior
 
 		@m_animIdle = AnimString(GetParamString(unit, params, "anim-idle"));
 		@m_animWalk = AnimString(GetParamString(unit, params, "anim-walk"));
+
+		m_speedForward = GetParamFloat(unit, params, "speed-forward");
+		m_speedBackward = GetParamFloat(unit, params, "speed-backward");
 	}
 
 	int TeamInside(uint team)
@@ -33,14 +41,35 @@ class PayloadBehavior
 		return ret;
 	}
 
+	int TeamTotal(uint team)
+	{
+		int ret = 0;
+		for (uint i = 0; i < g_players.length(); i++)
+		{
+			if (g_players[i].team == team)
+				ret++;
+		}
+		return ret;
+	}
+
 	int AttackersInside()
 	{
 		return TeamInside(HashString("player_1"));
 	}
 
+	int AttackersTotal()
+	{
+		return TeamTotal(HashString("player_1"));
+	}
+
 	int DefendersInside()
 	{
 		return TeamInside(HashString("player_0"));
+	}
+
+	int DefendersTotal()
+	{
+		return TeamTotal(HashString("player_0"));
 	}
 
 	void Collide(UnitPtr unit, vec2 pos, vec2 normal, Fixture@ fxSelf, Fixture@ fxOther)
@@ -76,19 +105,76 @@ class PayloadBehavior
 
 	void Update(int dt)
 	{
+		if (m_targetNode is null)
+			return;
+
 		int attackers = AttackersInside();
 		int defenders = DefendersInside();
+
+		float moveSpeed = 0.0f;
 
 		if (attackers > 0)
 		{
 			if (defenders == 0)
-				print(">>> " + attackers);
+				moveSpeed = (attackers / float(AttackersTotal())) * m_speedForward;
 			else
-				print("Contended!");
+				moveSpeed = 0;
 		}
 		else if (defenders > 0)
-			print("< 1");
+			moveSpeed = m_speedBackward;
 		else
-			m_body.SetLinearVelocity(vec2(0, 0));
+			moveSpeed = 0;
+
+		WorldScript::PayloadNode@ target;
+
+		if (moveSpeed > 0)
+			@target = m_targetNode;
+		else if (moveSpeed < 0 && m_prevNode !is null && !m_targetNode.Checkpoint)
+			@target = m_prevNode;
+
+		vec2 newVelocity;
+
+		if (target !is null)
+		{
+			float distStop = 4.0f;
+			if (distsq(target.Position, m_unit.GetPosition()) <= distStop * distStop)
+			{
+				if (moveSpeed < 0)
+				{
+					@m_targetNode = m_prevNode;
+					@m_prevNode = target.m_prevNode;
+				}
+				else if (moveSpeed > 0)
+				{
+					WorldScript@ ws = WorldScript::GetWorldScript(g_scene, target);
+					if (ws !is null)
+						ws.Execute();
+
+					if (target.m_nextNode is null)
+					{
+						print("Attackers win!");
+						@m_targetNode = null;
+						moveSpeed = 0;
+					}
+					else
+					{
+						@m_targetNode = target.m_nextNode;
+						@m_prevNode = target;
+					}
+				}
+			}
+
+			vec2 dir = normalize(xy(target.Position) - xy(m_unit.GetPosition()));
+			newVelocity = dir * moveSpeed;
+
+			m_dir = atan(dir.y, dir.x);
+		}
+
+		if (length(newVelocity) > 0)
+			m_unit.SetUnitScene(m_animWalk.GetSceneName(m_dir), false);
+		else
+			m_unit.SetUnitScene(m_animIdle.GetSceneName(m_dir), false);
+
+		m_body.SetLinearVelocity(newVelocity);
 	}
 }
