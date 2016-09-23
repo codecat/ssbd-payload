@@ -1,3 +1,5 @@
+array<WorldScript::PayloadBeginTrigger@> g_payloadBeginTriggers;
+
 [GameMode]
 class Payload : TeamVersusGameMode
 {
@@ -9,12 +11,30 @@ class Payload : TeamVersusGameMode
 
 	PayloadBehavior@ m_payload;
 
+	int m_tmStarted;
+
 	int m_nodeCount;
 	int m_nodeCurrent;
 
 	Payload(Scene@ scene)
 	{
 		super(scene);
+	}
+
+	void UpdateFrame(int ms, GameInput& gameInput, MenuInput& menuInput) override
+	{
+		TeamVersusGameMode::UpdateFrame(ms, gameInput, menuInput);
+
+		if (m_tmStarted == 0 && m_tmLevel > 10000)
+		{
+			m_tmStarted = m_tmLevel;
+
+			for (uint i = 0; i < g_payloadBeginTriggers.length(); i++)
+			{
+				WorldScript@ ws = WorldScript::GetWorldScript(g_scene, g_payloadBeginTriggers[i]);
+				ws.Execute();
+			}
+		}
 	}
 
 	void Start(uint8 peer, SValue@ save, StartMode sMode) override
