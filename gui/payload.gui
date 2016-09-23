@@ -1,0 +1,28 @@
+<gui>
+	<sprites>
+		<sprite name="checkpoint-blue" texture="gui/payload.png">
+			<frame>0 0 5 8</frame>
+		</sprite>
+		<sprite name="checkpoint-red" texture="gui/payload.png">
+			<frame>5 0 5 8</frame>
+		</sprite>
+		<sprite name="payload" texture="gui/payload.png">
+			<frame>10 0 5 7</frame>
+		</sprite>
+	</sprites>
+
+	<doc>
+		<group>
+			<rect anchor="0.5 0" width="200" height="45" color="0 0 0 125">
+				<text font="gui/fonts/font_msref12.fnt" text="Start in 10" id="status" anchor="0.5 0" offset="0 2" />
+
+				<rect anchor="0.5 1" offset="0 -14" width="192" height="7">
+					<sprite src="payload" id="payload" offset="-2 0" />
+				</rect>
+				<bar id="location" anchor="0.5 1" offset="0 -11" width="192" height="3" color="0 0 0 125" />
+				<sprite id="checkpoints-template" visible="false" />
+				<rect id="checkpoints" anchor="0.5 1" offset="0 -3" width="192" height="8" />
+			</rect>
+		</group>
+	</doc>
+</gui>

@@ -13,17 +13,20 @@ class Payload : TeamVersusGameMode
 
 	int m_tmStarted;
 
-	int m_nodeCount;
-	int m_nodeCurrent;
+	PayloadHUD@ m_payloadHUD;
 
 	Payload(Scene@ scene)
 	{
 		super(scene);
+
+		@m_payloadHUD = PayloadHUD(m_guiBuilder);
 	}
 
 	void UpdateFrame(int ms, GameInput& gameInput, MenuInput& menuInput) override
 	{
 		TeamVersusGameMode::UpdateFrame(ms, gameInput, menuInput);
+
+		m_payloadHUD.Update(ms);
 
 		if (m_tmStarted == 0 && m_tmLevel > 10000)
 		{
@@ -35,6 +38,13 @@ class Payload : TeamVersusGameMode
 				ws.Execute();
 			}
 		}
+	}
+
+	void RenderFrame(int idt, SpriteBatch& sb) override
+	{
+		m_payloadHUD.Draw(sb, idt, m_wndWidth, m_wndHeight);
+
+		TeamVersusGameMode::RenderFrame(idt, sb);
 	}
 
 	void Start(uint8 peer, SValue@ save, StartMode sMode) override
@@ -57,6 +67,8 @@ class Payload : TeamVersusGameMode
 
 		WorldScript::PayloadNode@ prevNode;
 
+		float totalDistance = 0.0f;
+
 		UnitPtr unitNode = unitFirstNode;
 		while (unitNode.IsValid())
 		{
@@ -64,11 +76,33 @@ class Payload : TeamVersusGameMode
 			if (node is null)
 				break;
 
-			m_nodeCount++;
 			unitNode = node.NextNode.FetchFirst();
 
 			@node.m_prevNode = prevNode;
 			@node.m_nextNode = cast<WorldScript::PayloadNode>(unitNode.GetScriptBehavior());
+
+			if (prevNode !is null)
+				totalDistance += dist(prevNode.Position, node.Position);
+
+			@prevNode = node;
 		}
+
+		float currDistance = 0.0f;
+
+		auto distNode = cast<WorldScript::PayloadNode>(unitFirstNode.GetScriptBehavior());
+		while (distNode !is null)
+		{
+			if (distNode.m_prevNode is null)
+				distNode.m_locationFactor = 0.0f;
+			else
+			{
+				currDistance += dist(distNode.m_prevNode.Position, distNode.Position);
+				distNode.m_locationFactor = currDistance / totalDistance;
+			}
+
+			@distNode = distNode.m_nextNode;
+		}
+
+		m_payloadHUD.AddCheckpoints();
 	}
 }

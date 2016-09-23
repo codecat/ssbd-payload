@@ -13,6 +13,7 @@ namespace WorldScript
 
 		PayloadNode@ m_prevNode;
 		PayloadNode@ m_nextNode;
+		float m_locationFactor;
 
 		SValue@ ServerExecute()
 		{
