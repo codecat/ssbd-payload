@@ -105,6 +105,7 @@ class PayloadBehavior
 			int defenders = DefendersInside();
 
 			float moveSpeed = 0.0f;
+			bool backward = false;
 
 			if (attackers > 0)
 			{
@@ -114,30 +115,36 @@ class PayloadBehavior
 					moveSpeed = 0;
 			}
 			else if (defenders > 0)
+			{
 				moveSpeed = m_speedBackward;
+				backward = true;
+			}
 			else
 				moveSpeed = 0;
 
 			WorldScript::PayloadNode@ target;
 
 			if (moveSpeed > 0)
-				@target = m_targetNode;
-			else if (moveSpeed < 0 && m_prevNode !is null && !m_targetNode.Checkpoint)
-				@target = m_prevNode;
+			{
+				if (!backward)
+					@target = m_targetNode;
+				else if (backward && m_prevNode !is null && !m_targetNode.Checkpoint)
+					@target = m_prevNode;
+			}
 
 			vec2 newVelocity;
 
 			if (target !is null)
 			{
 				float distStop = 4.0f;
-				if (distsq(target.Position, m_unit.GetPosition()) <= distStop * distStop)
+				if (moveSpeed > 0 && distsq(target.Position, m_unit.GetPosition()) <= distStop * distStop)
 				{
-					if (moveSpeed < 0)
+					if (backward)
 					{
 						@m_targetNode = m_prevNode;
 						@m_prevNode = target.m_prevNode;
 					}
-					else if (moveSpeed > 0)
+					else
 					{
 						WorldScript@ ws = WorldScript::GetWorldScript(g_scene, target);
 						if (ws !is null)
