@@ -4,6 +4,9 @@ class PayloadBehavior
 
 	PhysicsBody@ m_body;
 
+	int m_radius;
+	int m_queryTime;
+
 	AnimString@ m_animIdle;
 	AnimString@ m_animWalk;
 
@@ -22,6 +25,8 @@ class PayloadBehavior
 		m_unit = unit;
 
 		@m_body = m_unit.GetPhysicsBody();
+
+		m_radius = GetParamInt(unit, params, "radius");
 
 		@m_animIdle = AnimString(GetParamString(unit, params, "anim-idle"));
 		@m_animWalk = AnimString(GetParamString(unit, params, "anim-walk"));
@@ -72,6 +77,7 @@ class PayloadBehavior
 		return TeamTotal(HashString("player_0"));
 	}
 
+	/*
 	void Collide(UnitPtr unit, vec2 pos, vec2 normal, Fixture@ fxSelf, Fixture@ fxOther)
 	{
 		PlayerBase@ ply = cast<PlayerBase>(unit.GetScriptBehavior());
@@ -102,11 +108,23 @@ class PayloadBehavior
 
 		m_playersInside.removeAt(index);
 	}
+	*/
 
 	void Update(int dt)
 	{
 		if (m_targetNode is null)
 			return;
+
+		if (m_queryTime <= 0)
+		{
+			array<UnitPtr>@ arrRange = g_scene.QueryCircle(xy(m_unit.GetPosition()), m_radius, ~0, RaycastType::Any);
+			print("------ in range: ------");
+			for (uint i = 0; i < arrRange.length(); i++)
+				print(i + ": " + arrRange[i].GetDebugName());
+			m_queryTime = 100;
+		}
+		else
+			m_queryTime -= dt;
 
 		int attackers = AttackersInside();
 		int defenders = DefendersInside();

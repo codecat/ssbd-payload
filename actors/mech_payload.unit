@@ -1,5 +1,7 @@
 <unit slot="actor" netsync="position">
 	<behavior class="PayloadBehavior">
+		<int name="radius">100</int>
+
 		<string name="anim-idle">idle 8</string>
 		<string name="anim-walk">walk 8</string>
 
@@ -11,7 +13,6 @@
 		<scene name="shared">
 			<collision static="false">
 				<circle offset="0 -12" aim-through="true" radius="32" />
-				<circle offset="0 0" sensor="true" radius="100" />
 			</collision>
 
 			<minimap_sprite src="menus/minimap.xml:enemy" />
