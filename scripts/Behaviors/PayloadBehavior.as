@@ -175,8 +175,14 @@ class PayloadBehavior
 
 			m_body.SetLinearVelocity(newVelocity);
 		}
+		else
+		{
+			vec2 moveDir = m_unit.GetMoveDir();
+			if (lengthsq(moveDir) > 0.01)
+				m_dir = atan(moveDir.y, moveDir.x);
+		}
 
-		if (length(m_body.GetLinearVelocity()) > 0)
+		if (lengthsq(m_unit.GetMoveDir()) > 0.01)
 			m_unit.SetUnitScene(m_animWalk.GetSceneName(m_dir), false);
 		else
 			m_unit.SetUnitScene(m_animIdle.GetSceneName(m_dir), false);
