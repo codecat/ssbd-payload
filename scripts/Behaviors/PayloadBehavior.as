@@ -80,7 +80,10 @@ class PayloadBehavior
 	void Update(int dt)
 	{
 		if (m_targetNode is null)
+		{
+			m_body.SetLinearVelocity(vec2());
 			return;
+		}
 
 		if (Network::IsServer())
 		{

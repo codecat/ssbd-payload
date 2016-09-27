@@ -566,7 +566,7 @@
 			<int>1</int>
 			<bool>f</bool>
 			<dict>
-				<array name="Areas"><int>106</int></array>
+				<array name="Areas"><int>27</int></array>
 			</dict>
 			<array><int>326</int><int>0</int><int>311</int><int>0</int></array>
 		</array>
@@ -578,7 +578,7 @@
 			<int>-1</int>
 			<bool>f</bool>
 			<dict>
-				<array name="Units"><int>17</int><int>18</int></array>
+				<array name="Units"><int>23</int><int>25</int></array>
 				<string name="State">open</string>
 			</dict>
 		</array>
@@ -610,7 +610,7 @@
 			<int>-1</int>
 			<bool>f</bool>
 			<dict>
-				<array name="Units"><int>16</int></array>
+				<array name="Units"><int>24</int></array>
 				<string name="State">open</string>
 			</dict>
 		</array>
@@ -645,354 +645,181 @@
 				<string name="Sound">event:/misc/gate</string>
 			</dict>
 		</array>
+		<array>
+			<string>WaypointAdd</string>
+			<int>335</int>
+			<vec3>-728 -664 0</vec3>
+			<bool>t</bool>
+			<int>-1</int>
+			<bool>t</bool>
+			<dict>
+				<array name="AttachTo"><int>17</int></array>
+				<float name="FadeEnd">9050</float>
+				<float name="FadeStart">9000</float>
+			</dict>
+		</array>
 	</array>
 	<dict name="units">
-		<array name="doodads/terrain/tree_palm.unit">
-			<vec3>-240 -240 0</vec3>
-			<int>29</int>
-			<vec3>-504 -248 0</vec3>
-			<int>43</int>
-			<vec3>-488 -544 0</vec3>
-			<int>42</int>
-			<vec3>-144 -168 0</vec3>
-			<int>41</int>
-			<vec3>-280 -248 0</vec3>
-			<int>40</int>
-			<vec3>128 -424 0</vec3>
-			<int>39</int>
-			<vec3>-648 -512 0</vec3>
-			<int>38</int>
-			<vec3>48 -480 0</vec3>
-			<int>37</int>
-			<vec3>-312 -1288 0</vec3>
-			<int>36</int>
-			<vec3>-448 -248 0</vec3>
-			<int>35</int>
-			<vec3>-624 0 0</vec3>
-			<int>34</int>
-			<vec3>96 -408 0</vec3>
-			<int>33</int>
-			<vec3>-136 -104 0</vec3>
-			<int>32</int>
-			<vec3>-640 -128 0</vec3>
-			<int>31</int>
-			<vec3>-560 -200 0</vec3>
-			<int>30</int>
-			<vec3>-176 -136 0</vec3>
-			<int>44</int>
-			<vec3>-400 -192 0</vec3>
-			<int>28</int>
-			<vec3>-608 -64 0</vec3>
-			<int>75</int>
-			<vec3>-280 -192 0</vec3>
-			<int>76</int>
-			<vec3>-232 -176 0</vec3>
-			<int>77</int>
-			<vec3>-184 -200 0</vec3>
-			<int>78</int>
-			<vec3>-320 -200 0</vec3>
-			<int>79</int>
-			<vec3>-200 -160 0</vec3>
-			<int>80</int>
-			<vec3>-656 -56 0</vec3>
-			<int>81</int>
-			<vec3>-104 -128 0</vec3>
-			<int>82</int>
-			<vec3>-608 -168 0</vec3>
-			<int>83</int>
-			<vec3>-432 -176 0</vec3>
-			<int>84</int>
-			<vec3>-688 32 0</vec3>
-			<int>85</int>
-			<vec3>-152 -552 0</vec3>
-			<int>86</int>
-			<vec3>-584 -112 0</vec3>
-			<int>87</int>
-			<vec3>-96 -544 0</vec3>
-			<int>59</int>
-			<vec3>-360 -192 0</vec3>
-			<int>73</int>
-			<vec3>-504 -160 0</vec3>
-			<int>72</int>
-			<vec3>-680 -16 0</vec3>
-			<int>71</int>
-			<vec3>-616 -24 0</vec3>
-			<int>70</int>
-			<vec3>-472 -168 0</vec3>
-			<int>69</int>
-			<vec3>-632 40 0</vec3>
-			<int>68</int>
-			<vec3>-424 -1240 0</vec3>
-			<int>67</int>
-			<vec3>-400 -240 0</vec3>
-			<int>66</int>
-			<vec3>-552 -128 0</vec3>
-			<int>65</int>
-			<vec3>-384 -576 0</vec3>
-			<int>64</int>
-			<vec3>-552 -512 0</vec3>
-			<int>63</int>
-			<vec3>-592 -512 0</vec3>
-			<int>62</int>
-			<vec3>-536 -536 0</vec3>
-			<int>61</int>
-			<vec3>-416 -544 0</vec3>
-			<int>60</int>
-			<vec3>-336 -248 0</vec3>
-			<int>74</int>
-			<vec3>-456 -560 0</vec3>
-			<int>58</int>
-			<vec3>-568 -528 0</vec3>
-			<int>57</int>
-			<vec3>-344 -1304 0</vec3>
-			<int>56</int>
-			<vec3>-192 -1248 0</vec3>
-			<int>55</int>
-			<vec3>-384 -1280 0</vec3>
-			<int>54</int>
-			<vec3>-616 -528 0</vec3>
-			<int>53</int>
-			<vec3>-200 -576 0</vec3>
-			<int>52</int>
-			<vec3>-248 -608 0</vec3>
-			<int>51</int>
-			<vec3>-440 -744 0</vec3>
-			<int>50</int>
-			<vec3>-424 -1168 0</vec3>
-			<int>49</int>
-			<vec3>-264 -1280 0</vec3>
-			<int>48</int>
-			<vec3>-224 -1288 0</vec3>
-			<int>47</int>
-			<vec3>-192 -1200 0</vec3>
-			<int>46</int>
-			<vec3>-528 -144 0</vec3>
-			<int>45</int>
+		<array name="doodads/wall/egypt_fancy/fancy_h_16.unit">
+			<vec3>512 -288 0</vec3>
+			<int>11</int>
+			<vec3>-624 56 0</vec3>
+			<int>8</int>
+			<vec3>-184 -648 0</vec3>
+			<int>9</int>
+			<vec3>624 -288 0</vec3>
+			<int>10</int>
+			<vec3>-512 56 0</vec3>
+			<int>12</int>
+			<vec3>-56 -896 0</vec3>
+			<int>13</int>
 		</array>
-		<array name="doodads/cliff/sand/sand_s_cap_r.unit"><vec3>-160 -936 0</vec3><int>182</int></array>
+		<array name="doodads/cliff/sand/sand_s_cap_r.unit"><vec3>-160 -936 0</vec3><int>26</int></array>
+		<array name="doodads/generic/statue_egypt_s.unit">
+			<vec3>-1032 -744 0</vec3>
+			<int>71</int>
+			<vec3>296 -48 0</vec3>
+			<int>66</int>
+			<vec3>-744 -744 0</vec3>
+			<int>70</int>
+			<vec3>-872 -744 0</vec3>
+			<int>69</int>
+			<vec3>-952 -744 0</vec3>
+			<int>68</int>
+			<vec3>416 -48 0</vec3>
+			<int>67</int>
+		</array>
+		<array name="doodads/generic/door_egypt_fancy_h.unit"><vec3>-1096 -640 0</vec3><int>23</int><vec3>-88 -896 0</vec3><int>24</int><vec3>-1240 -464 0</vec3><int>25</int></array>
+		<array name="doodads/generic/statue_egypt_sw.unit"><vec3>240 104 0</vec3><int>78</int><vec3>336 176 0</vec3><int>77</int></array>
+		<array name="doodads/cliff/sand/sand_se.unit"><vec3>-40 -656 0</vec3><int>42</int></array>
+		<array name="doodads/cliff/sand/sand_ne_i.unit"><vec3>-256 -648 0</vec3><int>65</int><vec3>-72 -960 0</vec3><int>64</int><vec3>32 -544 0</vec3><int>63</int><vec3>-72 -592 0</vec3><int>62</int></array>
+		<array name="doodads/cliff/sand/sand_w.unit">
+			<vec3>-624 -592 0</vec3>
+			<int>203</int>
+			<vec3>-624 -656 0</vec3>
+			<int>204</int>
+			<vec3>-352 -920 0</vec3>
+			<int>202</int>
+			<vec3>-456 -744 0</vec3>
+			<int>201</int>
+			<vec3>-624 -688 0</vec3>
+			<int>205</int>
+			<vec3>-352 -888 0</vec3>
+			<int>206</int>
+			<vec3>-416 -648 0</vec3>
+			<int>207</int>
+			<vec3>-664 -752 0</vec3>
+			<int>208</int>
+			<vec3>-416 -616 0</vec3>
+			<int>209</int>
+			<vec3>-456 -712 0</vec3>
+			<int>210</int>
+			<vec3>-664 -784 0</vec3>
+			<int>211</int>
+			<vec3>-568 -992 0</vec3>
+			<int>200</int>
+			<vec3>-624 -624 0</vec3>
+			<int>199</int>
+			<vec3>-352 -856 0</vec3>
+			<int>198</int>
+			<vec3>-352 -824 0</vec3>
+			<int>197</int>
+		</array>
 		<array name="doodads/cliff/sand/sand_e.unit">
-			<vec3>-72 -992 0</vec3>
-			<int>177</int>
+			<vec3>-32 -880 0</vec3>
+			<int>168</int>
+			<vec3>-72 -624 0</vec3>
+			<int>169</int>
+			<vec3>-256 -680 0</vec3>
+			<int>170</int>
+			<vec3>-256 -904 0</vec3>
+			<int>171</int>
+			<vec3>136 -496 0</vec3>
+			<int>172</int>
+			<vec3>-256 -744 0</vec3>
+			<int>173</int>
 			<vec3>-32 -688 0</vec3>
 			<int>174</int>
 			<vec3>-256 -872 0</vec3>
 			<int>175</int>
 			<vec3>-256 -840 0</vec3>
 			<int>176</int>
-			<vec3>-256 -808 0</vec3>
-			<int>181</int>
 			<vec3>-256 -776 0</vec3>
+			<int>177</int>
+			<vec3>-72 -992 0</vec3>
 			<int>178</int>
-			<vec3>-32 -912 0</vec3>
-			<int>179</int>
 			<vec3>-256 -712 0</vec3>
+			<int>179</int>
+			<vec3>-32 -912 0</vec3>
 			<int>180</int>
-			<vec3>-256 -744 0</vec3>
-			<int>173</int>
-			<vec3>136 -496 0</vec3>
-			<int>172</int>
-			<vec3>-256 -904 0</vec3>
-			<int>171</int>
-			<vec3>-256 -680 0</vec3>
-			<int>170</int>
-			<vec3>-72 -624 0</vec3>
-			<int>169</int>
-			<vec3>-32 -880 0</vec3>
-			<int>168</int>
+			<vec3>-256 -808 0</vec3>
+			<int>167</int>
 		</array>
-		<array name="doodads/cliff/sand/sand_n_cap_l.unit"><vec3>-272 -1008 0</vec3><int>144</int><vec3>-728 -928 0</vec3><int>143</int></array>
-		<array name="doodads/wall/egypt_fancy/fancy_cap_w.unit">
-			<vec3>-472 -912 0</vec3>
-			<int>145</int>
-			<vec3>-1064 -640 0</vec3>
-			<int>146</int>
-			<vec3>-1208 -464 0</vec3>
-			<int>147</int>
-			<vec3>-448 200 0</vec3>
-			<int>148</int>
-			<vec3>608 -288 0</vec3>
-			<int>149</int>
-			<vec3>-528 56 0</vec3>
-			<int>150</int>
-		</array>
-		<array name="doodads/wall/egypt_fancy/fancy_crn_nw.unit">
-			<vec3>-496 -800 0</vec3>
-			<int>100</int>
-			<vec3>496 -560 0</vec3>
-			<int>101</int>
-			<vec3>-704 56 0</vec3>
-			<int>102</int>
-			<vec3>-232 -896 0</vec3>
-			<int>103</int>
-			<vec3>-1304 -736 0</vec3>
-			<int>99</int>
-			<vec3>-1160 -560 0</vec3>
-			<int>98</int>
-		</array>
-		<array name="doodads/wall/egypt_fancy/fancy_v.unit">
-			<vec3>-1160 -512 0</vec3>
-			<int>135</int>
-			<vec3>496 -560 0</vec3>
-			<int>128</int>
-			<vec3>-232 -704 0</vec3>
-			<int>136</int>
-			<vec3>-1160 -704 0</vec3>
-			<int>137</int>
-			<vec3>-392 -880 0</vec3>
-			<int>139</int>
-			<vec3>-1048 -608 0</vec3>
-			<int>140</int>
-			<vec3>-1160 -544 0</vec3>
-			<int>141</int>
-			<vec3>-232 -736 0</vec3>
-			<int>142</int>
-			<vec3>496 -336 0</vec3>
-			<int>134</int>
-			<vec3>-392 -848 0</vec3>
-			<int>133</int>
-			<vec3>496 -528 0</vec3>
-			<int>132</int>
-			<vec3>-392 -912 0</vec3>
-			<int>131</int>
-			<vec3>-1160 -736 0</vec3>
-			<int>130</int>
-			<vec3>-1048 -640 0</vec3>
-			<int>129</int>
-			<vec3>496 -368 0</vec3>
-			<int>138</int>
-			<vec3>-232 -768 0</vec3>
-			<int>127</int>
-		</array>
-		<array name="doodads/wall/egypt_fancy/fancy_cap_e.unit">
-			<vec3>-48 -896 0</vec3>
-			<int>1</int>
-			<vec3>-1288 -464 0</vec3>
-			<int>7</int>
-			<vec3>-560 200 0</vec3>
-			<int>6</int>
-			<vec3>-1144 -640 0</vec3>
-			<int>5</int>
-			<vec3>-168 -648 0</vec3>
-			<int>4</int>
-			<vec3>528 -288 0</vec3>
-			<int>3</int>
-			<vec3>-608 56 0</vec3>
-			<int>2</int>
-		</array>
-		<array name="doodads/generic/statue_egypt_sw.unit"><vec3>240 104 0</vec3><int>166</int><vec3>336 176 0</vec3><int>167</int></array>
-		<array name="doodads/cliff/sand/sand_ne.unit">
-			<vec3>128 -512 0</vec3>
-			<int>156</int>
-			<vec3>-192 -616 0</vec3>
-			<int>155</int>
-			<vec3>24 -560 0</vec3>
-			<int>154</int>
-			<vec3>-40 -928 0</vec3>
-			<int>153</int>
-			<vec3>-80 -1008 0</vec3>
-			<int>152</int>
-		</array>
-		<array name="doodads/cliff/sand/sand_w_cap_up.unit"><vec3>-704 -848 0</vec3><int>187</int></array>
-		<array name="doodads/cliff/sand/sand_n.unit">
-			<vec3>-144 -1008 0</vec3>
-			<int>234</int>
-			<vec3>-416 -760 0</vec3>
-			<int>231</int>
-			<vec3>-496 -1008 0</vec3>
-			<int>230</int>
-			<vec3>-528 -1008 0</vec3>
-			<int>229</int>
-			<vec3>-664 -928 0</vec3>
-			<int>228</int>
-			<vec3>-432 -1008 0</vec3>
-			<int>227</int>
-			<vec3>64 -512 0</vec3>
-			<int>226</int>
-			<vec3>-240 -1008 0</vec3>
-			<int>245</int>
-			<vec3>-464 -1008 0</vec3>
-			<int>243</int>
-			<vec3>-176 -1008 0</vec3>
-			<int>242</int>
-			<vec3>-112 -1008 0</vec3>
-			<int>232</int>
-			<vec3>-208 -1008 0</vec3>
-			<int>241</int>
-			<vec3>96 -512 0</vec3>
-			<int>240</int>
-			<vec3>-40 -560 0</vec3>
-			<int>238</int>
-			<vec3>-560 -1008 0</vec3>
-			<int>235</int>
-			<vec3>-224 -616 0</vec3>
-			<int>236</int>
-			<vec3>-448 -760 0</vec3>
-			<int>237</int>
-			<vec3>-696 -928 0</vec3>
-			<int>244</int>
-			<vec3>-632 -928 0</vec3>
-			<int>239</int>
-			<vec3>-8 -560 0</vec3>
-			<int>233</int>
-		</array>
-		<array name="doodads/cliff/sand/sand_se_i.unit"><vec3>-224 -936 0</vec3><int>247</int><vec3>-40 -656 0</vec3><int>246</int></array>
 		<array name="doodads/wall/egypt_fancy/fancy_v_128.unit">
-			<vec3>-496 -800 0</vec3>
-			<int>256</int>
-			<vec3>-432 56 0</vec3>
-			<int>257</int>
-			<vec3>-1304 -736 0</vec3>
-			<int>255</int>
-			<vec3>-232 -896 0</vec3>
-			<int>254</int>
-			<vec3>-1304 -608 0</vec3>
-			<int>253</int>
-			<vec3>-704 56 0</vec3>
-			<int>252</int>
-			<vec3>640 -432 0</vec3>
-			<int>251</int>
 			<vec3>640 -560 0</vec3>
+			<int>221</int>
+			<vec3>640 -432 0</vec3>
+			<int>220</int>
+			<vec3>-704 56 0</vec3>
+			<int>219</int>
+			<vec3>-496 -800 0</vec3>
+			<int>218</int>
+			<vec3>-432 56 0</vec3>
+			<int>217</int>
+			<vec3>-1304 -736 0</vec3>
+			<int>216</int>
+			<vec3>-232 -896 0</vec3>
+			<int>215</int>
+			<vec3>-1304 -608 0</vec3>
+			<int>214</int>
+		</array>
+		<array name="doodads/cliff/sand/sand_nw_i.unit"><vec3>-568 -960 0</vec3><int>212</int><vec3>-352 -792 0</vec3><int>213</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_h.unit">
+			<vec3>-1144 -560 0</vec3>
+			<int>244</int>
+			<vec3>-480 -800 0</vec3>
+			<int>256</int>
+			<vec3>-456 -800 0</vec3>
+			<int>255</int>
+			<vec3>-496 56 0</vec3>
+			<int>254</int>
+			<vec3>-464 56 0</vec3>
+			<int>258</int>
+			<vec3>-456 -912 0</vec3>
+			<int>245</int>
+			<vec3>-216 -648 0</vec3>
+			<int>246</int>
+			<vec3>-424 -800 0</vec3>
+			<int>247</int>
+			<vec3>-1192 -464 0</vec3>
+			<int>248</int>
+			<vec3>-688 56 0</vec3>
+			<int>249</int>
+			<vec3>-1112 -560 0</vec3>
 			<int>250</int>
+			<vec3>-424 -912 0</vec3>
+			<int>251</int>
+			<vec3>-656 56 0</vec3>
+			<int>252</int>
+			<vec3>-1080 -560 0</vec3>
+			<int>253</int>
+			<vec3>-184 -896 0</vec3>
+			<int>259</int>
+			<vec3>-152 -896 0</vec3>
+			<int>260</int>
+			<vec3>-216 -896 0</vec3>
+			<int>257</int>
 		</array>
-		<array name="doodads/cliff/sand/sand_nw_i.unit"><vec3>-568 -960 0</vec3><int>249</int><vec3>-352 -792 0</vec3><int>248</int></array>
-		<array name="doodads/wall/egypt_fancy/fancy_cap_s.unit"><vec3>496 -464 0</vec3><int>105</int><vec3>-496 -656 0</vec3><int>104</int></array>
-		<array name="doodads/generic/debris_egypt_fancy.unit"><vec3>464 -176 0</vec3><int>8</int></array>
-		<array name="doodads/cliff/sand/sand_w.unit">
-			<vec3>-416 -616 0</vec3>
-			<int>196</int>
-			<vec3>-664 -752 0</vec3>
-			<int>193</int>
-			<vec3>-416 -648 0</vec3>
-			<int>197</int>
-			<vec3>-624 -624 0</vec3>
-			<int>198</int>
-			<vec3>-352 -856 0</vec3>
-			<int>199</int>
-			<vec3>-456 -744 0</vec3>
-			<int>200</int>
-			<vec3>-568 -992 0</vec3>
-			<int>201</int>
-			<vec3>-352 -824 0</vec3>
-			<int>195</int>
-			<vec3>-352 -920 0</vec3>
-			<int>194</int>
-			<vec3>-624 -592 0</vec3>
-			<int>202</int>
-			<vec3>-624 -656 0</vec3>
-			<int>192</int>
-			<vec3>-624 -688 0</vec3>
-			<int>191</int>
-			<vec3>-352 -888 0</vec3>
-			<int>190</int>
-			<vec3>-456 -712 0</vec3>
-			<int>189</int>
-			<vec3>-664 -784 0</vec3>
-			<int>188</int>
-		</array>
+		<array name="doodads/cliff/sand/sand_e_cap_up.unit"><vec3>-32 -720 0</vec3><int>265</int></array>
+		<array name="doodads/cliff/sand/sand_sw_i.unit"><vec3>-384 -952 0</vec3><int>261</int><vec3>-696 -816 0</vec3><int>264</int><vec3>-656 -720 0</vec3><int>263</int><vec3>-448 -680 0</vec3><int>262</int></array>
+		<array name="doodads/cliff/sand/sand_n_cap_r.unit"><vec3>-400 -1008 0</vec3><int>266</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_deco_door.unit"><vec3>576 -544 0</vec3><int>43</int><vec3>-1224 -720 0</vec3><int>44</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_cap_s.unit"><vec3>496 -464 0</vec3><int>80</int><vec3>-496 -656 0</vec3><int>79</int></array>
+		<array name="doodads/cliff/sand/sand_sw.unit"><vec3>-704 -816 0</vec3><int>30</int><vec3>-456 -680 0</vec3><int>29</int><vec3>-664 -720 0</vec3><int>28</int></array>
 		<array name=":Physics_Rectangle">
 			<array>
 				<vec3>-320 -1264 0</vec3>
-				<int>106</int>
+				<int>27</int>
 				<dict>
 					<vec2 name="size">192 500</vec2>
 					<bool name="jam-through">t</bool>
@@ -1002,136 +829,358 @@
 				</dict>
 			</array>
 		</array>
-		<array name="doodads/cliff/sand/sand_sw.unit"><vec3>-456 -680 0</vec3><int>109</int><vec3>-704 -816 0</vec3><int>108</int><vec3>-664 -720 0</vec3><int>107</int></array>
-		<array name="doodads/wall/egypt_fancy/fancy_h_128.unit"><vec3>512 -560 0</vec3><int>186</int><vec3>-688 200 0</vec3><int>185</int><vec3>-1288 -736 0</vec3><int>184</int></array>
-		<array name="doodads/cliff/sand/sand_se.unit"><vec3>-40 -656 0</vec3><int>165</int></array>
-		<array name="doodads/wall/egypt_fancy/fancy_deco_door.unit"><vec3>576 -544 0</vec3><int>164</int><vec3>-1224 -720 0</vec3><int>163</int></array>
-		<array name="doodads/wall/egypt_fancy/fancy_h_16.unit">
-			<vec3>-56 -896 0</vec3>
-			<int>162</int>
-			<vec3>-184 -648 0</vec3>
-			<int>157</int>
-			<vec3>624 -288 0</vec3>
-			<int>158</int>
-			<vec3>512 -288 0</vec3>
-			<int>159</int>
-			<vec3>-624 56 0</vec3>
-			<int>160</int>
-			<vec3>-512 56 0</vec3>
-			<int>161</int>
+		<array name="doodads/cliff/sand/sand_se_i.unit"><vec3>-224 -936 0</vec3><int>223</int><vec3>-40 -656 0</vec3><int>222</int></array>
+		<array name="doodads/cliff/sand/sand_n.unit">
+			<vec3>-496 -1008 0</vec3>
+			<int>230</int>
+			<vec3>-696 -928 0</vec3>
+			<int>243</int>
+			<vec3>64 -512 0</vec3>
+			<int>224</int>
+			<vec3>-240 -1008 0</vec3>
+			<int>225</int>
+			<vec3>-224 -616 0</vec3>
+			<int>226</int>
+			<vec3>-176 -1008 0</vec3>
+			<int>227</int>
+			<vec3>-144 -1008 0</vec3>
+			<int>228</int>
+			<vec3>-416 -760 0</vec3>
+			<int>229</int>
+			<vec3>-528 -1008 0</vec3>
+			<int>231</int>
+			<vec3>-664 -928 0</vec3>
+			<int>232</int>
+			<vec3>-432 -1008 0</vec3>
+			<int>233</int>
+			<vec3>-632 -928 0</vec3>
+			<int>234</int>
+			<vec3>-464 -1008 0</vec3>
+			<int>235</int>
+			<vec3>-8 -560 0</vec3>
+			<int>236</int>
+			<vec3>-112 -1008 0</vec3>
+			<int>237</int>
+			<vec3>-208 -1008 0</vec3>
+			<int>238</int>
+			<vec3>96 -512 0</vec3>
+			<int>239</int>
+			<vec3>-40 -560 0</vec3>
+			<int>240</int>
+			<vec3>-560 -1008 0</vec3>
+			<int>241</int>
+			<vec3>-448 -760 0</vec3>
+			<int>242</int>
+		</array>
+		<array name="doodads/wall/egypt_fancy/fancy_crn_nw.unit">
+			<vec3>-496 -800 0</vec3>
+			<int>149</int>
+			<vec3>-232 -896 0</vec3>
+			<int>148</int>
+			<vec3>-704 56 0</vec3>
+			<int>147</int>
+			<vec3>-1304 -736 0</vec3>
+			<int>146</int>
+			<vec3>-1160 -560 0</vec3>
+			<int>145</int>
+			<vec3>496 -560 0</vec3>
+			<int>144</int>
+		</array>
+		<array name="doodads/terrain/tree_palm.unit">
+			<vec3>-616 -24 0</vec3>
+			<int>119</int>
+			<vec3>-144 -168 0</vec3>
+			<int>113</int>
+			<vec3>-680 -16 0</vec3>
+			<int>120</int>
+			<vec3>-504 -160 0</vec3>
+			<int>121</int>
+			<vec3>-360 -192 0</vec3>
+			<int>122</int>
+			<vec3>-96 -544 0</vec3>
+			<int>123</int>
+			<vec3>-584 -112 0</vec3>
+			<int>124</int>
+			<vec3>-152 -552 0</vec3>
+			<int>125</int>
+			<vec3>-200 -576 0</vec3>
+			<int>118</int>
+			<vec3>-632 40 0</vec3>
+			<int>117</int>
+			<vec3>-424 -1240 0</vec3>
+			<int>116</int>
+			<vec3>-656 -56 0</vec3>
+			<int>115</int>
+			<vec3>-488 -544 0</vec3>
+			<int>114</int>
+			<vec3>-232 -176 0</vec3>
+			<int>131</int>
+			<vec3>-280 -248 0</vec3>
+			<int>112</int>
+			<vec3>-688 32 0</vec3>
+			<int>126</int>
+			<vec3>-608 -168 0</vec3>
+			<int>127</int>
+			<vec3>-104 -128 0</vec3>
+			<int>128</int>
+			<vec3>-200 -160 0</vec3>
+			<int>129</int>
+			<vec3>-320 -200 0</vec3>
+			<int>130</int>
+			<vec3>-176 -136 0</vec3>
+			<int>106</int>
+			<vec3>-280 -192 0</vec3>
+			<int>132</int>
+			<vec3>-432 -176 0</vec3>
+			<int>133</int>
+			<vec3>-248 -608 0</vec3>
+			<int>134</int>
+			<vec3>-440 -744 0</vec3>
+			<int>135</int>
+			<vec3>-424 -1168 0</vec3>
+			<int>136</int>
+			<vec3>-264 -1280 0</vec3>
+			<int>137</int>
+			<vec3>-528 -144 0</vec3>
+			<int>138</int>
+			<vec3>-224 -1288 0</vec3>
+			<int>139</int>
+			<vec3>-192 -1200 0</vec3>
+			<int>140</int>
+			<vec3>-384 -1280 0</vec3>
+			<int>96</int>
+			<vec3>-384 -576 0</vec3>
+			<int>81</int>
+			<vec3>-552 -512 0</vec3>
+			<int>82</int>
+			<vec3>-536 -536 0</vec3>
+			<int>83</int>
+			<vec3>-592 -512 0</vec3>
+			<int>84</int>
+			<vec3>-240 -240 0</vec3>
+			<int>85</int>
+			<vec3>-608 -64 0</vec3>
+			<int>86</int>
+			<vec3>-400 -240 0</vec3>
+			<int>87</int>
+			<vec3>-344 -1304 0</vec3>
+			<int>88</int>
+			<vec3>-616 -528 0</vec3>
+			<int>89</int>
+			<vec3>-416 -544 0</vec3>
+			<int>90</int>
+			<vec3>-336 -248 0</vec3>
+			<int>91</int>
+			<vec3>-456 -560 0</vec3>
+			<int>92</int>
+			<vec3>-568 -528 0</vec3>
+			<int>93</int>
+			<vec3>-552 -128 0</vec3>
+			<int>94</int>
+			<vec3>-192 -1248 0</vec3>
+			<int>95</int>
+			<vec3>128 -424 0</vec3>
+			<int>111</int>
+			<vec3>-184 -200 0</vec3>
+			<int>97</int>
+			<vec3>-472 -168 0</vec3>
+			<int>98</int>
+			<vec3>-136 -104 0</vec3>
+			<int>99</int>
+			<vec3>96 -408 0</vec3>
+			<int>100</int>
+			<vec3>-448 -248 0</vec3>
+			<int>101</int>
+			<vec3>-624 0 0</vec3>
+			<int>102</int>
+			<vec3>-400 -192 0</vec3>
+			<int>103</int>
+			<vec3>-640 -128 0</vec3>
+			<int>104</int>
+			<vec3>-560 -200 0</vec3>
+			<int>105</int>
+			<vec3>-504 -248 0</vec3>
+			<int>107</int>
+			<vec3>-312 -1288 0</vec3>
+			<int>108</int>
+			<vec3>48 -480 0</vec3>
+			<int>109</int>
+			<vec3>-648 -512 0</vec3>
+			<int>110</int>
+		</array>
+		<array name="doodads/cliff/sand/sand_w_cap_up.unit"><vec3>-704 -848 0</vec3><int>41</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_h_128.unit"><vec3>512 -560 0</vec3><int>141</int><vec3>-1288 -736 0</vec3><int>143</int><vec3>-688 200 0</vec3><int>142</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_cap_e.unit">
+			<vec3>-560 200 0</vec3>
+			<int>184</int>
+			<vec3>-608 56 0</vec3>
+			<int>188</int>
+			<vec3>528 -288 0</vec3>
+			<int>187</int>
+			<vec3>-168 -648 0</vec3>
+			<int>186</int>
+			<vec3>-1144 -640 0</vec3>
+			<int>185</int>
+			<vec3>-1288 -464 0</vec3>
+			<int>183</int>
+			<vec3>-48 -896 0</vec3>
+			<int>182</int>
+		</array>
+		<array name="doodads/generic/debris_egypt_fancy.unit"><vec3>464 -176 0</vec3><int>181</int></array>
+		<array name="doodads/cliff/sand/sand_s_cap_l.unit"><vec3>-512 -952 0</vec3><int>267</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_cap_w.unit">
+			<vec3>-1064 -640 0</vec3>
+			<int>190</int>
+			<vec3>-528 56 0</vec3>
+			<int>194</int>
+			<vec3>608 -288 0</vec3>
+			<int>193</int>
+			<vec3>-448 200 0</vec3>
+			<int>192</int>
+			<vec3>-1208 -464 0</vec3>
+			<int>191</int>
+			<vec3>-472 -912 0</vec3>
+			<int>189</int>
+		</array>
+		<array name="doodads/cliff/sand/sand_n_cap_l.unit"><vec3>-272 -1008 0</vec3><int>195</int><vec3>-728 -928 0</vec3><int>196</int></array>
+		<array name="doodads/cliff/sand/sand_ne.unit">
+			<vec3>128 -512 0</vec3>
+			<int>72</int>
+			<vec3>-192 -616 0</vec3>
+			<int>73</int>
+			<vec3>24 -560 0</vec3>
+			<int>74</int>
+			<vec3>-40 -928 0</vec3>
+			<int>75</int>
+			<vec3>-80 -1008 0</vec3>
+			<int>76</int>
+		</array>
+		<array name="doodads/cliff/sand/sand_e_cap_dn.unit"><vec3>-32 -848 0</vec3><int>16</int><vec3>-184 -600 0</vec3><int>15</int><vec3>136 -464 0</vec3><int>14</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_crn_ne.unit">
+			<vec3>-1048 -640 0</vec3>
+			<int>18</int>
+			<vec3>-1160 -736 0</vec3>
+			<int>19</int>
+			<vec3>640 -560 0</vec3>
+			<int>20</int>
+			<vec3>-392 -912 0</vec3>
+			<int>21</int>
+			<vec3>-432 56 0</vec3>
+			<int>22</int>
+		</array>
+		<array name="actors/mech_payload.unit"><vec3>-888 -592 0</vec3><int>17</int></array>
+		<array name="doodads/cliff/sand/sand_w_cap_dn.unit"><vec3>-624 -560 0</vec3><int>1</int><vec3>-416 -584 0</vec3><int>2</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_v_16.unit">
+			<vec3>-1160 -672 0</vec3>
+			<int>3</int>
+			<vec3>496 -496 0</vec3>
+			<int>4</int>
+			<vec3>496 -384 0</vec3>
+			<int>5</int>
+			<vec3>-1160 -560 0</vec3>
+			<int>6</int>
+			<vec3>-232 -680 0</vec3>
+			<int>7</int>
 		</array>
 		<array name="doodads/cliff/sand/sand_s.unit">
 			<vec3>-416 -952 0</vec3>
-			<int>91</int>
+			<int>31</int>
 			<vec3>-448 -952 0</vec3>
-			<int>92</int>
+			<int>32</int>
 			<vec3>-192 -936 0</vec3>
-			<int>89</int>
+			<int>33</int>
 			<vec3>-224 -936 0</vec3>
-			<int>88</int>
+			<int>34</int>
 			<vec3>-480 -952 0</vec3>
-			<int>90</int>
+			<int>35</int>
 		</array>
 		<array name="doodads/wall/egypt_fancy/fancy_crn_se.unit">
-			<vec3>-432 200 0</vec3>
-			<int>97</int>
-			<vec3>-392 -800 0</vec3>
-			<int>96</int>
-			<vec3>-1160 -464 0</vec3>
-			<int>95</int>
-			<vec3>640 -288 0</vec3>
-			<int>94</int>
 			<vec3>-1048 -560 0</vec3>
-			<int>93</int>
+			<int>39</int>
+			<vec3>-432 200 0</vec3>
+			<int>40</int>
+			<vec3>-1160 -464 0</vec3>
+			<int>36</int>
+			<vec3>-392 -800 0</vec3>
+			<int>37</int>
+			<vec3>640 -288 0</vec3>
+			<int>38</int>
 		</array>
-		<array name="doodads/cliff/sand/sand_s_cap_l.unit"><vec3>-512 -952 0</vec3><int>151</int></array>
-		<array name="doodads/cliff/sand/sand_sw_i.unit"><vec3>-448 -680 0</vec3><int>225</int><vec3>-696 -816 0</vec3><int>224</int><vec3>-384 -952 0</vec3><int>223</int><vec3>-656 -720 0</vec3><int>222</int></array>
-		<array name="doodads/cliff/sand/sand_e_cap_up.unit"><vec3>-32 -720 0</vec3><int>221</int></array>
-		<array name="doodads/cliff/sand/sand_n_cap_r.unit"><vec3>-400 -1008 0</vec3><int>203</int></array>
-		<array name="doodads/wall/egypt_fancy/fancy_h.unit">
-			<vec3>-464 56 0</vec3>
-			<int>212</int>
-			<vec3>-1192 -464 0</vec3>
-			<int>209</int>
-			<vec3>-688 56 0</vec3>
-			<int>208</int>
-			<vec3>-1112 -560 0</vec3>
-			<int>207</int>
-			<vec3>-424 -912 0</vec3>
-			<int>220</int>
-			<vec3>-152 -896 0</vec3>
-			<int>206</int>
-			<vec3>-184 -896 0</vec3>
-			<int>219</int>
-			<vec3>-216 -896 0</vec3>
-			<int>218</int>
-			<vec3>-480 -800 0</vec3>
-			<int>217</int>
-			<vec3>-424 -800 0</vec3>
-			<int>216</int>
-			<vec3>-456 -800 0</vec3>
-			<int>215</int>
-			<vec3>-496 56 0</vec3>
-			<int>214</int>
-			<vec3>-1080 -560 0</vec3>
-			<int>213</int>
-			<vec3>-656 56 0</vec3>
-			<int>205</int>
-			<vec3>-1144 -560 0</vec3>
-			<int>204</int>
-			<vec3>-456 -912 0</vec3>
-			<int>210</int>
-			<vec3>-216 -648 0</vec3>
-			<int>211</int>
-		</array>
-		<array name="doodads/wall/egypt_fancy/fancy_crn_ne.unit">
-			<vec3>-432 56 0</vec3>
-			<int>24</int>
-			<vec3>-392 -912 0</vec3>
-			<int>23</int>
+		<array name="doodads/wall/egypt_fancy/fancy_v.unit">
 			<vec3>-1048 -640 0</vec3>
-			<int>22</int>
+			<int>156</int>
+			<vec3>-1160 -704 0</vec3>
+			<int>160</int>
 			<vec3>-1160 -736 0</vec3>
-			<int>21</int>
-			<vec3>640 -560 0</vec3>
-			<int>20</int>
+			<int>157</int>
+			<vec3>-232 -736 0</vec3>
+			<int>165</int>
+			<vec3>-1160 -544 0</vec3>
+			<int>164</int>
+			<vec3>-1048 -608 0</vec3>
+			<int>163</int>
+			<vec3>-392 -880 0</vec3>
+			<int>162</int>
+			<vec3>-232 -704 0</vec3>
+			<int>161</int>
+			<vec3>496 -368 0</vec3>
+			<int>155</int>
+			<vec3>-392 -848 0</vec3>
+			<int>154</int>
+			<vec3>496 -528 0</vec3>
+			<int>153</int>
+			<vec3>-392 -912 0</vec3>
+			<int>152</int>
+			<vec3>-232 -768 0</vec3>
+			<int>151</int>
+			<vec3>496 -336 0</vec3>
+			<int>150</int>
+			<vec3>496 -560 0</vec3>
+			<int>159</int>
+			<vec3>-1160 -512 0</vec3>
+			<int>158</int>
 		</array>
-		<array name="actors/mech_payload.unit"><vec3>-888 -592 0</vec3><int>19</int></array>
-		<array name="doodads/cliff/sand/sand_e_cap_dn.unit"><vec3>136 -464 0</vec3><int>27</int><vec3>-184 -600 0</vec3><int>26</int><vec3>-32 -848 0</vec3><int>25</int></array>
-		<array name="doodads/generic/door_egypt_fancy_h.unit"><vec3>-1240 -464 0</vec3><int>18</int><vec3>-1096 -640 0</vec3><int>17</int><vec3>-88 -896 0</vec3><int>16</int></array>
-		<array name="doodads/cliff/sand/sand_w_cap_dn.unit"><vec3>-624 -560 0</vec3><int>14</int><vec3>-416 -584 0</vec3><int>15</int></array>
-		<array name="doodads/wall/egypt_fancy/fancy_v_16.unit">
-			<vec3>-1160 -560 0</vec3>
-			<int>13</int>
-			<vec3>-232 -680 0</vec3>
-			<int>9</int>
-			<vec3>-1160 -672 0</vec3>
-			<int>10</int>
-			<vec3>496 -496 0</vec3>
-			<int>11</int>
-			<vec3>496 -384 0</vec3>
-			<int>12</int>
-		</array>
-		<array name="doodads/generic/statue_egypt_s.unit">
-			<vec3>-952 -744 0</vec3>
-			<int>264</int>
-			<vec3>-872 -744 0</vec3>
-			<int>265</int>
-			<vec3>-744 -744 0</vec3>
-			<int>266</int>
-			<vec3>296 -48 0</vec3>
-			<int>267</int>
-			<vec3>416 -48 0</vec3>
-			<int>263</int>
-			<vec3>-1032 -744 0</vec3>
-			<int>262</int>
-		</array>
-		<array name="doodads/cliff/sand/sand_ne_i.unit"><vec3>-72 -592 0</vec3><int>259</int><vec3>32 -544 0</vec3><int>261</int><vec3>-72 -960 0</vec3><int>260</int><vec3>-256 -648 0</vec3><int>258</int></array>
-		<array name="doodads/cliff/sand/sand_nw.unit"><vec3>-560 -1008 0</vec3><int>125</int><vec3>-448 -760 0</vec3><int>126</int></array>
+		<array name="doodads/wall/egypt_fancy/fancy_cap_n.unit"><vec3>496 -384 0</vec3><int>166</int></array>
+		<array name="doodads/cliff/sand/sand_nw.unit"><vec3>-560 -1008 0</vec3><int>45</int><vec3>-448 -760 0</vec3><int>46</int></array>
 		<array name=":Physics_Freeform">
 			<array>
+				<vec3>-1048 -64 0</vec3>
+				<int>56</int>
+				<dict>
+					<array name="points">
+						<vec2>-64 -24</vec2>
+						<vec2>80 -64</vec2>
+						<vec2>56 8</vec2>
+						<vec2>-72 88</vec2>
+						<vec2>-240 40</vec2>
+						<vec2>-520 -224</vec2>
+						<vec2>-512 -488</vec2>
+						<vec2>-368 -704</vec2>
+						<vec2>-328 -336</vec2>
+						<vec2>-200 -100</vec2>
+					</array>
+					<int name="decompose">2</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+				</dict>
+			</array>
+			<array>
+				<vec3>-792 -320 0</vec3>
+				<int>55</int>
+				<dict>
+					<array name="points"><vec2>-120 16</vec2><vec2>112 -120</vec2><vec2>112 0</vec2><vec2>-40 200</vec2><vec2>-48 384</vec2><vec2>16 488</vec2><vec2>-40 536</vec2><vec2>-128 496</vec2><vec2>-200 264</vec2></array>
+					<int name="decompose">2</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+				</dict>
+			</array>
+			<array>
 				<vec3>840 504 0</vec3>
-				<int>113</int>
+				<int>54</int>
 				<dict>
 					<array name="points">
 						<vec2>168 -240</vec2>
@@ -1161,70 +1210,8 @@
 				</dict>
 			</array>
 			<array>
-				<vec3>-792 -320 0</vec3>
-				<int>110</int>
-				<dict>
-					<array name="points"><vec2>-120 16</vec2><vec2>112 -120</vec2><vec2>112 0</vec2><vec2>-40 200</vec2><vec2>-48 384</vec2><vec2>16 488</vec2><vec2>-40 536</vec2><vec2>-128 496</vec2><vec2>-200 264</vec2></array>
-					<int name="decompose">2</int>
-					<bool name="jam-through">t</bool>
-					<bool name="shot-through">t</bool>
-					<bool name="aim-through">t</bool>
-					<bool name="sensor">f</bool>
-				</dict>
-			</array>
-			<array>
-				<vec3>-1048 -64 0</vec3>
-				<int>114</int>
-				<dict>
-					<array name="points">
-						<vec2>-64 -24</vec2>
-						<vec2>80 -64</vec2>
-						<vec2>56 8</vec2>
-						<vec2>-72 88</vec2>
-						<vec2>-240 40</vec2>
-						<vec2>-520 -224</vec2>
-						<vec2>-512 -488</vec2>
-						<vec2>-368 -704</vec2>
-						<vec2>-328 -336</vec2>
-						<vec2>-200 -100</vec2>
-					</array>
-					<int name="decompose">2</int>
-					<bool name="jam-through">t</bool>
-					<bool name="shot-through">t</bool>
-					<bool name="aim-through">t</bool>
-					<bool name="sensor">f</bool>
-				</dict>
-			</array>
-			<array>
-				<vec3>352 -1248 0</vec3>
-				<int>111</int>
-				<dict>
-					<array name="points">
-						<vec2>376 216</vec2>
-						<vec2>560 648</vec2>
-						<vec2>696 1040</vec2>
-						<vec2>704 1360</vec2>
-						<vec2>656 1512</vec2>
-						<vec2>376 1616</vec2>
-						<vec2>528 1328</vec2>
-						<vec2>560 1032</vec2>
-						<vec2>496 952</vec2>
-						<vec2>416 672</vec2>
-						<vec2>272 536</vec2>
-						<vec2>152 240</vec2>
-						<vec2>-72 48</vec2>
-						<vec2>0 -136</vec2>
-					</array>
-					<int name="decompose">2</int>
-					<bool name="jam-through">t</bool>
-					<bool name="shot-through">t</bool>
-					<bool name="aim-through">t</bool>
-					<bool name="sensor">f</bool>
-				</dict>
-			</array>
-			<array>
 				<vec3>-216 -432 0</vec3>
-				<int>112</int>
+				<int>47</int>
 				<dict>
 					<array name="points"><vec2>112 -72</vec2><vec2>264 56</vec2><vec2>96 80</vec2><vec2>-104 48</vec2><vec2>-232 40</vec2><vec2>-464 112</vec2><vec2>-464 -8</vec2><vec2>-280 -40</vec2><vec2>-192 -72</vec2></array>
 					<int name="decompose">2</int>
@@ -1235,32 +1222,8 @@
 				</dict>
 			</array>
 			<array>
-				<vec3>-648 -488 0</vec3>
-				<int>115</int>
-				<dict>
-					<array name="points"><vec2>224 -72</vec2><vec2>240 -16</vec2><vec2>152 16</vec2><vec2>-32 48</vec2><vec2>8 -48</vec2></array>
-					<int name="decompose">0</int>
-					<bool name="jam-through">t</bool>
-					<bool name="shot-through">t</bool>
-					<bool name="aim-through">t</bool>
-					<bool name="sensor">f</bool>
-				</dict>
-			</array>
-			<array>
-				<vec3>-280 -544 0</vec3>
-				<int>119</int>
-				<dict>
-					<array name="points"><vec2>112 -32</vec2><vec2>224 -24</vec2><vec2>176 40</vec2><vec2>-128 40</vec2><vec2>-144 -16</vec2></array>
-					<int name="decompose">2</int>
-					<bool name="jam-through">t</bool>
-					<bool name="shot-through">t</bool>
-					<bool name="aim-through">t</bool>
-					<bool name="sensor">f</bool>
-				</dict>
-			</array>
-			<array>
 				<vec3>96 -64 0</vec3>
-				<int>116</int>
+				<int>48</int>
 				<dict>
 					<array name="points"><vec2>-48 -312</vec2><vec2>56 -144</vec2><vec2>72 88</vec2><vec2>-24 88</vec2><vec2>-96 -72</vec2><vec2>-136 -232</vec2><vec2>-216 -288</vec2></array>
 					<int name="decompose">2</int>
@@ -1271,8 +1234,32 @@
 				</dict>
 			</array>
 			<array>
+				<vec3>-280 -544 0</vec3>
+				<int>49</int>
+				<dict>
+					<array name="points"><vec2>112 -32</vec2><vec2>224 -24</vec2><vec2>176 40</vec2><vec2>-128 40</vec2><vec2>-144 -16</vec2></array>
+					<int name="decompose">2</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+				</dict>
+			</array>
+			<array>
+				<vec3>-648 -488 0</vec3>
+				<int>50</int>
+				<dict>
+					<array name="points"><vec2>224 -72</vec2><vec2>240 -16</vec2><vec2>152 16</vec2><vec2>-32 48</vec2><vec2>8 -48</vec2></array>
+					<int name="decompose">0</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+				</dict>
+			</array>
+			<array>
 				<vec3>-1416 -816 0</vec3>
-				<int>117</int>
+				<int>53</int>
 				<dict>
 					<array name="points">
 						<vec2>264 -424</vec2>
@@ -1303,7 +1290,7 @@
 			</array>
 			<array>
 				<vec3>56 -456 0</vec3>
-				<int>118</int>
+				<int>52</int>
 				<dict>
 					<array name="points"><vec2>-160 -48</vec2><vec2>-112 -112</vec2><vec2>-16 -112</vec2><vec2>-16 -64</vec2><vec2>88 -64</vec2><vec2>88 24</vec2><vec2>-8 80</vec2></array>
 					<int name="decompose">2</int>
@@ -1313,28 +1300,54 @@
 					<bool name="sensor">f</bool>
 				</dict>
 			</array>
+			<array>
+				<vec3>352 -1248 0</vec3>
+				<int>51</int>
+				<dict>
+					<array name="points">
+						<vec2>376 216</vec2>
+						<vec2>560 648</vec2>
+						<vec2>696 1040</vec2>
+						<vec2>704 1360</vec2>
+						<vec2>656 1512</vec2>
+						<vec2>376 1616</vec2>
+						<vec2>528 1328</vec2>
+						<vec2>560 1032</vec2>
+						<vec2>496 952</vec2>
+						<vec2>416 672</vec2>
+						<vec2>272 536</vec2>
+						<vec2>152 240</vec2>
+						<vec2>-72 48</vec2>
+						<vec2>0 -136</vec2>
+					</array>
+					<int name="decompose">2</int>
+					<bool name="jam-through">t</bool>
+					<bool name="shot-through">t</bool>
+					<bool name="aim-through">t</bool>
+					<bool name="sensor">f</bool>
+				</dict>
+			</array>
 		</array>
 		<array name="doodads/wall/egypt_fancy/fancy_crn_sw.unit">
-			<vec3>496 -288 0</vec3>
-			<int>120</int>
-			<vec3>-704 200 0</vec3>
-			<int>121</int>
-			<vec3>-1304 -464 0</vec3>
-			<int>122</int>
 			<vec3>-232 -648 0</vec3>
-			<int>123</int>
+			<int>60</int>
 			<vec3>-1160 -640 0</vec3>
-			<int>124</int>
+			<int>61</int>
+			<vec3>-1304 -464 0</vec3>
+			<int>59</int>
+			<vec3>-704 200 0</vec3>
+			<int>58</int>
+			<vec3>496 -288 0</vec3>
+			<int>57</int>
 		</array>
-		<array name="doodads/wall/egypt_fancy/fancy_cap_n.unit"><vec3>496 -384 0</vec3><int>183</int></array>
 	</dict>
 	<dict name="lighting">
 		<string name="environment">effects/env/egypt_outside.env</string>
 	</dict>
 	<int name="version">1</int>
 	<dict name="game-mode">
+		<array name="PayloadUnit"><int>17</int></array>
 		<array name="FirstNode"><int>288</int></array>
-		<array name="PayloadUnit"><int>19</int></array>
 		<string name="Class">Payload</string>
 		<string name="CreatorName">Scratch</string>
 		<string name="MapName">Egypt</string>
