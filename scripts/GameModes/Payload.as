@@ -42,7 +42,7 @@ class Payload : TeamVersusGameMode
 
 	void RenderFrame(int idt, SpriteBatch& sb) override
 	{
-		m_payloadHUD.Draw(sb, idt, m_wndWidth, m_wndHeight);
+		m_payloadHUD.Draw(sb, idt);
 
 		TeamVersusGameMode::RenderFrame(idt, sb);
 	}
