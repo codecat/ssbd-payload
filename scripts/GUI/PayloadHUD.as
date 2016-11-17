@@ -6,6 +6,10 @@ class PayloadHUD : IWidgetHoster
 	Widget@ m_wCheckpoints;
 
 	Widget@ m_wPayload;
+	TextWidget@ m_wPayloadText;
+
+	Widget@ m_wCheckpointAlert;
+	TextWidget@ m_wCheckpointAlertText;
 
 	PayloadHUD(GUIBuilder& in b)
 	{
@@ -17,6 +21,25 @@ class PayloadHUD : IWidgetHoster
 		@m_wCheckpoints = m_widget.GetWidgetById("checkpoints");
 
 		@m_wPayload = m_widget.GetWidgetById("payload");
+		@m_wPayloadText = cast<TextWidget>(m_wPayload.GetWidgetById("text"));
+
+		@m_wCheckpointAlert = m_widget.GetWidgetById("checkpoint-alert");
+		@m_wCheckpointAlertText = cast<TextWidget>(m_wCheckpointAlert.GetWidgetById("text"));
+	}
+
+	void ReachedCheckpont()
+	{
+		if (m_wCheckpointAlert is null)
+			return;
+
+		m_wCheckpointAlert.FinishAnimations();
+		m_wCheckpointAlert.m_visible = true;
+		m_wCheckpointAlert.Animate(WidgetBoolAnimation("visible", false, 3000));
+
+		if (m_wCheckpointAlertText is null)
+			return;
+
+		m_wCheckpointAlertText.SetText("Checkpoint reached!");
 	}
 
 	void AddCheckpoints()
@@ -57,7 +80,10 @@ class PayloadHUD : IWidgetHoster
 		if (gm.m_tmStarted == 0)
 			m_wStatus.SetText("Start in " + ceil(10 - gm.m_tmLevel / 1000));
 		else
-			m_wStatus.m_visible = false;
+		{
+			int tmLeft = max(0, gm.m_tmLimit - gm.m_tmLevel);
+			m_wStatus.SetText(formatTime(ceil(tmLeft / 1000.0f), false));
+		}
 
 		float payloadFactor = 0.0f;
 
@@ -74,5 +100,23 @@ class PayloadHUD : IWidgetHoster
 		}
 
 		m_wPayload.m_offset.x = (payloadFactor * m_wCheckpoints.m_width) - 2;
+
+		int insideAttackers = gm.m_payload.AttackersInside();
+		int insideDefenders = gm.m_payload.DefendersInside();
+
+		m_wPayloadText.m_visible = true;
+		if (insideAttackers > 0 && insideDefenders == 0)
+		{
+			string str = "";
+			for (int i = 0; i < insideAttackers; i++)
+				str += ">";
+			m_wPayloadText.SetText(str);
+		}
+		else if (insideAttackers == 0 && insideDefenders > 0)
+			m_wPayloadText.SetText("<");
+		else if (insideAttackers > 0 && insideDefenders > 0)
+			m_wPayloadText.SetText("Contested!");
+		else
+			m_wPayloadText.m_visible = false;
 	}
 }

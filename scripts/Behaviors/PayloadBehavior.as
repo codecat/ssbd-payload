@@ -59,11 +59,17 @@ class PayloadBehavior
 
 	int AttackersInside()
 	{
+		Payload@ gm = cast<Payload>(g_gameMode);
+		if (gm.m_tmStarted == 0)
+			return 0;
 		return TeamInside(HashString("player_1"));
 	}
 
 	int AttackersTotal()
 	{
+		Payload@ gm = cast<Payload>(g_gameMode);
+		if (gm.m_tmStarted == 0)
+			return 0;
 		return TeamTotal(HashString("player_1"));
 	}
 
@@ -77,6 +83,12 @@ class PayloadBehavior
 		return TeamTotal(HashString("player_0"));
 	}
 
+	void CheckpointReached(UnitPtr node)
+	{
+		Payload@ gm = cast<Payload>(g_gameMode);
+		gm.m_payloadHUD.ReachedCheckpont();
+	}
+
 	void Update(int dt)
 	{
 		if (m_targetNode is null)
@@ -85,25 +97,25 @@ class PayloadBehavior
 			return;
 		}
 
+		if (m_queryTime <= 0)
+		{
+			array<UnitPtr>@ arrRange = g_scene.QueryCircle(xy(m_unit.GetPosition()), m_radius, ~0, RaycastType::Any);
+			while (m_playersInside.length() > 0)
+				m_playersInside.removeLast();
+			for (uint i = 0; i < arrRange.length(); i++)
+			{
+				PlayerBase@ ply = cast<PlayerBase>(arrRange[i].GetScriptBehavior());
+				if (ply is null)
+					continue;
+				m_playersInside.insertLast(ply);
+			}
+			m_queryTime = 100;
+		}
+		else
+			m_queryTime -= dt;
+
 		if (Network::IsServer())
 		{
-			if (m_queryTime <= 0)
-			{
-				array<UnitPtr>@ arrRange = g_scene.QueryCircle(xy(m_unit.GetPosition()), m_radius, ~0, RaycastType::Any);
-				while (m_playersInside.length() > 0)
-					m_playersInside.removeLast();
-				for (uint i = 0; i < arrRange.length(); i++)
-				{
-					PlayerBase@ ply = cast<PlayerBase>(arrRange[i].GetScriptBehavior());
-					if (ply is null)
-						continue;
-					m_playersInside.insertLast(ply);
-				}
-				m_queryTime = 100;
-			}
-			else
-				m_queryTime -= dt;
-
 			int attackers = AttackersInside();
 			int defenders = DefendersInside();
 
@@ -161,6 +173,12 @@ class PayloadBehavior
 						}
 						else
 						{
+							if (target is m_targetNode && target.Checkpoint)
+							{
+								UnitPtr wsUnit = ws.GetUnit();
+								(Network::Message("CheckpointReached") << m_unit << wsUnit).SendToAll();
+								CheckpointReached(wsUnit);
+							}
 							@m_targetNode = target.m_nextNode;
 							@m_prevNode = target;
 						}

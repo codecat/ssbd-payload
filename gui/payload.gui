@@ -17,11 +17,19 @@
 				<text font="gui/fonts/font_msref12.fnt" text="Start in 10" id="status" anchor="0.5 0" offset="0 2" />
 
 				<rect anchor="0.5 1" offset="0 -14" width="192" height="7">
-					<sprite src="payload" id="payload" offset="-2 0" />
+					<rect id="payload" width="40" height="8" offset="-2 0">
+						<sprite src="payload" />
+						<systext id="text" offset="7" />
+					</rect>
 				</rect>
 				<bar id="location" anchor="0.5 1" offset="0 -11" width="192" height="3" color="0 0 0 125" />
 				<sprite id="checkpoints-template" visible="false" />
 				<rect id="checkpoints" anchor="0.5 1" offset="0 -3" width="192" height="8" />
+			</rect>
+
+			%// Checkpoint alert
+			<rect id="checkpoint-alert" visible="false" width="9999" height="22" color="0 0 0 125" offset="0 50" anchor="0.5 0">
+				<text id="text" font="gui/fonts/font_agency16_bold_gradient.fnt" color="350 100 0 255" anchor="0.5 0.5" />
 			</rect>
 		</group>
 	</doc>

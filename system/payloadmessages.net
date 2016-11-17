@@ -1,0 +1,6 @@
+<network>
+	<message name="CheckpointReached" namespace="PayloadHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Payload behavior -->
+		<unit /> <!-- Node -->
+	</message>
+</network>

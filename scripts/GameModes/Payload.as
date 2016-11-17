@@ -12,12 +12,21 @@ class Payload : TeamVersusGameMode
 	PayloadBehavior@ m_payload;
 
 	int m_tmStarted;
+	int m_tmLimit;
 
 	PayloadHUD@ m_payloadHUD;
 
 	Payload(Scene@ scene)
 	{
 		super(scene);
+
+		ButtonWidget@ wJoin0 = cast<ButtonWidget>(m_switchTeam.m_widget.GetWidgetById("join_0"));
+		if (wJoin0 !is null)
+			wJoin0.SetText("Defenders");
+
+		ButtonWidget@ wJoin1 = cast<ButtonWidget>(m_switchTeam.m_widget.GetWidgetById("join_1"));
+		if (wJoin1 !is null)
+			wJoin1.SetText("Attackers");
 
 		@m_payloadHUD = PayloadHUD(m_guiBuilder);
 	}
@@ -50,6 +59,8 @@ class Payload : TeamVersusGameMode
 	void Start(uint8 peer, SValue@ save, StartMode sMode) override
 	{
 		TeamVersusGameMode::Start(peer, save, sMode);
+
+		m_tmLimit = 5 * 60 * 1000; // 5 minutes
 
 		@m_payload = cast<PayloadBehavior>(PayloadUnit.FetchFirst().GetScriptBehavior());
 
