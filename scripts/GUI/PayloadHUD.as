@@ -11,6 +11,11 @@ class PayloadHUD : IWidgetHoster
 	Widget@ m_wCheckpointAlert;
 	TextWidget@ m_wCheckpointAlertText;
 
+	Widget@ m_wWinnerAlert;
+	TextWidget@ m_wWinnerAlertText;
+
+	TextWidget@ m_wWaiting;
+
 	PayloadHUD(GUIBuilder& in b)
 	{
 		LoadWidget(b, "gui/payload.gui");
@@ -25,6 +30,11 @@ class PayloadHUD : IWidgetHoster
 
 		@m_wCheckpointAlert = m_widget.GetWidgetById("checkpoint-alert");
 		@m_wCheckpointAlertText = cast<TextWidget>(m_wCheckpointAlert.GetWidgetById("text"));
+
+		@m_wWinnerAlert = m_widget.GetWidgetById("winner-alert");
+		@m_wWinnerAlertText = cast<TextWidget>(m_wWinnerAlert.GetWidgetById("text"));
+
+		@m_wWaiting = cast<TextWidget>(m_widget.GetWidgetById("waiting"));
 	}
 
 	void ReachedCheckpont()
@@ -40,6 +50,22 @@ class PayloadHUD : IWidgetHoster
 			return;
 
 		m_wCheckpointAlertText.SetText("Checkpoint reached!");
+	}
+
+	void Winner(bool attackers)
+	{
+		if (m_wWinnerAlert is null)
+			return;
+
+		m_wWinnerAlert.m_visible = true;
+
+		if (m_wWinnerAlertText is null)
+			return;
+
+		if (attackers)
+			m_wWinnerAlertText.SetText("Attackers win!");
+		else
+			m_wWinnerAlertText.SetText("Defenders win!");
 	}
 
 	void AddCheckpoints()
@@ -81,7 +107,7 @@ class PayloadHUD : IWidgetHoster
 			m_wStatus.SetText("Start in " + ceil(10 - gm.m_tmLevel / 1000));
 		else
 		{
-			int tmLeft = max(0, gm.m_tmLimit - gm.m_tmLevel);
+			int tmLeft = max(0, gm.m_tmLimit - (gm.m_tmLevel - gm.m_tmStarted));
 			m_wStatus.SetText(formatTime(ceil(tmLeft / 1000.0f), false));
 		}
 
@@ -118,5 +144,13 @@ class PayloadHUD : IWidgetHoster
 			m_wPayloadText.SetText("Contested!");
 		else
 			m_wPayloadText.m_visible = false;
+
+		if (gm.m_ended && m_wWaiting !is null)
+		{
+			m_wWaiting.m_visible = true;
+			int tmLeft = int(ceil(((gm.m_tmEnded + 5000) - g_scene.GetTime()) / 1000.0f));
+			dictionary params = { { "timeleft", formatTime(max(0, tmLeft)) } };
+			m_wWaiting.SetText(Resources::GetString(".deathmatch.waiting", params));
+		}
 	}
 }

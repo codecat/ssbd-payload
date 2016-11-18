@@ -100,13 +100,13 @@ class PayloadBehavior
 		if (m_queryTime <= 0)
 		{
 			array<UnitPtr>@ arrRange = g_scene.QueryCircle(xy(m_unit.GetPosition()), m_radius, ~0, RaycastType::Any);
-			while (m_playersInside.length() > 0)
-				m_playersInside.removeLast();
+			m_playersInside.removeRange(0, m_playersInside.length());
 			for (uint i = 0; i < arrRange.length(); i++)
 			{
 				PlayerBase@ ply = cast<PlayerBase>(arrRange[i].GetScriptBehavior());
 				if (ply is null)
 					continue;
+
 				m_playersInside.insertLast(ply);
 			}
 			m_queryTime = 100;
@@ -167,7 +167,11 @@ class PayloadBehavior
 
 						if (target.m_nextNode is null)
 						{
-							print("Attackers win!");
+							(Network::Message("FinishReached")).SendToAll();
+
+							Payload@ gm = cast<Payload>(g_gameMode);
+							gm.SetWinner(true);
+
 							@m_targetNode = null;
 							moveSpeed = 0;
 						}
@@ -175,6 +179,7 @@ class PayloadBehavior
 						{
 							if (target is m_targetNode && target.Checkpoint)
 							{
+								//TODO: This should add time
 								UnitPtr wsUnit = ws.GetUnit();
 								(Network::Message("CheckpointReached") << m_unit << wsUnit).SendToAll();
 								CheckpointReached(wsUnit);

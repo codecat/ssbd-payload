@@ -31,6 +31,13 @@
 			<rect id="checkpoint-alert" visible="false" width="9999" height="22" color="0 0 0 125" offset="0 50" anchor="0.5 0">
 				<text id="text" font="gui/fonts/font_agency16_bold_gradient.fnt" color="350 100 0 255" anchor="0.5 0.5" />
 			</rect>
+
+			%// Winner alert
+			<rect id="winner-alert" visible="false" width="9999" height="22" color="0 0 0 125" offset="0 50" anchor="0.5 0">
+				<text id="text" font="gui/fonts/font_agency16_bold_gradient.fnt" color="#FFFFFFFF" anchor="0.5 0.5" />
+			</rect>
+
+			<text id="waiting" anchor="0.5 0.55" font="gui/fonts/font_msref12.fnt" visible="false" />
 		</group>
 	</doc>
 </gui>

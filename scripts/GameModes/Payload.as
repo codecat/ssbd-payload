@@ -47,6 +47,23 @@ class Payload : TeamVersusGameMode
 				ws.Execute();
 			}
 		}
+
+		if (!m_ended && m_tmStarted > 0)
+		{
+			if (m_tmLimit - (m_tmLevel - m_tmStarted) <= 0)
+				SetWinner(false);
+		}
+	}
+
+	void SetWinner(bool attackers)
+	{
+		if (attackers)
+			print("Attackers win!");
+		else
+			print("Defenders win!");
+
+		m_payloadHUD.Winner(attackers);
+		EndMatch();
 	}
 
 	void RenderFrame(int idt, SpriteBatch& sb) override

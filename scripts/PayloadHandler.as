@@ -11,4 +11,16 @@ namespace PayloadHandler
 
 		pl.CheckpointReached(node);
 	}
+
+	void FinishReached(uint8 peer)
+	{
+		Payload@ gm = cast<Payload>(g_gameMode);
+		gm.SetWinner(true);
+	}
+
+	void TimeReached(uint8 peer)
+	{
+		Payload@ gm = cast<Payload>(g_gameMode);
+		gm.SetWinner(false);
+	}
 }

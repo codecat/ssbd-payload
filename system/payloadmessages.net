@@ -3,4 +3,8 @@
 		<unit /> <!-- Payload behavior -->
 		<unit /> <!-- Node -->
 	</message>
+
+	<message name="FinishReached" namespace="PayloadHandler" delivery="ReliableOrdered" />
+
+	<message name="TimeReached" namespace="PayloadHandler" delivery="ReliableOrdered" />
 </network>
