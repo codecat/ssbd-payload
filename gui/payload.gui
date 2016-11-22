@@ -14,7 +14,7 @@
 	<doc>
 		<group>
 			<rect anchor="0.5 0" width="200" height="45" color="0 0 0 125">
-				<text font="gui/fonts/font_msref12.fnt" text="Start in 10" id="status" anchor="0.5 0" offset="0 2" />
+				<text font="gui/fonts/font_msref12.fnt" text="Waiting for players" id="status" anchor="0.5 0" offset="0 2" />
 
 				<rect anchor="0.5 1" offset="0 -14" width="192" height="7">
 					<rect id="payload" width="40" height="8" offset="-2 0">

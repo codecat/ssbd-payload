@@ -103,7 +103,7 @@ class PayloadHUD : IWidgetHoster
 		if (gm is null)
 			return;
 
-		if (gm.m_tmStarted == 0)
+		if (gm.m_tmStarting > 0 && gm.m_tmStarted == 0)
 			m_wStatus.SetText("Start in " + ceil(10 - gm.m_tmLevel / 1000));
 		else
 		{

@@ -11,6 +11,7 @@ class Payload : TeamVersusGameMode
 
 	PayloadBehavior@ m_payload;
 
+	int m_tmStarting;
 	int m_tmStarted;
 	int m_tmLimit;
 
@@ -37,7 +38,13 @@ class Payload : TeamVersusGameMode
 
 		m_payloadHUD.Update(ms);
 
-		if (m_tmStarted == 0 && m_tmLevel > 10000)
+		if (m_tmStarting == 0)
+		{
+			if (GetPlayersInTeam(0) > 0 && GetPlayersInTeam(1) > 0)
+				m_tmStarting = m_tmLevel;
+		}
+
+		if (m_tmStarting > 0 && m_tmStarted == 0 && m_tmLevel - m_tmStarting > 10000)
 		{
 			m_tmStarted = m_tmLevel;
 
