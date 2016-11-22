@@ -158,6 +158,11 @@ class PayloadBehavior
 					{
 						@m_targetNode = m_prevNode;
 						@m_prevNode = target.m_prevNode;
+
+						UnitPtr unitTarget = WorldScript::GetWorldScript(g_scene, m_targetNode).GetUnit();
+						UnitPtr unitPrev = WorldScript::GetWorldScript(g_scene, m_prevNode).GetUnit();
+
+						(Network::Message("NewTargetNode") << unitTarget << unitPrev).SendToAll();
 					}
 					else
 					{
@@ -186,6 +191,11 @@ class PayloadBehavior
 							}
 							@m_targetNode = target.m_nextNode;
 							@m_prevNode = target;
+
+							UnitPtr unitTarget = WorldScript::GetWorldScript(g_scene, m_targetNode).GetUnit();
+							UnitPtr unitPrev = WorldScript::GetWorldScript(g_scene, m_prevNode).GetUnit();
+
+							(Network::Message("NewTargetNode") << unitTarget << unitPrev).SendToAll();
 						}
 					}
 				}

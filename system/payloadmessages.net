@@ -1,4 +1,12 @@
 <network>
+	<message name="GameStarting" namespace="PayloadHandler" delivery="ReliableOrdered">
+		<int /> <!-- Time -->
+	</message>
+
+	<message name="GameStarted" namespace="PayloadHandler" delivery="ReliableOrdered">
+		<int /> <!-- Time -->
+	</message>
+
 	<message name="CheckpointReached" namespace="PayloadHandler" delivery="ReliableOrdered">
 		<unit /> <!-- Payload behavior -->
 		<unit /> <!-- Node -->
@@ -7,4 +15,9 @@
 	<message name="FinishReached" namespace="PayloadHandler" delivery="ReliableOrdered" />
 
 	<message name="TimeReached" namespace="PayloadHandler" delivery="ReliableOrdered" />
+
+	<message name="NewTargetNode" namespace="PayloadHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Target node -->
+		<unit /> <!-- Previous node -->
+	</message>
 </network>

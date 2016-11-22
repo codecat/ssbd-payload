@@ -9,6 +9,9 @@ class Payload : TeamVersusGameMode
 	[Editable]
 	UnitFeed FirstNode;
 
+	[Editable default=10]
+	int PrepareTime;
+
 	PayloadBehavior@ m_payload;
 
 	int m_tmStarting;
@@ -38,27 +41,37 @@ class Payload : TeamVersusGameMode
 
 		m_payloadHUD.Update(ms);
 
-		if (m_tmStarting == 0)
+		if (Network::IsServer())
 		{
-			if (GetPlayersInTeam(0) > 0 && GetPlayersInTeam(1) > 0)
-				m_tmStarting = m_tmLevel;
-		}
-
-		if (m_tmStarting > 0 && m_tmStarted == 0 && m_tmLevel - m_tmStarting > 10000)
-		{
-			m_tmStarted = m_tmLevel;
-
-			for (uint i = 0; i < g_payloadBeginTriggers.length(); i++)
+			if (m_tmStarting == 0)
 			{
-				WorldScript@ ws = WorldScript::GetWorldScript(g_scene, g_payloadBeginTriggers[i]);
-				ws.Execute();
+				if (GetPlayersInTeam(0) > 0 && GetPlayersInTeam(1) > 0)
+				{
+					m_tmStarting = m_tmLevel;
+					(Network::Message("GameStarting") << m_tmStarting).SendToAll();
+				}
 			}
-		}
 
-		if (!m_ended && m_tmStarted > 0)
-		{
-			if (m_tmLimit - (m_tmLevel - m_tmStarted) <= 0)
-				SetWinner(false);
+			if (m_tmStarting > 0 && m_tmStarted == 0 && m_tmLevel - m_tmStarting > PrepareTime * 1000)
+			{
+				m_tmStarted = m_tmLevel;
+				(Network::Message("GameStarted") << m_tmStarted).SendToAll();
+
+				for (uint i = 0; i < g_payloadBeginTriggers.length(); i++)
+				{
+					WorldScript@ ws = WorldScript::GetWorldScript(g_scene, g_payloadBeginTriggers[i]);
+					ws.Execute();
+				}
+			}
+
+			if (!m_ended && m_tmStarted > 0)
+			{
+				if (m_tmLimit - (m_tmLevel - m_tmStarted) <= 0)
+				{
+					(Network::Message("TimeReached")).SendToAll();
+					SetWinner(false);
+				}
+			}
 		}
 	}
 

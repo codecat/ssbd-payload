@@ -104,8 +104,8 @@ class PayloadHUD : IWidgetHoster
 			return;
 
 		if (gm.m_tmStarting > 0 && gm.m_tmStarted == 0)
-			m_wStatus.SetText("Start in " + ceil(10 - gm.m_tmLevel / 1000));
-		else
+			m_wStatus.SetText("Start in " + ceil(gm.PrepareTime - (gm.m_tmLevel - gm.m_tmStarting) / 1000));
+		else if (gm.m_tmStarted > 0)
 		{
 			int tmLeft = max(0, gm.m_tmLimit - (gm.m_tmLevel - gm.m_tmStarted));
 			m_wStatus.SetText(formatTime(ceil(tmLeft / 1000.0f), false));

@@ -8,7 +8,7 @@
 	</start>
 
 	<modifiers>
-		<modifier forced="true" id="DEATHMATCH" />
+		<modifier forced="true" id="VERSUS" />
 		<modifier forced="true" id="PICKUP_RESPAWN" />
 	</modifiers>
 </info>
