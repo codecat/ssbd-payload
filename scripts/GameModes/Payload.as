@@ -12,7 +12,7 @@ class Payload : TeamVersusGameMode
 	[Editable default=10]
 	int PrepareTime;
 
-	[Editable default=5]
+	[Editable default=300]
 	int TimeLimit;
 
 	[Editable default=90]
