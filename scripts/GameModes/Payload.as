@@ -12,17 +12,22 @@ class Payload : TeamVersusGameMode
 	[Editable default=10]
 	int PrepareTime;
 
-	[Editable default=300]
+	[Editable default=5]
 	int TimeLimit;
 
 	[Editable default=90]
 	int TimeAddCheckpoint;
+
+	[Editable default=2]
+	float TimeOvertime;
 
 	PayloadBehavior@ m_payload;
 
 	int m_tmStarting;
 	int m_tmStarted;
 	int m_tmLimit;
+	int m_tmOvertime;
+	int m_tmInOvertime;
 
 	PayloadHUD@ m_payloadHUD;
 
@@ -71,16 +76,60 @@ class Payload : TeamVersusGameMode
 					ws.Execute();
 				}
 			}
+		}
 
-			if (!m_ended && m_tmStarted > 0)
+		if (!m_ended && m_tmStarted > 0)
+			CheckTimeReached(ms);
+	}
+
+	void CheckTimeReached(int dt)
+	{
+		// Check if time limit is not reached yet
+		if (m_tmLimit - (m_tmLevel - m_tmStarted) > 0)
+		{
+			// Don't need to continue checking
+			m_tmOvertime = 0;
+			m_tmInOvertime = 0;
+			return;
+		}
+
+		// Count how long we're in overtime for later time limit fixing when we reach a checkpoint
+		if (m_tmOvertime > 0)
+			m_tmInOvertime += dt;
+
+		// Check if there are any attackers still inside
+		if (m_payload.AttackersInside() > 0)
+		{
+			// We have overtime
+			m_tmOvertime = int(TimeOvertime * 1000);
+			return;
+		}
+
+		// If we have overtime
+		if (m_tmOvertime > 0)
+		{
+			// Decrease timer
+			m_tmOvertime -= dt;
+			if (m_tmOvertime <= 0)
 			{
-				if (m_tmLimit - (m_tmLevel - m_tmStarted) <= 0)
-				{
-					(Network::Message("TimeReached")).SendToAll();
-					SetWinner(false);
-				}
+				// Overtime countdown reached, time limit reached
+				TimeReached();
 			}
 		}
+		else
+		{
+			// No overtime, so time limit is reached
+			TimeReached();
+		}
+	}
+
+	void TimeReached()
+	{
+		if (!Network::IsServer())
+			return;
+
+		(Network::Message("TimeReached")).SendToAll();
+		SetWinner(false);
 	}
 
 	void SetWinner(bool attackers)

@@ -87,6 +87,9 @@ class PayloadBehavior
 	{
 		Payload@ gm = cast<Payload>(g_gameMode);
 		gm.m_payloadHUD.ReachedCheckpont();
+
+		if (gm.m_tmOvertime > 0)
+			gm.m_tmLimit += gm.m_tmInOvertime;
 		gm.m_tmLimit += gm.TimeAddCheckpoint * 1000;
 	}
 

@@ -1,6 +1,7 @@
 class PayloadHUD : IWidgetHoster
 {
 	TextWidget@ m_wStatus;
+	BarWidget@ m_wOvertimeBar;
 
 	Widget@ m_wCheckpointsTemplate;
 	Widget@ m_wCheckpoints;
@@ -21,6 +22,7 @@ class PayloadHUD : IWidgetHoster
 		LoadWidget(b, "gui/payload.gui");
 
 		@m_wStatus = cast<TextWidget>(m_widget.GetWidgetById("status"));
+		@m_wOvertimeBar = cast<BarWidget>(m_widget.GetWidgetById("overtime"));
 
 		@m_wCheckpointsTemplate = m_widget.GetWidgetById("checkpoints-template");
 		@m_wCheckpoints = m_widget.GetWidgetById("checkpoints");
@@ -109,8 +111,18 @@ class PayloadHUD : IWidgetHoster
 			m_wStatus.SetText("Start in " + ceil(gm.PrepareTime - (gm.m_tmLevel - gm.m_tmStarting) / 1000));
 		else if (gm.m_tmStarted > 0)
 		{
-			int tmLeft = max(0, gm.m_tmLimit - (gm.m_tmLevel - gm.m_tmStarted));
-			m_wStatus.SetText(formatTime(ceil(tmLeft / 1000.0f), false));
+			m_wOvertimeBar.m_visible = (gm.m_tmOvertime > 0);
+			if (gm.m_tmOvertime > 0)
+			{
+				m_wStatus.SetText("Overtime!");
+				float overtimeScalar = gm.m_tmOvertime / (gm.TimeOvertime * 1000);
+				m_wOvertimeBar.SetScale(overtimeScalar);
+			}
+			else
+			{
+				int tmLeft = max(0, gm.m_tmLimit - (gm.m_tmLevel - gm.m_tmStarted));
+				m_wStatus.SetText(formatTime(ceil(tmLeft / 1000.0f), false));
+			}
 		}
 
 		float payloadFactor = 0.0f;
