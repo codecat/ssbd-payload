@@ -12,6 +12,12 @@ class Payload : TeamVersusGameMode
 	[Editable default=10]
 	int PrepareTime;
 
+	[Editable default=300]
+	int TimeLimit;
+
+	[Editable default=90]
+	int TimeAddCheckpoint;
+
 	PayloadBehavior@ m_payload;
 
 	int m_tmStarting;
@@ -99,7 +105,7 @@ class Payload : TeamVersusGameMode
 	{
 		TeamVersusGameMode::Start(peer, save, sMode);
 
-		m_tmLimit = 5 * 60 * 1000; // 5 minutes
+		m_tmLimit = TimeLimit * 1000; // 5 minutes by default
 
 		@m_payload = cast<PayloadBehavior>(PayloadUnit.FetchFirst().GetScriptBehavior());
 
