@@ -93,6 +93,7 @@ class PayloadBehavior
 	{
 		if (m_targetNode is null)
 		{
+			m_body.SetStatic(true);
 			m_body.SetLinearVelocity(vec2());
 			return;
 		}
@@ -160,7 +161,9 @@ class PayloadBehavior
 						@m_prevNode = target.m_prevNode;
 
 						UnitPtr unitTarget = WorldScript::GetWorldScript(g_scene, m_targetNode).GetUnit();
-						UnitPtr unitPrev = WorldScript::GetWorldScript(g_scene, m_prevNode).GetUnit();
+						UnitPtr unitPrev;
+						if (m_prevNode !is null)
+							unitPrev = WorldScript::GetWorldScript(g_scene, m_prevNode).GetUnit();
 
 						(Network::Message("NewTargetNode") << unitTarget << unitPrev).SendToAll();
 					}
@@ -206,6 +209,7 @@ class PayloadBehavior
 				m_dir = atan(dir.y, dir.x);
 			}
 
+			m_body.SetStatic(lengthsq(newVelocity) == 0);
 			m_body.SetLinearVelocity(newVelocity);
 		}
 		else
@@ -213,6 +217,8 @@ class PayloadBehavior
 			vec2 moveDir = m_unit.GetMoveDir();
 			if (lengthsq(moveDir) > 0.01)
 				m_dir = atan(moveDir.y, moveDir.x);
+
+			m_body.SetStatic(true);
 		}
 
 		if (lengthsq(m_unit.GetMoveDir()) > 0.01)

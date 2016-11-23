@@ -120,7 +120,7 @@ class PayloadHUD : IWidgetHoster
 		{
 			float distMax = dist(nodePrev.Position, nodeTarget.Position);
 			float distCurrent = dist(gm.m_payload.m_unit.GetPosition(), nodeTarget.Position);
-			float distFactor = 1 - distCurrent / distMax;
+			float distFactor = (distMax == 0 ? 0.0f : (1 - distCurrent / distMax));
 
 			payloadFactor = lerp(nodePrev.m_locationFactor, nodeTarget.m_locationFactor, distFactor);
 		}

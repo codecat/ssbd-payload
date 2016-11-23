@@ -24,8 +24,10 @@ namespace PayloadHandler
 			return;
 		}
 
-		@pl.m_targetNode = cast<WorldScript::PayloadNode>(unitTarget.GetScriptBehavior());
-		@pl.m_prevNode = cast<WorldScript::PayloadNode>(unitPrev.GetScriptBehavior());
+		if (unitTarget.IsValid())
+			@pl.m_targetNode = cast<WorldScript::PayloadNode>(unitTarget.GetScriptBehavior());
+		if (unitPrev.IsValid())
+			@pl.m_prevNode = cast<WorldScript::PayloadNode>(unitPrev.GetScriptBehavior());
 	}
 
 	void CheckpointReached(uint8 peer, UnitPtr payload, UnitPtr node)
