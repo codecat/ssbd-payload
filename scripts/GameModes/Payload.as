@@ -24,6 +24,8 @@ class Payload : TeamVersusGameMode
 	{
 		super(scene);
 
+		m_tmRespawnCountdown = 5000;
+
 		ButtonWidget@ wJoin0 = cast<ButtonWidget>(m_switchTeam.m_widget.GetWidgetById("join_0"));
 		if (wJoin0 !is null)
 			wJoin0.SetText("Defenders");
