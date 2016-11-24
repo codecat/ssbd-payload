@@ -148,7 +148,7 @@ class PayloadBehavior
 			{
 				if (!backward)
 					@target = m_targetNode;
-				else if (backward && m_prevNode !is null && !m_targetNode.Checkpoint)
+				else if (backward)
 					@target = m_prevNode;
 			}
 
@@ -161,15 +161,20 @@ class PayloadBehavior
 				{
 					if (backward)
 					{
-						@m_targetNode = m_prevNode;
-						@m_prevNode = target.m_prevNode;
+						if (m_prevNode.Checkpoint)
+							moveSpeed = 0;
+						else
+						{
+							@m_targetNode = m_prevNode;
+							@m_prevNode = target.m_prevNode;
 
-						UnitPtr unitTarget = WorldScript::GetWorldScript(g_scene, m_targetNode).GetUnit();
-						UnitPtr unitPrev;
-						if (m_prevNode !is null)
-							unitPrev = WorldScript::GetWorldScript(g_scene, m_prevNode).GetUnit();
+							UnitPtr unitTarget = WorldScript::GetWorldScript(g_scene, m_targetNode).GetUnit();
+							UnitPtr unitPrev;
+							if (m_prevNode !is null)
+								unitPrev = WorldScript::GetWorldScript(g_scene, m_prevNode).GetUnit();
 
-						(Network::Message("NewTargetNode") << unitTarget << unitPrev).SendToAll();
+							(Network::Message("NewTargetNode") << unitTarget << unitPrev).SendToAll();
+						}
 					}
 					else
 					{
