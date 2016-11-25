@@ -4,7 +4,7 @@
 	<multiplayer>true</multiplayer>
 
 	<start>
-		<level name="Test" lvl="levels/test.lvl" />
+		<level name="Simple" lvl="levels/simple.lvl" />
 	</start>
 
 	<modifiers>
