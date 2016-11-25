@@ -127,6 +127,8 @@ class PayloadBehavior
 			float moveSpeed = 0.0f;
 			bool backward = false;
 
+			Payload@ gm = cast<Payload>(g_gameMode);
+
 			if (attackers > 0)
 			{
 				if (defenders == 0)
@@ -140,6 +142,9 @@ class PayloadBehavior
 				backward = true;
 			}
 			else
+				moveSpeed = 0;
+
+			if (gm.m_ended)
 				moveSpeed = 0;
 
 			WorldScript::PayloadNode@ target;
@@ -186,7 +191,6 @@ class PayloadBehavior
 						{
 							(Network::Message("FinishReached")).SendToAll();
 
-							Payload@ gm = cast<Payload>(g_gameMode);
 							gm.SetWinner(true);
 
 							@m_targetNode = null;
