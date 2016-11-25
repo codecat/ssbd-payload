@@ -15,7 +15,6 @@
 				<circle offset="0 -12" aim-through="true" radius="32" />
 			</collision>
 
-			<minimap_sprite src="menus/minimap.xml:enemy" />
 			<shadow>
 				<sprite origin="38 38" texture="doodads/special/shadows.png">
 					<frame>50 51 76 76</frame>
