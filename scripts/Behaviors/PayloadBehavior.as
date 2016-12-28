@@ -89,8 +89,8 @@ class PayloadBehavior
 		gm.m_payloadHUD.ReachedCheckpont();
 
 		if (gm.m_tmOvertime > 0)
-			gm.m_tmLimit += gm.m_tmInOvertime;
-		gm.m_tmLimit += gm.TimeAddCheckpoint * 1000;
+			gm.m_tmLimitCustom += gm.m_tmInOvertime;
+		gm.m_tmLimitCustom += gm.TimeAddCheckpoint * 1000;
 	}
 
 	void Update(int dt)

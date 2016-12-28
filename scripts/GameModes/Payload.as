@@ -25,7 +25,7 @@ class Payload : TeamVersusGameMode
 
 	int m_tmStarting;
 	int m_tmStarted;
-	int m_tmLimit;
+	int m_tmLimitCustom;
 	int m_tmOvertime;
 	int m_tmInOvertime;
 
@@ -85,7 +85,7 @@ class Payload : TeamVersusGameMode
 	void CheckTimeReached(int dt)
 	{
 		// Check if time limit is not reached yet
-		if (m_tmLimit - (m_tmLevel - m_tmStarted) > 0)
+		if (m_tmLimitCustom - (m_tmLevel - m_tmStarted) > 0)
 		{
 			// Don't need to continue checking
 			m_tmOvertime = 0;
@@ -154,7 +154,8 @@ class Payload : TeamVersusGameMode
 	{
 		TeamVersusGameMode::Start(peer, save, sMode);
 
-		m_tmLimit = TimeLimit * 1000; // 5 minutes by default
+		m_tmLimit = 0; // infinite time limit as far as VersusGameMode is concerned
+		m_tmLimitCustom = TimeLimit * 1000; // 5 minutes by default
 
 		@m_payload = cast<PayloadBehavior>(PayloadUnit.FetchFirst().GetScriptBehavior());
 

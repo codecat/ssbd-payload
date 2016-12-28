@@ -120,7 +120,7 @@ class PayloadHUD : IWidgetHoster
 			}
 			else
 			{
-				int tmLeft = max(0, gm.m_tmLimit - (gm.m_tmLevel - gm.m_tmStarted));
+				int tmLeft = max(0, gm.m_tmLimitCustom - (gm.m_tmLevel - gm.m_tmStarted));
 				m_wStatus.SetText(formatTime(ceil(tmLeft / 1000.0f), false));
 			}
 		}
