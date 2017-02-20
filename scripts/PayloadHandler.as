@@ -3,14 +3,12 @@ namespace PayloadHandler
 	void GameStarting(uint8 peer, int tm)
 	{
 		Payload@ gm = cast<Payload>(g_gameMode);
-		gm.m_tmLevel = tm;
 		gm.m_tmStarting = tm;
 	}
 
 	void GameStarted(uint8 peer, int tm)
 	{
 		Payload@ gm = cast<Payload>(g_gameMode);
-		gm.m_tmLevel = tm;
 		gm.m_tmStarted = tm;
 	}
 

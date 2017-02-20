@@ -17,7 +17,7 @@ class PayloadHUD : IWidgetHoster
 
 	TextWidget@ m_wWaiting;
 
-	PayloadHUD(GUIBuilder& in b)
+	PayloadHUD(GUIBuilder@ b)
 	{
 		LoadWidget(b, "gui/payload.gui");
 
@@ -108,7 +108,7 @@ class PayloadHUD : IWidgetHoster
 		if (gm.m_ended)
 			m_wStatus.SetText("");
 		else if (gm.m_tmStarting > 0 && gm.m_tmStarted == 0)
-			m_wStatus.SetText("Start in " + ceil(gm.PrepareTime - (gm.m_tmLevel - gm.m_tmStarting) / 1000));
+			m_wStatus.SetText("Start in " + ceil(gm.PrepareTime - (CurrPlaytimeLevel() - gm.m_tmStarting) / 1000));
 		else if (gm.m_tmStarted > 0)
 		{
 			m_wOvertimeBar.m_visible = (gm.m_tmOvertime > 0);
@@ -120,7 +120,7 @@ class PayloadHUD : IWidgetHoster
 			}
 			else
 			{
-				int tmLeft = max(0, gm.m_tmLimitCustom - (gm.m_tmLevel - gm.m_tmStarted));
+				int tmLeft = max(0, gm.m_tmLimitCustom - (CurrPlaytimeLevel() - gm.m_tmStarted));
 				m_wStatus.SetText(formatTime(ceil(tmLeft / 1000.0f), false));
 			}
 		}

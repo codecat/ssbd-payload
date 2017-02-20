@@ -56,18 +56,20 @@ class Payload : TeamVersusGameMode
 
 		if (Network::IsServer())
 		{
+			uint64 tmNow = CurrPlaytimeLevel();
+
 			if (m_tmStarting == 0)
 			{
 				if (GetPlayersInTeam(0) > 0 && GetPlayersInTeam(1) > 0)
 				{
-					m_tmStarting = m_tmLevel;
+					m_tmStarting = tmNow;
 					(Network::Message("GameStarting") << m_tmStarting).SendToAll();
 				}
 			}
 
-			if (m_tmStarting > 0 && m_tmStarted == 0 && m_tmLevel - m_tmStarting > PrepareTime * 1000)
+			if (m_tmStarting > 0 && m_tmStarted == 0 && tmNow - m_tmStarting > PrepareTime * 1000)
 			{
-				m_tmStarted = m_tmLevel;
+				m_tmStarted = tmNow;
 				(Network::Message("GameStarted") << m_tmStarted).SendToAll();
 
 				for (uint i = 0; i < g_payloadBeginTriggers.length(); i++)
@@ -85,7 +87,7 @@ class Payload : TeamVersusGameMode
 	void CheckTimeReached(int dt)
 	{
 		// Check if time limit is not reached yet
-		if (m_tmLimitCustom - (m_tmLevel - m_tmStarted) > 0)
+		if (m_tmLimitCustom - (CurrPlaytimeLevel() - m_tmStarted) > 0)
 		{
 			// Don't need to continue checking
 			m_tmOvertime = 0;

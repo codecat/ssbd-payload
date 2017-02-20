@@ -3,6 +3,8 @@
 	<description>Bring the payload to the other side.</description>
 	<multiplayer>true</multiplayer>
 
+	<players min="2" max="8" />
+
 	<start>
 		<level name="Simple" lvl="levels/simple.lvl" />
 	</start>
