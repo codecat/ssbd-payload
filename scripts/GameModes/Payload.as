@@ -1,4 +1,5 @@
 array<WorldScript::PayloadBeginTrigger@> g_payloadBeginTriggers;
+array<WorldScript::PayloadTeamForcefield@> g_teamForceFields;
 
 [GameMode]
 class Payload : TeamVersusGameMode
@@ -212,5 +213,31 @@ class Payload : TeamVersusGameMode
 		}
 
 		m_payloadHUD.AddCheckpoints();
+	}
+
+	void SpawnPlayer(int i, vec2 pos = vec2(), int unitId = 0, uint team = 0) override
+	{
+		TeamVersusGameMode::SpawnPlayer(i, pos, unitId, team);
+
+		if (!g_players[i].local)
+			return;
+
+		bool localAttackers = (team == HashString("player_1"));
+		for (uint j = 0; j < g_teamForceFields.length(); j++)
+		{
+			bool hasCollision = (localAttackers != g_teamForceFields[j].Attackers);
+
+			auto units = g_teamForceFields[j].Units.FetchAll();
+			for (uint k = 0; k < units.length(); k++)
+			{
+				PhysicsBody@ body = units[k].GetPhysicsBody();
+				if (body is null)
+				{
+					PrintError("PhysicsBody for unit " + units[k].GetDebugName() + "is null");
+					continue;
+				}
+				body.SetActive(hasCollision);
+			}
+		}
 	}
 }
