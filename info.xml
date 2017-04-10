@@ -6,6 +6,7 @@
 	<players min="2" max="8" />
 
 	<start>
+		<level name="Payload01" lvl="levels/payload01.lvl" />
 		<level name="Simple" lvl="levels/simple.lvl" />
 	</start>
 
