@@ -22,7 +22,7 @@ class Payload : TeamVersusGameMode
 	[Editable default=2]
 	float TimeOvertime;
 
-	[Editable default=4000]
+	[Editable default=1000]
 	int TimePayloadHeal;
 
 	PayloadBehavior@ m_payload;

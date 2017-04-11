@@ -3,10 +3,10 @@
 	<description>Bring the payload to the other side.</description>
 	<multiplayer>true</multiplayer>
 
-	<players min="2" max="8" />
+	<players min="2" max="12" />
 
 	<start>
-		<level name="Payload01" lvl="levels/payload01.lvl" />
+		<level name="Over the Mountain" lvl="levels/payload01.lvl" />
 		<level name="Simple" lvl="levels/simple.lvl" />
 	</start>
 
