@@ -61,11 +61,16 @@ class Payload : TeamVersusGameMode
 
 			if (m_tmStarting == 0)
 			{
+%if MOD_TESTING
+				m_tmStarting = tmNow;
+				(Network::Message("GameStarting") << m_tmStarting).SendToAll();
+%else
 				if (GetPlayersInTeam(0) > 0 && GetPlayersInTeam(1) > 0)
 				{
 					m_tmStarting = tmNow;
 					(Network::Message("GameStarting") << m_tmStarting).SendToAll();
 				}
+%endif
 			}
 
 			if (m_tmStarting > 0 && m_tmStarted == 0 && tmNow - m_tmStarting > PrepareTime * 1000)
