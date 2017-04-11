@@ -6,6 +6,7 @@ class PayloadBehavior
 
 	int m_radius;
 	int m_queryTime;
+	int m_healTime;
 
 	AnimString@ m_animIdle;
 	AnimString@ m_animWalk;
@@ -102,6 +103,21 @@ class PayloadBehavior
 			return;
 		}
 
+		Payload@ gm = cast<Payload>(g_gameMode);
+
+		m_healTime -= dt;
+		if (m_healTime <= 0)
+		{
+			uint hashAttackers = HashString("player_1");
+			for (uint i = 0; i < m_playersInside.length(); i++)
+			{
+				if (m_playersInside[i].m_record.team != hashAttackers)
+					continue;
+				m_playersInside[i].Heal(5);
+			}
+			m_healTime = gm.TimePayloadHeal;
+		}
+
 		if (m_queryTime <= 0)
 		{
 			array<UnitPtr>@ arrRange = g_scene.QueryCircle(xy(m_unit.GetPosition()), m_radius, ~0, RaycastType::Any);
@@ -126,8 +142,6 @@ class PayloadBehavior
 
 			float moveSpeed = 0.0f;
 			bool backward = false;
-
-			Payload@ gm = cast<Payload>(g_gameMode);
 
 			if (attackers > 0)
 			{

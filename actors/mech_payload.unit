@@ -1,6 +1,6 @@
 <unit slot="actor" netsync="position">
 	<behavior class="PayloadBehavior">
-		<int name="radius">125</int>
+		<int name="radius">100</int>
 
 		<string name="anim-idle">idle 8</string>
 		<string name="anim-walk">walk 8</string>
