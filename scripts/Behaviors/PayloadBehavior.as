@@ -113,7 +113,7 @@ class PayloadBehavior
 			{
 				if (m_playersInside[i].m_record.team != hashAttackers)
 					continue;
-				m_playersInside[i].Heal(1);
+				m_playersInside[i].Heal(gm.PayloadHeal);
 			}
 			m_healTime = gm.TimePayloadHeal;
 		}

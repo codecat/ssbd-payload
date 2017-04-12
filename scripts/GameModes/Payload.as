@@ -25,6 +25,9 @@ class Payload : TeamVersusGameMode
 	[Editable default=1000]
 	int TimePayloadHeal;
 
+	[Editable default=1]
+	int PayloadHeal;
+
 	PayloadBehavior@ m_payload;
 
 	int m_tmStarting;
