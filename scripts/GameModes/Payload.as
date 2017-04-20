@@ -146,6 +146,11 @@ class Payload : TeamVersusGameMode
 		SetWinner(false);
 	}
 
+	bool CanSwitchTeams() override
+	{
+		return m_tmStarted == 0;
+	}
+
 	void SetWinner(bool attackers)
 	{
 		if (attackers)
