@@ -8,6 +8,7 @@
 	<start>
 		<level name="Over the Mountain" lvl="levels/payload01.lvl" />
 		<level name="Simple" lvl="levels/simple.lvl" />
+		<level name="That belongs in a Museum" lvl="levels/payload02.lvl" />
 	</start>
 
 	<modifiers>

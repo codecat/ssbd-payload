@@ -44,14 +44,6 @@ class Payload : TeamVersusGameMode
 
 		m_tmRespawnCountdown = 5000;
 
-		ButtonWidget@ wJoin0 = cast<ButtonWidget>(m_switchTeam.m_widget.GetWidgetById("join_0"));
-		if (wJoin0 !is null)
-			wJoin0.SetText("Defenders");
-
-		ButtonWidget@ wJoin1 = cast<ButtonWidget>(m_switchTeam.m_widget.GetWidgetById("join_1"));
-		if (wJoin1 !is null)
-			wJoin1.SetText("Attackers");
-
 		@m_payloadHUD = PayloadHUD(m_guiBuilder);
 	}
 
@@ -94,6 +86,16 @@ class Payload : TeamVersusGameMode
 
 		if (!m_ended && m_tmStarted > 0)
 			CheckTimeReached(ms);
+	}
+
+	string NameForTeam(int index) override
+	{
+		if (index == 0)
+			return "Defenders";
+		else if (index == 1)
+			return "Attackers";
+
+		return "Unknown";
 	}
 
 	void CheckTimeReached(int dt)
@@ -177,6 +179,9 @@ class Payload : TeamVersusGameMode
 		m_tmLimitCustom = TimeLimit * 1000; // 5 minutes by default
 
 		@m_payload = cast<PayloadBehavior>(PayloadUnit.FetchFirst().GetScriptBehavior());
+
+		if (m_payload is null)
+			PrintError("PayloadUnit is not a PayloadBehavior!");
 
 		UnitPtr unitFirstNode = FirstNode.FetchFirst();
 		if (unitFirstNode.IsValid())
