@@ -38,6 +38,8 @@ class Payload : TeamVersusGameMode
 
 	PayloadHUD@ m_payloadHUD;
 
+	array<SValue@>@ m_switchedSidesData;
+
 	Payload(Scene@ scene)
 	{
 		super(scene);
@@ -171,12 +173,80 @@ class Payload : TeamVersusGameMode
 		TeamVersusGameMode::RenderFrame(idt, sb);
 	}
 
+	void GoNextMap() override
+	{
+		if (m_switchedSidesData !is null)
+		{
+			TeamVersusGameMode::GoNextMap();
+			return;
+		}
+
+		ChangeLevel(GetCurrentLevelFilename());
+	}
+
+	void SpawnPlayers() override
+	{
+		if (m_switchedSidesData is null)
+		{
+			TeamVersusGameMode::SpawnPlayers();
+			return;
+		}
+
+		if (Network::IsServer())
+		{
+			for (uint i = 0; i < m_switchedSidesData.length(); i += 2)
+			{
+				uint peer = uint(m_switchedSidesData[i].GetInteger());
+				uint team = uint(m_switchedSidesData[i + 1].GetInteger());
+
+				TeamVersusScore@ joinScore = FindTeamScore(team);
+				if (joinScore is m_teamScores[0])
+					@joinScore = m_teamScores[1];
+				else
+					@joinScore = m_teamScores[0];
+
+				for (uint j = 0; j < g_players.length(); j++)
+				{
+					if (g_players[j].peer != peer)
+						continue;
+					SpawnPlayer(j, vec2(), 0, joinScore.m_team);
+					break;
+				}
+			}
+		}
+	}
+
+	void Save(SValueBuilder& builder) override
+	{
+		if (m_switchedSidesData is null)
+		{
+			builder.PushArray("teams");
+			for (uint i = 0; i < g_players.length(); i++)
+			{
+				if (g_players[i].peer == 255)
+					continue;
+				builder.PushInteger(g_players[i].peer);
+				builder.PushInteger(g_players[i].team);
+			}
+			builder.PopArray();
+		}
+
+		TeamVersusGameMode::Save(builder);
+	}
+
 	void Start(uint8 peer, SValue@ save, StartMode sMode) override
 	{
+		if (save !is null)
+			@m_switchedSidesData = GetParamArray(UnitPtr(), save, "teams", false);
+
 		TeamVersusGameMode::Start(peer, save, sMode);
 
 		m_tmLimit = 0; // infinite time limit as far as VersusGameMode is concerned
+%if MOD_TESTING
+		m_tmLimitCustom = 15 * 1000; // 15 seconds for testing
+%else
 		m_tmLimitCustom = TimeLimit * 1000; // 5 minutes by default
+%endif
 
 		@m_payload = cast<PayloadBehavior>(PayloadUnit.FetchFirst().GetScriptBehavior());
 

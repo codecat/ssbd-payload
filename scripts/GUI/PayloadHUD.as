@@ -1,4 +1,4 @@
-class PayloadHUD : IWidgetHoster
+class PayloadHUD : HUDVersus
 {
 	TextWidget@ m_wStatus;
 	BarWidget@ m_wOvertimeBar;
@@ -15,11 +15,9 @@ class PayloadHUD : IWidgetHoster
 	Widget@ m_wWinnerAlert;
 	TextWidget@ m_wWinnerAlertText;
 
-	TextWidget@ m_wWaiting;
-
 	PayloadHUD(GUIBuilder@ b)
 	{
-		LoadWidget(b, "gui/payload.gui");
+		super(b, "gui/payload.gui");
 
 		@m_wStatus = cast<TextWidget>(m_widget.GetWidgetById("status"));
 		@m_wOvertimeBar = cast<BarWidget>(m_widget.GetWidgetById("overtime"));
@@ -35,8 +33,6 @@ class PayloadHUD : IWidgetHoster
 
 		@m_wWinnerAlert = m_widget.GetWidgetById("winner-alert");
 		@m_wWinnerAlertText = cast<TextWidget>(m_wWinnerAlert.GetWidgetById("text"));
-
-		@m_wWaiting = cast<TextWidget>(m_widget.GetWidgetById("waiting"));
 	}
 
 	void ReachedCheckpont()
@@ -97,10 +93,13 @@ class PayloadHUD : IWidgetHoster
 		}
 	}
 
+	string NextMapText(string time) override
+	{
+		return "Switching sides in: " + time;
+	}
+
 	void Update(int dt) override
 	{
-		IWidgetHoster::Update(dt);
-
 		Payload@ gm = cast<Payload>(g_gameMode);
 		if (gm is null)
 			return;
@@ -159,12 +158,6 @@ class PayloadHUD : IWidgetHoster
 		else
 			m_wPayloadText.m_visible = false;
 
-		if (gm.m_ended && m_wWaiting !is null)
-		{
-			m_wWaiting.m_visible = true;
-			int tmLeft = int(ceil(((gm.m_tmEnded + 5000) - g_scene.GetTime()) / 1000.0f));
-			dictionary params = { { "timeleft", formatTime(max(0, tmLeft)) } };
-			m_wWaiting.SetText(Resources::GetString(".deathmatch.waiting", params));
-		}
+		HUDVersus::Update(dt);
 	}
 }
