@@ -1,0 +1,11 @@
+<materials>
+	<material name="healbeam">
+		<blend-mode value="blend" />
+		<shadow-mode value="none" />
+		<parallax value="0 0" />
+		<color value="255 400 255 255" />
+		<xray-mask value="false" />
+		<decal-mode value="none" />
+		<glow-mode value="both" />
+	</material>
+</materials>

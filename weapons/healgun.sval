@@ -1,0 +1,49 @@
+<dict>
+	<string name="name">Healgun</string>
+	<string name="arms">weapons/healgun.unit</string>
+	<string name="idle-anim">idle 16</string>
+	<string name="attack-anim-0">attack 16</string>
+
+	<string name="class">PlayerHealgun</string>
+	<string name="class-husk">PlayerHealgunHusk</string>
+
+	<string name="beam-fx">effects/weapons/trail_healgun.effect</string>
+	<string name="beam-loop-snd">event:/weapons/shaft/fire</string>
+	<string name="beam-hit-fx">effects/weapons/hit_weapon_healgun.effect</string>
+
+	<float name="beam-range">150</float>
+
+	<array name="beam-hit-effects">
+		<dict>
+			<string name="class">Damage</string>
+			<int name="dmg">-10</int>
+			<string name="dmg-type">energy</string>
+		</dict>
+	</array>
+
+	<int name="aim-length">250</int>
+
+	<float name="team-dmg">1</float>
+
+	<string name="cursor">weapons/cursors/aim_lg.tga</string>
+	<vec2 name="cursor-hotspot">15 15</vec2>
+
+	<int name="weapon-slot">8</int>
+	<int name="weapon-slot-prio">10</int>
+
+	<string name="ammo-type">weapons/ammo/electricity.sval</string>
+	<int name="ammo-cost">0</int>
+	<int name="clip-size">0</int>
+
+	<string name="offset">shoot-pos</string>
+
+	<int name="cooldown">200</int>
+
+	<string name="no-ammo-snd">event:/weapons/no-ammo</string>
+
+	<array name="icon">
+		<string>gui/icons.png</string>
+		<int>100</int><vec4>93 0 14 13</vec4>
+		<int>100</int><vec4>107 0 14 13</vec4>
+	</array>
+</dict>

@@ -1,0 +1,276 @@
+<unit>
+	<scenes start="attack-3">
+		<scene name="shared">
+			<locator name="shoot-pos" pos="0 -10" />
+		</scene>
+
+		<scene name="attack-0">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">0 0 64 64</frame>
+				<frame time="22">0 64 64 64</frame>
+				<frame time="22">0 128 64 64</frame>
+				<frame time="22">0 192 64 64</frame>
+			</sprite>
+			<effect ulayer="0" pos="18 -11" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-1">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">960 0 64 64</frame>
+				<frame time="22">960 64 64 64</frame>
+				<frame time="22">960 128 64 64</frame>
+				<frame time="22">960 192 64 64</frame>
+			</sprite>
+			<effect ulayer="0" pos="17 -6" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-2">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">448 0 64 64</frame>
+				<frame time="22">448 64 64 64</frame>
+				<frame time="22">448 128 64 64</frame>
+				<frame time="22">448 192 64 64</frame>
+			</sprite>
+			<effect ulayer="0" pos="14 0" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-3">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">896 0 64 64</frame>
+				<frame time="22">896 64 64 64</frame>
+				<frame time="22">896 128 64 64</frame>
+				<frame time="22">896 192 64 64</frame>
+			</sprite>
+			<effect ulayer="0" pos="8 3" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-4">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">384 0 64 64</frame>
+				<frame time="22">384 64 64 64</frame>
+				<frame time="22">384 128 64 64</frame>
+				<frame time="22">384 192 64 64</frame>
+			</sprite>
+			<effect ulayer="-1" pos="2 7" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-5">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">832 0 64 64</frame>
+				<frame time="22">832 64 64 64</frame>
+				<frame time="22">832 128 64 64</frame>
+				<frame time="22">832 192 64 64</frame>
+			</sprite>
+			<effect ulayer="-1" pos="-5 4" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-6">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">320 0 64 64</frame>
+				<frame time="22">320 64 64 64</frame>
+				<frame time="22">320 128 64 64</frame>
+				<frame time="22">320 192 64 64</frame>
+			</sprite>
+			<effect ulayer="-1" pos="-10 0" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-7">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">768 0 64 64</frame>
+				<frame time="22">768 64 64 64</frame>
+				<frame time="22">768 128 64 64</frame>
+				<frame time="22">768 192 64 64</frame>
+			</sprite>
+			<effect ulayer="-1" pos="-13 -6" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-8">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">256 0 64 64</frame>
+				<frame time="22">256 64 64 64</frame>
+				<frame time="22">256 128 64 64</frame>
+				<frame time="22">256 192 64 64</frame>
+			</sprite>
+			<effect ulayer="-1" pos="-14 -8" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-9">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">704 0 64 64</frame>
+				<frame time="22">704 64 64 64</frame>
+				<frame time="22">704 128 64 64</frame>
+				<frame time="22">704 192 64 64</frame>
+			</sprite>
+			<effect ulayer="0" pos="-12 -16" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-10">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">192 0 64 64</frame>
+				<frame time="22">192 64 64 64</frame>
+				<frame time="22">192 128 64 64</frame>
+				<frame time="22">192 192 64 64</frame>
+			</sprite>
+			<effect ulayer="0" pos="-10 -20" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-11">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">640 0 64 64</frame>
+				<frame time="22">640 64 64 64</frame>
+				<frame time="22">640 128 64 64</frame>
+				<frame time="22">640 192 64 64</frame>
+			</sprite>
+			<effect ulayer="0" pos="-6 -22" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-12">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">128 0 64 64</frame>
+				<frame time="22">128 64 64 64</frame>
+				<frame time="22">128 128 64 64</frame>
+				<frame time="22">128 192 64 64</frame>
+			</sprite>
+			<effect ulayer="0" pos="0 -25" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-13">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">576 0 64 64</frame>
+				<frame time="22">576 64 64 64</frame>
+				<frame time="22">576 128 64 64</frame>
+				<frame time="22">576 192 64 64</frame>
+			</sprite>
+			<effect ulayer="0" pos="8 -22" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-14">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">64 0 64 64</frame>
+				<frame time="22">64 64 64 64</frame>
+				<frame time="22">64 128 64 64</frame>
+				<frame time="22">64 192 64 64</frame>
+			</sprite>
+			<effect ulayer="0" pos="11 -21" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+		<scene name="attack-15">
+			<scene src="shared" />
+			<sprite ulayer="1" looping="false" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame time="22">512 0 64 64</frame>
+				<frame time="22">512 64 64 64</frame>
+				<frame time="22">512 128 64 64</frame>
+				<frame time="22">512 192 64 64</frame>
+			</sprite>
+			<effect ulayer="0" pos="14 -17" src="effects/weapons/muzzleflare_shaft.effect" />
+		</scene>
+
+		<scene name="idle-0">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>0 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-1">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>960 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-2">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>448 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-3">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>896 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-4">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>384 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-5">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>832 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-6">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>320 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-7">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>768 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-8">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>256 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-9">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>704 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-10">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>192 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-11">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>640 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-12">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>128 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-13">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>576 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-14">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>64 0 64 64</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-15">
+			<scene src="shared" />
+			<sprite ulayer="1" origin="31 41" texture="weapons/healgun.png" material="system/default.mats:player">
+				<frame>512 0 64 64</frame>
+			</sprite>
+		</scene>
+
+		<scene name="marker-green">
+			<sprite texture="weapons/healgun.png" material="system/default.mats:default">
+				<frame>0 481 32 31</frame>
+			</sprite>
+		</scene>
+		<scene name="marker-red">
+			<sprite texture="weapons/healgun.png" material="system/default.mats:default">
+				<frame>32 481 32 31</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>

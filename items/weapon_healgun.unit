@@ -1,0 +1,53 @@
+%include "items/respawn_weapon.inc"
+		<string name="sound">event:/items/weapon</string>
+		<array name="effects">
+			<dict>
+				<string name="class">GiveWeapon</string>
+				<string name="weapon">weapons/healgun.sval</string>
+			</dict>
+			<dict>
+				<string name="class">ShowFloatingText</string>
+				<string name="text">Healgun</string>
+				<vec2 name="offset">0 -18</vec2>
+			</dict>
+		</array>
+	</behavior>
+
+	<scenes nolabel="nolabel" label="label">
+		<scene name="nolabel">
+			<collision static="true">
+				<circle sensor="true" offset="0 0" radius="12" />
+			</collision>
+
+			<sprite origin="11 15" texture="items/payloadweapons.png" material="system/default.mats:pickup">
+				<frame time="100">176 0 22 21</frame>
+				<frame time="100">198 0 22 21</frame>
+				<frame time="100">220 0 22 21</frame>
+				<frame time="100">242 0 22 21</frame>
+				<frame time="100">264 0 22 21</frame>
+				<frame time="100">286 0 22 21</frame>
+				<frame time="100">308 0 22 21</frame>
+				<frame time="100">330 0 22 21</frame>
+				<frame time="100">0 0 22 21</frame>
+				<frame time="100">22 0 22 21</frame>
+				<frame time="100">44 0 22 21</frame>
+				<frame time="100">66 0 22 21</frame>
+				<frame time="100">88 0 22 21</frame>
+				<frame time="100">110 0 22 21</frame>
+				<frame time="100">132 0 22 21</frame>
+				<frame time="100">154 0 22 21</frame>
+			</sprite>
+
+			<shadow>
+				<sprite origin="6 6" texture="doodads/special/shadows.png">
+					<frame>18 0 12 12</frame>
+				</sprite>
+			</shadow>
+		</scene>
+
+		<scene name="label">
+			<scene src="nolabel"/>
+			<text origin="0 26" layer="1" font="gui/fonts/font_hw8.fnt" text="Healgun" align="center" material="system/default.mats:bright"/>
+		</scene>
+	</scenes>
+</unit>

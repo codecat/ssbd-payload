@@ -1,0 +1,225 @@
+<effect looping="true" bounds="750 750">
+	<param name="angle" default="0" />
+	<param name="length" default="100" />
+
+	<variation>
+		%// MainBeam
+		<sprite looping="true" origin="0 11" texture="./healbeam.png" material="effects/payloadeffects.mats:healbeam"
+
+			pos-x="cos(angle)*5"
+			pos-y="sin(angle)*5"
+
+			angle="angle"
+
+			color-r="1"
+			color-g="1"
+			color-b="1"
+			color-a="1"
+
+			scale-x="1"
+			scale-y="1"
+			>
+			<frame time="50" x="(t+l)*-15" y="0" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="22" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="44" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="66" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="88" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="110" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="132" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="154" w="length-14" h="22" />
+		</sprite>
+	</variation>
+
+	<variation>
+		%// MainBeam
+		<sprite looping="true" origin="0 11" texture="./healbeam.png" material="effects/payloadeffects.mats:healbeam"
+
+			pos-x="cos(angle)*5"
+			pos-y="sin(angle)*5"
+
+
+			angle="angle"
+
+			color-r="1"
+			color-g="1"
+			color-b="1"
+			color-a="1"
+
+
+			scale-x="1"
+			scale-y="1"
+			>
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="88" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="110" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="132" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="154" w="length-14" h="22" />
+
+			<frame time="50" x="(t+l)*-15" y="0" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="22" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="44" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="66" w="length-14" h="22" />
+
+		</sprite>
+	</variation>
+
+	<variation>
+		%// MainBeam
+		<sprite looping="true" origin="0 11" texture="./healbeam.png" material="effects/payloadeffects.mats:healbeam"
+
+			pos-x="cos(angle)*5"
+			pos-y="sin(angle)*5"
+
+
+			angle="angle"
+
+			color-r="1"
+			color-g="1"
+			color-b="1"
+			color-a="1"
+
+
+			scale-x="1"
+			scale-y="1"
+			>
+			<frame time="50" x="(t+l)*-15" y="22" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="44" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="66" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="88" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="110" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="132" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+			<frame time="50" x="(t+l)*-15" y="154" w="length-14" h="22" />
+
+			<frame time="50" x="(t+l)*-15" y="0" w="length-14" h="22" />
+
+			<frame time="20" x="(t+l)*-15" y="22" w="length-14" h="0" />
+
+		</sprite>
+	</variation>
+
+	%// Point(buff)
+	<sprite origin="11 13" looping="true" texture="effects/generic/buff_emp.png" material="effects/payloadeffects.mats:healbeam"
+
+		pos-x="cos(angle)*length*0.985"
+		pos-y="sin(angle)*length*0.975"
+
+		color-r="1"
+		color-g="1"
+		color-b="1"
+		color-a="1"
+
+
+		scale-x="1"
+		scale-y="1"
+		>
+			<frame time="25"> 0 0 21 17</frame>
+			<frame time="25"> 21 0 21 17</frame>
+			<frame time="25"> 42 0 21 17</frame>
+			<frame time="25"> 63 0 21 17</frame>
+			<frame time="25"> 84 0 21 17</frame>
+			<frame time="25"> 105 0 21 17</frame>
+			<frame time="25"> 0 17 21 17</frame>
+			<frame time="25"> 21 17 21 17</frame>
+			<frame time="25"> 42 17 21 17</frame>
+			<frame time="25"> 63 17 21 17</frame>
+			<frame time="25"> 84 17 21 17</frame>
+			<frame time="25"> 105 17 21 17</frame>
+			<frame time="25"> 0 34 21 17</frame>
+			<frame time="25"> 21 34 21 17</frame>
+
+			<frame time="25"> 0 0 21 17</frame>
+			<frame time="25"> 21 0 21 17</frame>
+			<frame time="25"> 42 0 21 17</frame>
+			<frame time="25"> 63 0 21 17</frame>
+			<frame time="25"> 84 0 21 17</frame>
+			<frame time="25"> 105 0 21 17</frame>
+			<frame time="25"> 0 17 21 17</frame>
+			<frame time="25"> 63 17 21 17</frame>
+			<frame time="25"> 84 17 21 17</frame>
+			<frame time="25"> 105 17 21 17</frame>
+			<frame time="25"> 0 34 21 17</frame>
+			<frame time="25"> 21 34 21 17</frame>
+	</sprite>
+
+	%// Lighting
+	<light pos="0 0">
+		<sprite texture="system/light_concentrated_L.png">
+			<frame>0 0 128 128</frame>
+		</sprite>
+
+		<length value="500" />
+
+		<looping value="true" />
+
+		<cast-shadows value="false" />
+
+		<shadow-cast-pos-x value="0" />
+		<shadow-cast-pos-y value="0" />
+
+		<size value="rand(t)*60+10" />
+
+		<color-r value="0.5" />
+		<color-g value="2" />
+		<color-b value="0.5" />
+		<color-a value="0" />
+	</light>
+
+</effect>

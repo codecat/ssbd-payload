@@ -168,9 +168,22 @@ class Payload : TeamVersusGameMode
 
 	void RenderFrame(int idt, SpriteBatch& sb) override
 	{
-		m_payloadHUD.Draw(sb, idt);
+		Player@ player = GetLocalPlayer();
+		if (player !is null)
+		{
+			PlayerHealgun@ healgun = cast<PlayerHealgun>(player.m_currWeapon);
+			if (healgun !is null)
+				healgun.RenderMarkers(idt, sb);
+		}
 
 		TeamVersusGameMode::RenderFrame(idt, sb);
+	}
+
+	void RenderWidgets(PlayerRecord@ player, int idt, SpriteBatch& sb) override
+	{
+		m_payloadHUD.Draw(sb, idt);
+
+		TeamVersusGameMode::RenderWidgets(player, idt, sb);
 	}
 
 	void GoNextMap() override
@@ -242,11 +255,7 @@ class Payload : TeamVersusGameMode
 		TeamVersusGameMode::Start(peer, save, sMode);
 
 		m_tmLimit = 0; // infinite time limit as far as VersusGameMode is concerned
-%if MOD_TESTING
-		m_tmLimitCustom = 15 * 1000; // 15 seconds for testing
-%else
 		m_tmLimitCustom = TimeLimit * 1000; // 5 minutes by default
-%endif
 
 		@m_payload = cast<PayloadBehavior>(PayloadUnit.FetchFirst().GetScriptBehavior());
 

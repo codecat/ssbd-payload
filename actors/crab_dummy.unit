@@ -1,0 +1,107 @@
+<unit slot="actor" netsync="position">
+	<behavior class="CompositeActorBehavior">
+		<string name="team">crab</string>
+		<string name="netricsa-message">gui/netricsa/data.sval:crab</string>
+		<int name="hp">500</int>
+		<bool name="counts-as-kill">false</bool>
+
+		<string name="aggro-snd">event:/enemies/crab/aggro</string>
+		<string name="hurt-snd">event:/enemies/crab/hurt</string>
+		<string name="death-snd">event:/enemies/crab/death</string>
+		<string name="gore">effects/gibs/actors/gib_crab.sval</string>
+
+		<dict name="movement">
+			<string name="class">PassiveMovement</string>
+			<string name="anim-idle">idle 8</string>
+		</dict>
+
+		<array name="skills" />
+	</behavior>
+
+	<scenes start="idle-0 idle-1 idle-2 idle-3 idle-4 idle-5 idle-6 idle-7">
+		<scene name="shared">
+			<collision static="true">
+				<circle offset="0 0" radius="7" />
+			</collision>
+
+			<shadow>
+				<sprite layer="-1" origin="8 6" texture="doodads/special/shadows.png">
+					<frame>30 0 16 16</frame>
+				</sprite>
+			</shadow>
+		</scene>
+
+		<scene name="idle-0" random-start="true">
+			<scene src="shared" />
+			<sprite origin="16 16" texture="actors/crab.png" material="system/default.mats:enemy-civilian">
+				<frame time="2500">0 0 32 32</frame>
+				<frame time="150">0 32 32 32</frame>
+				<frame time="150">0 64 32 32</frame>
+				<frame time="150">0 96 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-1" random-start="true">
+			<scene src="shared" />
+			<sprite origin="16 16" texture="actors/crab.png" material="system/default.mats:enemy-civilian">
+				<frame time="2500">224 0 32 32</frame>
+				<frame time="150">224 32 32 32</frame>
+				<frame time="150">224 64 32 32</frame>
+				<frame time="150">224 96 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-2" random-start="true">
+			<scene src="shared" />
+			<sprite origin="16 16" texture="actors/crab.png" material="system/default.mats:enemy-civilian">
+				<frame time="2500">192 0 32 32</frame>
+				<frame time="150">192 32 32 32</frame>
+				<frame time="150">192 64 32 32</frame>
+				<frame time="150">192 96 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-3" random-start="true">
+			<scene src="shared" />
+			<sprite origin="16 16" texture="actors/crab.png" material="system/default.mats:enemy-civilian">
+				<frame time="2500">160 0 32 32</frame>
+				<frame time="150">160 32 32 32</frame>
+				<frame time="150">160 64 32 32</frame>
+				<frame time="150">160 96 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-4" random-start="true">
+			<scene src="shared" />
+			<sprite origin="16 16" texture="actors/crab.png" material="system/default.mats:enemy-civilian">
+				<frame time="2500">128 0 32 32</frame>
+				<frame time="150">128 32 32 32</frame>
+				<frame time="150">128 64 32 32</frame>
+				<frame time="150">128 96 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-5" random-start="true">
+			<scene src="shared" />
+			<sprite origin="16 16" texture="actors/crab.png" material="system/default.mats:enemy-civilian">
+				<frame time="2500">96 0 32 32</frame>
+				<frame time="150">96 32 32 32</frame>
+				<frame time="150">96 64 32 32</frame>
+				<frame time="150">96 96 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-6" random-start="true">
+			<scene src="shared" />
+			<sprite origin="16 16" texture="actors/crab.png" material="system/default.mats:enemy-civilian">
+				<frame time="2500">64 0 32 32</frame>
+				<frame time="150">64 32 32 32</frame>
+				<frame time="150">64 64 32 32</frame>
+				<frame time="150">64 96 32 32</frame>
+			</sprite>
+		</scene>
+		<scene name="idle-7" random-start="true">
+			<scene src="shared" />
+			<sprite origin="16 16" texture="actors/crab.png" material="system/default.mats:enemy-civilian">
+				<frame time="2500">32 0 32 32</frame>
+				<frame time="150">32 32 32 32</frame>
+				<frame time="150">32 64 32 32</frame>
+				<frame time="150">32 96 32 32</frame>
+			</sprite>
+		</scene>
+	</scenes>
+</unit>
