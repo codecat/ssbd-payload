@@ -175,14 +175,19 @@ class Payload : TeamVersusGameMode
 		return PayloadPlayerRecord();
 	}
 
-	int GetPlayerClassCount(PlayerClass playerClass)
+	// 2. Healing players doesn't work. Why does healing enemies work?
+
+	int GetPlayerClassCount(PlayerClass playerClass, TeamVersusScore@ team)
 	{
+		if (team is null)
+			return 0;
+
 		int ret = 0;
-		for (uint i = 0; i < g_players.length(); i++)
+		for (uint i = 0; i < team.m_players.length(); i++)
 		{
-			if (g_players[i].peer == 255)
+			if (team.m_players[i].peer == 255)
 				continue;
-			auto record = cast<PayloadPlayerRecord>(g_players[i]);
+			auto record = cast<PayloadPlayerRecord>(team.m_players[i]);
 			if (record.playerClass == playerClass)
 				ret++;
 		}

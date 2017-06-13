@@ -48,6 +48,8 @@ class PayloadClassSwitchWindow : IWidgetHoster
 
 		Platform::PushCursor(Platform::CursorNormal);
 		g_gameMode.ReplaceTopWidgetRoot(this);
+
+		PlayerClassesUpdated();
 	}
 
 	void Hide()
@@ -65,7 +67,7 @@ class PayloadClassSwitchWindow : IWidgetHoster
 	{
 		Payload@ gm = cast<Payload>(g_gameMode);
 
-		int numMedics = gm.GetPlayerClassCount(PlayerClass::Medic);
+		int numMedics = gm.GetPlayerClassCount(PlayerClass::Medic, m_joinTeam);
 
 		auto wMedic = cast<ScalableSpriteButtonWidget>(m_widget.GetWidgetById("class-medic"));
 		if (wMedic !is null)
