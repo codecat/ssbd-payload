@@ -296,8 +296,10 @@
 		<string name="environment">effects/env/anatolia_outside.env</string>
 	</dict>
 	<dict name="units">
-		<array name="doodads/wall/anatolia_fancy/fancy_x_s.unit"><vec2>352 288</vec2><int>296</int><vec2>-336 -96</vec2><int>297</int></array>
+		<array name="doodads/wall/anatolia_fancy/fancy_x_s.unit"><vec2>-336 -96</vec2><int>297</int><vec2>352 288</vec2><int>296</int></array>
 		<array name="doodads/generic/container_crate_wood_12.unit">
+			<vec2>984 440</vec2>
+			<int>287</int>
 			<vec2>968 432</vec2>
 			<int>294</int>
 			<vec2>952 424</vec2>
@@ -308,87 +310,97 @@
 			<int>291</int>
 			<vec2>952 440</vec2>
 			<int>290</int>
+			<vec2>1000 432</vec2>
+			<int>295</int>
 			<vec2>968 416</vec2>
 			<int>289</int>
 			<vec2>1000 408</vec2>
 			<int>288</int>
-			<vec2>984 440</vec2>
-			<int>287</int>
-			<vec2>1000 432</vec2>
-			<int>295</int>
 		</array>
 		<array name="doodads/terrain/tree_olive.unit">
+			<vec2>912 360</vec2>
+			<int>136</int>
 			<vec2>888 152</vec2>
 			<int>135</int>
+			<vec2>712 64</vec2>
+			<int>134</int>
 			<vec2>784 288</vec2>
 			<int>133</int>
 			<vec2>792 0</vec2>
 			<int>132</int>
-			<vec2>728 144</vec2>
-			<int>131</int>
-			<vec2>-40 168</vec2>
-			<int>130</int>
 			<vec2>848 120</vec2>
 			<int>129</int>
-			<vec2>912 360</vec2>
-			<int>136</int>
-			<vec2>712 64</vec2>
-			<int>134</int>
+			<vec2>-40 168</vec2>
+			<int>130</int>
+			<vec2>728 144</vec2>
+			<int>131</int>
 		</array>
-		<array name="items/health_large.unit"><vec2>-184 256</vec2><int>199</int><vec2>552 232</vec2><int>200</int></array>
+		<array name="items/health_large.unit"><vec2>552 232</vec2><int>200</int><vec2>-184 256</vec2><int>199</int></array>
 		<array name="doodads/wall/anatolia_fancy/fancy_crn_nw.unit">
-			<vec2>-448 -48</vec2>
-			<int>202</int>
 			<vec2>48 -96</vec2>
 			<int>201</int>
 			<vec2>352 48</vec2>
 			<int>205</int>
+			<vec2>-448 -48</vec2>
+			<int>202</int>
 			<vec2>-384 -96</vec2>
 			<int>204</int>
 			<vec2>-336 -176</vec2>
 			<int>203</int>
 		</array>
 		<array name="doodads/wall/anatolia_fancy/fancy_crn_sw.unit">
-			<vec2>288 -96</vec2>
-			<int>279</int>
-			<vec2>-448 32</vec2>
-			<int>270</int>
-			<vec2>720 48</vec2>
-			<int>273</int>
-			<vec2>1120 368</vec2>
-			<int>274</int>
-			<vec2>-208 288</vec2>
-			<int>275</int>
-			<vec2>528 320</vec2>
-			<int>276</int>
-			<vec2>-384 80</vec2>
-			<int>277</int>
-			<vec2>48 144</vec2>
-			<int>278</int>
-			<vec2>-352 208</vec2>
-			<int>269</int>
-			<vec2>-128 -96</vec2>
-			<int>271</int>
 			<vec2>-32 96</vec2>
 			<int>272</int>
+			<vec2>-128 -96</vec2>
+			<int>271</int>
+			<vec2>-448 32</vec2>
+			<int>270</int>
+			<vec2>-352 208</vec2>
+			<int>269</int>
 			<vec2>736 464</vec2>
 			<int>281</int>
 			<vec2>1008 512</vec2>
 			<int>280</int>
+			<vec2>288 -96</vec2>
+			<int>279</int>
+			<vec2>48 144</vec2>
+			<int>278</int>
+			<vec2>-384 80</vec2>
+			<int>277</int>
+			<vec2>528 320</vec2>
+			<int>276</int>
+			<vec2>-208 288</vec2>
+			<int>275</int>
+			<vec2>1120 368</vec2>
+			<int>274</int>
+			<vec2>720 48</vec2>
+			<int>273</int>
 		</array>
 		<array name="doodads/wall/anatolia_fancy/fancy_v_16.unit">
-			<vec2>-352 176</vec2>
-			<int>283</int>
-			<vec2>48 0</vec2>
-			<int>282</int>
 			<vec2>-32 32</vec2>
 			<int>284</int>
+			<vec2>48 0</vec2>
+			<int>282</int>
+			<vec2>-352 176</vec2>
+			<int>283</int>
 			<vec2>1264 -32</vec2>
 			<int>285</int>
 			<vec2>528 288</vec2>
 			<int>286</int>
 		</array>
 		<array name="doodads/wall/anatolia_fancy/fancy_v.unit">
+			<vec2>528 240</vec2>
+			<int>334</int>
+			<vec2>192 96</vec2>
+			<int>322</int>
+			<vec2>-352 144</vec2>
+			<int>344</int>
+			<vec2>528 208</vec2>
+			<int>343</int>
+			<vec2>48 96</vec2>
+			<int>315</int>
+			<vec2>1120 288</vec2>
+			<int>316</int>
 			<vec2>1008 256</vec2>
 			<int>317</int>
 			<vec2>1264 -96</vec2>
@@ -397,82 +409,66 @@
 			<int>319</int>
 			<vec2>352 48</vec2>
 			<int>320</int>
-			<vec2>1008 288</vec2>
-			<int>321</int>
-			<vec2>192 96</vec2>
-			<int>322</int>
-			<vec2>48 -32</vec2>
-			<int>323</int>
-			<vec2>-448 -16</vec2>
-			<int>324</int>
-			<vec2>192 32</vec2>
-			<int>325</int>
-			<vec2>-384 -96</vec2>
-			<int>326</int>
-			<vec2>528 208</vec2>
-			<int>343</int>
-			<vec2>1120 320</vec2>
-			<int>342</int>
-			<vec2>1120 288</vec2>
-			<int>316</int>
-			<vec2>48 96</vec2>
-			<int>315</int>
-			<vec2>288 -176</vec2>
-			<int>327</int>
-			<vec2>288 -144</vec2>
-			<int>328</int>
-			<vec2>-48 -176</vec2>
-			<int>341</int>
-			<vec2>48 -96</vec2>
-			<int>329</int>
-			<vec2>-336 -176</vec2>
-			<int>330</int>
-			<vec2>-32 48</vec2>
-			<int>339</int>
-			<vec2>352 80</vec2>
-			<int>331</int>
-			<vec2>-352 112</vec2>
-			<int>350</int>
-			<vec2>1264 -64</vec2>
-			<int>332</int>
+			<vec2>-128 -176</vec2>
+			<int>347</int>
 			<vec2>-336 -144</vec2>
 			<int>333</int>
-			<vec2>528 240</vec2>
-			<int>334</int>
-			<vec2>-352 80</vec2>
-			<int>335</int>
-			<vec2>352 112</vec2>
-			<int>336</int>
-			<vec2>1008 464</vec2>
-			<int>337</int>
+			<vec2>1264 -64</vec2>
+			<int>332</int>
+			<vec2>352 80</vec2>
+			<int>331</int>
+			<vec2>-336 -176</vec2>
+			<int>330</int>
+			<vec2>48 -96</vec2>
+			<int>329</int>
+			<vec2>288 -144</vec2>
+			<int>328</int>
+			<vec2>288 -176</vec2>
+			<int>327</int>
+			<vec2>-384 -96</vec2>
+			<int>326</int>
+			<vec2>192 32</vec2>
+			<int>325</int>
+			<vec2>-448 -16</vec2>
+			<int>324</int>
+			<vec2>48 -32</vec2>
+			<int>323</int>
+			<vec2>1120 320</vec2>
+			<int>342</int>
+			<vec2>-48 -176</vec2>
+			<int>341</int>
+			<vec2>-352 112</vec2>
+			<int>350</int>
+			<vec2>-32 48</vec2>
+			<int>339</int>
+			<vec2>1008 288</vec2>
+			<int>321</int>
 			<vec2>-448 -48</vec2>
 			<int>338</int>
+			<vec2>1008 464</vec2>
+			<int>337</int>
+			<vec2>352 112</vec2>
+			<int>336</int>
+			<vec2>-352 80</vec2>
+			<int>335</int>
 			<vec2>-384 32</vec2>
 			<int>340</int>
-			<vec2>-128 -144</vec2>
-			<int>353</int>
-			<vec2>528 176</vec2>
-			<int>352</int>
-			<vec2>192 64</vec2>
-			<int>351</int>
 			<vec2>-208 208</vec2>
 			<int>349</int>
 			<vec2>-208 240</vec2>
 			<int>348</int>
-			<vec2>-128 -176</vec2>
-			<int>347</int>
 			<vec2>48 -64</vec2>
 			<int>346</int>
 			<vec2>-48 -144</vec2>
 			<int>345</int>
-			<vec2>-352 144</vec2>
-			<int>344</int>
+			<vec2>192 64</vec2>
+			<int>351</int>
+			<vec2>528 176</vec2>
+			<int>352</int>
+			<vec2>-128 -144</vec2>
+			<int>353</int>
 		</array>
 		<array name="doodads/wall/anatolia_fancy/fancy_x_n.unit">
-			<vec2>-208 -96</vec2>
-			<int>309</int>
-			<vec2>-128 -176</vec2>
-			<int>308</int>
 			<vec2>736 320</vec2>
 			<int>313</int>
 			<vec2>-352 80</vec2>
@@ -481,72 +477,62 @@
 			<int>311</int>
 			<vec2>720 -96</vec2>
 			<int>310</int>
+			<vec2>-208 -96</vec2>
+			<int>309</int>
+			<vec2>-128 -176</vec2>
+			<int>308</int>
 			<vec2>-48 -176</vec2>
 			<int>314</int>
 		</array>
 		<array name="doodads/wall/anatolia_fancy/fancy_x_e.unit"><vec2>528 288</vec2><int>307</int><vec2>1008 464</vec2><int>306</int></array>
-		<array name="items/weapon_railgun.unit"><vec2>16 64</vec2><int>105</int><vec2>-384 0</vec2><int>106</int><vec2>1200 184</vec2><int>107</int></array>
+		<array name="items/weapon_railgun.unit"><vec2>-384 0</vec2><int>106</int><vec2>16 64</vec2><int>105</int><vec2>1200 184</vec2><int>107</int></array>
 		<array name="doodads/wall/anatolia_fancy/fancy_v_128.unit">
-			<vec2>720 -96</vec2>
-			<int>108</int>
-			<vec2>1120 160</vec2>
-			<int>109</int>
-			<vec2>192 -96</vec2>
-			<int>110</int>
-			<vec2>1120 32</vec2>
-			<int>111</int>
-			<vec2>1264 112</vec2>
-			<int>112</int>
-			<vec2>1264 -16</vec2>
-			<int>113</int>
-			<vec2>736 320</vec2>
-			<int>114</int>
-			<vec2>352 144</vec2>
-			<int>115</int>
-			<vec2>1264 240</vec2>
-			<int>116</int>
 			<vec2>-208 -96</vec2>
 			<int>118</int>
+			<vec2>1008 320</vec2>
+			<int>117</int>
+			<vec2>1264 240</vec2>
+			<int>116</int>
+			<vec2>352 144</vec2>
+			<int>115</int>
+			<vec2>1264 -16</vec2>
+			<int>113</int>
+			<vec2>1264 112</vec2>
+			<int>112</int>
+			<vec2>736 320</vec2>
+			<int>114</int>
+			<vec2>1120 32</vec2>
+			<int>111</int>
+			<vec2>192 -96</vec2>
+			<int>110</int>
+			<vec2>1120 160</vec2>
+			<int>109</int>
+			<vec2>720 -96</vec2>
+			<int>108</int>
 			<vec2>528 48</vec2>
 			<int>119</int>
 			<vec2>1264 368</vec2>
 			<int>120</int>
-			<vec2>1008 320</vec2>
-			<int>117</int>
 		</array>
 		<array name="doodads/generic/container_crate_food.unit">
+			<vec2>248 -152</vec2>
+			<int>13</int>
 			<vec2>232 -152</vec2>
 			<int>11</int>
 			<vec2>280 -152</vec2>
 			<int>9</int>
-			<vec2>264 -152</vec2>
-			<int>10</int>
-			<vec2>248 -152</vec2>
-			<int>13</int>
 			<vec2>216 -152</vec2>
 			<int>12</int>
+			<vec2>264 -152</vec2>
+			<int>10</int>
 		</array>
 		<array name="items/armor_large.unit"><vec2>-408 0</vec2><int>18</int></array>
 		<array name="doodads/wall/anatolia_fancy/fancy_cap_s.unit"><vec2>48 32</vec2><int>19</int></array>
 		<array name="doodads/terrain/grass_high_garden.unit">
-			<vec2>-32 128</vec2>
-			<int>158</int>
-			<vec2>1184 56</vec2>
-			<int>157</int>
-			<vec2>816 72</vec2>
-			<int>156</int>
-			<vec2>48 168</vec2>
-			<int>143</int>
-			<vec2>-24 -88</vec2>
-			<int>144</int>
-			<vec2>824 328</vec2>
-			<int>145</int>
-			<vec2>1008 248</vec2>
-			<int>155</int>
-			<vec2>-328 168</vec2>
-			<int>146</int>
 			<vec2>824 56</vec2>
 			<int>148</int>
+			<vec2>48 168</vec2>
+			<int>143</int>
 			<vec2>-184 240</vec2>
 			<int>149</int>
 			<vec2>816 344</vec2>
@@ -555,65 +541,81 @@
 			<int>151</int>
 			<vec2>720 80</vec2>
 			<int>152</int>
-			<vec2>-192 200</vec2>
-			<int>153</int>
 			<vec2>-40 -72</vec2>
 			<int>154</int>
-			<vec2>1040 48</vec2>
-			<int>159</int>
-			<vec2>712 56</vec2>
-			<int>147</int>
-			<vec2>1048 56</vec2>
-			<int>137</int>
-			<vec2>544 32</vec2>
-			<int>138</int>
-			<vec2>176 -152</vec2>
-			<int>139</int>
-			<vec2>352 32</vec2>
-			<int>140</int>
+			<vec2>1008 248</vec2>
+			<int>155</int>
+			<vec2>816 72</vec2>
+			<int>156</int>
 			<vec2>216 152</vec2>
 			<int>141</int>
+			<vec2>352 32</vec2>
+			<int>140</int>
+			<vec2>176 -152</vec2>
+			<int>139</int>
+			<vec2>544 32</vec2>
+			<int>138</int>
+			<vec2>1184 56</vec2>
+			<int>157</int>
+			<vec2>-192 200</vec2>
+			<int>153</int>
+			<vec2>1040 48</vec2>
+			<int>159</int>
+			<vec2>-32 128</vec2>
+			<int>158</int>
+			<vec2>-24 -88</vec2>
+			<int>144</int>
+			<vec2>824 328</vec2>
+			<int>145</int>
+			<vec2>1048 56</vec2>
+			<int>137</int>
+			<vec2>-328 168</vec2>
+			<int>146</int>
+			<vec2>712 56</vec2>
+			<int>147</int>
 			<vec2>200 -152</vec2>
 			<int>142</int>
 		</array>
 		<array name="actors/mech_payload.unit"><vec2>-104 -16</vec2><int>55</int></array>
 		<array name="items/ammo_shells_small.unit">
-			<vec2>168 104</vec2>
-			<int>72</int>
-			<vec2>-248 -40</vec2>
-			<int>64</int>
-			<vec2>-344 -40</vec2>
-			<int>63</int>
-			<vec2>-352 0</vec2>
-			<int>62</int>
-			<vec2>-240 40</vec2>
-			<int>61</int>
-			<vec2>168 8</vec2>
-			<int>60</int>
-			<vec2>-352 -40</vec2>
-			<int>71</int>
-			<vec2>176 -40</vec2>
-			<int>65</int>
-			<vec2>72 8</vec2>
-			<int>59</int>
-			<vec2>-336 0</vec2>
-			<int>58</int>
-			<vec2>-256 40</vec2>
-			<int>57</int>
-			<vec2>-352 40</vec2>
-			<int>56</int>
-			<vec2>168 56</vec2>
-			<int>70</int>
-			<vec2>168 -40</vec2>
-			<int>73</int>
-			<vec2>-240 0</vec2>
-			<int>66</int>
-			<vec2>176 104</vec2>
-			<int>67</int>
+			<vec2>-336 -40</vec2>
+			<int>86</int>
+			<vec2>-248 40</vec2>
+			<int>85</int>
+			<vec2>88 -40</vec2>
+			<int>84</int>
+			<vec2>88 8</vec2>
+			<int>83</int>
+			<vec2>80 8</vec2>
+			<int>82</int>
+			<vec2>72 -40</vec2>
+			<int>80</int>
+			<vec2>184 -40</vec2>
+			<int>79</int>
+			<vec2>-256 0</vec2>
+			<int>78</int>
+			<vec2>80 56</vec2>
+			<int>77</int>
+			<vec2>88 104</vec2>
+			<int>76</int>
+			<vec2>-336 40</vec2>
+			<int>75</int>
+			<vec2>184 56</vec2>
+			<int>81</int>
 			<vec2>176 56</vec2>
 			<int>68</int>
 			<vec2>-256 -40</vec2>
 			<int>69</int>
+			<vec2>168 56</vec2>
+			<int>70</int>
+			<vec2>-352 -40</vec2>
+			<int>71</int>
+			<vec2>168 104</vec2>
+			<int>72</int>
+			<vec2>168 -40</vec2>
+			<int>73</int>
+			<vec2>184 8</vec2>
+			<int>74</int>
 			<vec2>-248 0</vec2>
 			<int>97</int>
 			<vec2>-344 40</vec2>
@@ -632,87 +634,75 @@
 			<int>90</int>
 			<vec2>88 56</vec2>
 			<int>89</int>
+			<vec2>176 104</vec2>
+			<int>67</int>
+			<vec2>-240 0</vec2>
+			<int>66</int>
+			<vec2>176 -40</vec2>
+			<int>65</int>
+			<vec2>-248 -40</vec2>
+			<int>64</int>
+			<vec2>-344 -40</vec2>
+			<int>63</int>
 			<vec2>176 8</vec2>
 			<int>88</int>
 			<vec2>72 104</vec2>
 			<int>87</int>
-			<vec2>-336 -40</vec2>
-			<int>86</int>
-			<vec2>-248 40</vec2>
-			<int>85</int>
-			<vec2>88 -40</vec2>
-			<int>84</int>
-			<vec2>88 8</vec2>
-			<int>83</int>
-			<vec2>80 8</vec2>
-			<int>82</int>
-			<vec2>184 56</vec2>
-			<int>81</int>
-			<vec2>72 -40</vec2>
-			<int>80</int>
-			<vec2>184 -40</vec2>
-			<int>79</int>
-			<vec2>-256 0</vec2>
-			<int>78</int>
-			<vec2>80 56</vec2>
-			<int>77</int>
-			<vec2>88 104</vec2>
-			<int>76</int>
-			<vec2>-336 40</vec2>
-			<int>75</int>
-			<vec2>184 8</vec2>
-			<int>74</int>
+			<vec2>-352 0</vec2>
+			<int>62</int>
+			<vec2>-240 40</vec2>
+			<int>61</int>
+			<vec2>168 8</vec2>
+			<int>60</int>
+			<vec2>72 8</vec2>
+			<int>59</int>
+			<vec2>-336 0</vec2>
+			<int>58</int>
+			<vec2>-256 40</vec2>
+			<int>57</int>
+			<vec2>-352 40</vec2>
+			<int>56</int>
 		</array>
 		<array name="doodads/wall/anatolia_fancy/fancy_crn_ne.unit">
-			<vec2>-384 32</vec2>
-			<int>101</int>
-			<vec2>528 48</vec2>
-			<int>98</int>
-			<vec2>1264 -96</vec2>
-			<int>102</int>
 			<vec2>288 -176</vec2>
 			<int>103</int>
+			<vec2>-384 32</vec2>
+			<int>101</int>
 			<vec2>192 -96</vec2>
 			<int>104</int>
+			<vec2>528 48</vec2>
+			<int>98</int>
 			<vec2>-208 208</vec2>
 			<int>99</int>
 			<vec2>48 96</vec2>
 			<int>100</int>
+			<vec2>1264 -96</vec2>
+			<int>102</int>
 		</array>
 		<array name="doodads/wall/anatolia_fancy/fancy_crn_se.unit">
-			<vec2>-384 -48</vec2>
-			<int>207</int>
-			<vec2>-208 80</vec2>
-			<int>208</int>
 			<vec2>192 144</vec2>
 			<int>209</int>
-			<vec2>-48 -96</vec2>
-			<int>206</int>
+			<vec2>-208 80</vec2>
+			<int>208</int>
+			<vec2>-384 -48</vec2>
+			<int>207</int>
 			<vec2>1264 512</vec2>
 			<int>210</int>
+			<vec2>-48 -96</vec2>
+			<int>206</int>
 		</array>
-		<array name="items/ammo_rockets.unit"><vec2>-184 -40</vec2><int>249</int><vec2>584 288</vec2><int>250</int><vec2>-184 -64</vec2><int>251</int><vec2>608 288</vec2><int>252</int></array>
+		<array name="items/ammo_rockets.unit"><vec2>608 288</vec2><int>252</int><vec2>-184 -64</vec2><int>251</int><vec2>584 288</vec2><int>250</int><vec2>-184 -40</vec2><int>249</int></array>
 		<array name="doodads/wall/anatolia_fancy/fancy_h_128.unit">
-			<vec2>64 288</vec2>
-			<int>43</int>
+			<vec2>864 -96</vec2>
+			<int>30</int>
+			<vec2>992 -96</vec2>
+			<int>29</int>
+			<vec2>880 464</vec2>
+			<int>28</int>
 			<vec2>64 144</vec2>
 			<int>27</int>
-			<vec2>192 288</vec2>
-			<int>47</int>
 			<vec2>-32 -176</vec2>
 			<int>26</int>
-			<vec2>336 -96</vec2>
-			<int>46</int>
-			<vec2>-64 288</vec2>
-			<int>45</int>
-			<vec2>-192 288</vec2>
-			<int>44</int>
-			<vec2>368 48</vec2>
-			<int>42</int>
-			<vec2>736 -96</vec2>
-			<int>41</int>
-			<vec2>368 288</vec2>
-			<int>40</int>
 			<vec2>464 -96</vec2>
 			<int>39</int>
 			<vec2>592 -96</vec2>
@@ -731,43 +721,31 @@
 			<int>32</int>
 			<vec2>544 320</vec2>
 			<int>31</int>
-			<vec2>864 -96</vec2>
-			<int>30</int>
-			<vec2>992 -96</vec2>
-			<int>29</int>
-			<vec2>880 464</vec2>
-			<int>28</int>
+			<vec2>192 288</vec2>
+			<int>47</int>
+			<vec2>336 -96</vec2>
+			<int>46</int>
+			<vec2>-64 288</vec2>
+			<int>45</int>
+			<vec2>-192 288</vec2>
+			<int>44</int>
+			<vec2>64 288</vec2>
+			<int>43</int>
+			<vec2>368 48</vec2>
+			<int>42</int>
+			<vec2>736 -96</vec2>
+			<int>41</int>
+			<vec2>368 288</vec2>
+			<int>40</int>
 		</array>
-		<array name="doodads/special/color_anatolia_fancy_128.unit"><vec2>408 264</vec2><int>22</int><vec2>408 152</vec2><int>23</int><vec2>360 152</vec2><int>24</int><vec2>360 264</vec2><int>25</int></array>
-		<array name="items/armor_medium.unit"><vec2>880 408</vec2><int>21</int><vec2>56 -152</vec2><int>20</int></array>
-		<array name="actors/crab_dummy.unit">
-			<vec2>-128 176</vec2>
-			<int>357</int>
-			<vec2>1184 400</vec2>
-			<int>358</int>
-			<vec2>1248 384</vec2>
-			<int>359</int>
-			<vec2>1216 352</vec2>
-			<int>360</int>
-			<vec2>-176 176</vec2>
-			<int>361</int>
-			<vec2>-128 128</vec2>
-			<int>354</int>
-			<vec2>1152 440</vec2>
-			<int>355</int>
-			<vec2>-256 160</vec2>
-			<int>356</int>
-		</array>
+		<array name="doodads/special/color_anatolia_fancy_128.unit"><vec2>360 152</vec2><int>24</int><vec2>408 264</vec2><int>22</int><vec2>408 152</vec2><int>23</int><vec2>360 264</vec2><int>25</int></array>
+		<array name="items/armor_medium.unit"><vec2>56 -152</vec2><int>20</int><vec2>880 408</vec2><int>21</int></array>
 		<array name="items/weapon_rocketlauncher.unit"><vec2>-224 0</vec2><int>384</int></array>
 		<array name="doodads/wall/anatolia_fancy/fancy_cap_e.unit">
-			<vec2>1168 368</vec2>
-			<int>166</int>
-			<vec2>64 -96</vec2>
-			<int>167</int>
-			<vec2>1168 32</vec2>
-			<int>160</int>
 			<vec2>800 320</vec2>
 			<int>161</int>
+			<vec2>1168 32</vec2>
+			<int>160</int>
 			<vec2>-304 80</vec2>
 			<int>162</int>
 			<vec2>800 48</vec2>
@@ -776,215 +754,219 @@
 			<int>164</int>
 			<vec2>-304 -96</vec2>
 			<int>165</int>
+			<vec2>1168 368</vec2>
+			<int>166</int>
+			<vec2>64 -96</vec2>
+			<int>167</int>
 		</array>
 		<array name="doodads/terrain/flowers_64.unit">
-			<vec2>1208 -32</vec2>
-			<int>258</int>
-			<vec2>-72 64</vec2>
-			<int>257</int>
-			<vec2>872 368</vec2>
-			<int>256</int>
-			<vec2>1088 424</vec2>
-			<int>255</int>
+			<vec2>0 -56</vec2>
+			<int>265</int>
 			<vec2>368 -24</vec2>
 			<int>264</int>
+			<vec2>1064 96</vec2>
+			<int>263</int>
 			<vec2>-152 16</vec2>
 			<int>259</int>
-			<vec2>856 -40</vec2>
-			<int>260</int>
+			<vec2>1088 424</vec2>
+			<int>255</int>
+			<vec2>872 368</vec2>
+			<int>256</int>
+			<vec2>752 272</vec2>
+			<int>268</int>
+			<vec2>792 104</vec2>
+			<int>267</int>
+			<vec2>1224 456</vec2>
+			<int>266</int>
 			<vec2>160 -128</vec2>
 			<int>261</int>
 			<vec2>256 88</vec2>
 			<int>262</int>
-			<vec2>1064 96</vec2>
-			<int>263</int>
-			<vec2>0 -56</vec2>
-			<int>265</int>
-			<vec2>1224 456</vec2>
-			<int>266</int>
-			<vec2>792 104</vec2>
-			<int>267</int>
-			<vec2>752 272</vec2>
-			<int>268</int>
+			<vec2>856 -40</vec2>
+			<int>260</int>
+			<vec2>1208 -32</vec2>
+			<int>258</int>
+			<vec2>-72 64</vec2>
+			<int>257</int>
 		</array>
 		<array name="doodads/wall/anatolia_fancy/fancy_h.unit">
-			<vec2>1072 512</vec2>
-			<int>198</int>
-			<vec2>496 48</vec2>
-			<int>169</int>
-			<vec2>16 96</vec2>
-			<int>168</int>
-			<vec2>768 48</vec2>
-			<int>174</int>
-			<vec2>-416 32</vec2>
-			<int>194</int>
-			<vec2>-160 -176</vec2>
-			<int>196</int>
 			<vec2>320 288</vec2>
 			<int>175</int>
-			<vec2>-112 -176</vec2>
-			<int>172</int>
-			<vec2>672 320</vec2>
-			<int>171</int>
+			<vec2>16 96</vec2>
+			<int>168</int>
+			<vec2>496 48</vec2>
+			<int>169</int>
 			<vec2>-112 -96</vec2>
 			<int>170</int>
+			<vec2>672 320</vec2>
+			<int>171</int>
+			<vec2>-112 -176</vec2>
+			<int>172</int>
 			<vec2>1040 512</vec2>
 			<int>173</int>
-			<vec2>-368 -96</vec2>
-			<int>193</int>
-			<vec2>-80 -176</vec2>
-			<int>182</int>
-			<vec2>1136 32</vec2>
-			<int>181</int>
-			<vec2>1104 512</vec2>
-			<int>180</int>
-			<vec2>-192 -176</vec2>
-			<int>179</int>
-			<vec2>736 48</vec2>
-			<int>178</int>
-			<vec2>304 -96</vec2>
-			<int>177</int>
+			<vec2>768 48</vec2>
+			<int>174</int>
 			<vec2>1136 368</vec2>
 			<int>176</int>
-			<vec2>496 288</vec2>
-			<int>197</int>
-			<vec2>-416 -48</vec2>
-			<int>195</int>
-			<vec2>1088 32</vec2>
-			<int>192</int>
-			<vec2>-80 -96</vec2>
-			<int>191</int>
-			<vec2>1056 32</vec2>
-			<int>190</int>
-			<vec2>160 -96</vec2>
-			<int>189</int>
-			<vec2>-16 96</vec2>
-			<int>188</int>
-			<vec2>768 320</vec2>
-			<int>187</int>
-			<vec2>128 -176</vec2>
-			<int>186</int>
-			<vec2>-336 80</vec2>
-			<int>185</int>
-			<vec2>96 -176</vec2>
-			<int>184</int>
+			<vec2>304 -96</vec2>
+			<int>177</int>
+			<vec2>736 48</vec2>
+			<int>178</int>
+			<vec2>-192 -176</vec2>
+			<int>179</int>
+			<vec2>1104 512</vec2>
+			<int>180</int>
+			<vec2>1136 32</vec2>
+			<int>181</int>
+			<vec2>-80 -176</vec2>
+			<int>182</int>
 			<vec2>704 320</vec2>
 			<int>183</int>
+			<vec2>96 -176</vec2>
+			<int>184</int>
+			<vec2>-336 80</vec2>
+			<int>185</int>
+			<vec2>128 -176</vec2>
+			<int>186</int>
+			<vec2>768 320</vec2>
+			<int>187</int>
+			<vec2>-16 96</vec2>
+			<int>188</int>
+			<vec2>160 -96</vec2>
+			<int>189</int>
+			<vec2>1056 32</vec2>
+			<int>190</int>
+			<vec2>1088 32</vec2>
+			<int>192</int>
+			<vec2>-368 -96</vec2>
+			<int>193</int>
+			<vec2>-416 32</vec2>
+			<int>194</int>
+			<vec2>-416 -48</vec2>
+			<int>195</int>
+			<vec2>-160 -176</vec2>
+			<int>196</int>
+			<vec2>-80 -96</vec2>
+			<int>191</int>
+			<vec2>1072 512</vec2>
+			<int>198</int>
+			<vec2>496 288</vec2>
+			<int>197</int>
 		</array>
 		<array name="items/ammo_shells.unit">
 			<vec2>280 -88</vec2>
 			<int>362</int>
-			<vec2>-152 -152</vec2>
-			<int>380</int>
-			<vec2>696 -72</vec2>
-			<int>367</int>
-			<vec2>-184 96</vec2>
-			<int>382</int>
-			<vec2>-184 -152</vec2>
-			<int>383</int>
-			<vec2>-16 -152</vec2>
-			<int>381</int>
-			<vec2>552 176</vec2>
-			<int>379</int>
-			<vec2>552 160</vec2>
-			<int>378</int>
-			<vec2>664 -72</vec2>
-			<int>377</int>
-			<vec2>-136 -152</vec2>
-			<int>376</int>
-			<vec2>912 -72</vec2>
-			<int>375</int>
-			<vec2>-200 -152</vec2>
-			<int>374</int>
-			<vec2>-192 104</vec2>
-			<int>373</int>
-			<vec2>680 -72</vec2>
-			<int>372</int>
-			<vec2>928 -72</vec2>
-			<int>371</int>
-			<vec2>32 -152</vec2>
-			<int>370</int>
-			<vec2>896 -72</vec2>
-			<int>369</int>
-			<vec2>288 -72</vec2>
-			<int>368</int>
 			<vec2>560 168</vec2>
 			<int>366</int>
-			<vec2>-168 -152</vec2>
-			<int>365</int>
+			<vec2>-184 96</vec2>
+			<int>382</int>
 			<vec2>0 -152</vec2>
 			<int>364</int>
 			<vec2>16 -152</vec2>
 			<int>363</int>
+			<vec2>-168 -152</vec2>
+			<int>365</int>
+			<vec2>696 -72</vec2>
+			<int>367</int>
+			<vec2>288 -72</vec2>
+			<int>368</int>
+			<vec2>896 -72</vec2>
+			<int>369</int>
+			<vec2>32 -152</vec2>
+			<int>370</int>
+			<vec2>928 -72</vec2>
+			<int>371</int>
+			<vec2>680 -72</vec2>
+			<int>372</int>
+			<vec2>-200 -152</vec2>
+			<int>374</int>
+			<vec2>912 -72</vec2>
+			<int>375</int>
+			<vec2>-136 -152</vec2>
+			<int>376</int>
+			<vec2>664 -72</vec2>
+			<int>377</int>
+			<vec2>552 160</vec2>
+			<int>378</int>
+			<vec2>552 176</vec2>
+			<int>379</int>
+			<vec2>-152 -152</vec2>
+			<int>380</int>
+			<vec2>-16 -152</vec2>
+			<int>381</int>
+			<vec2>-184 -152</vec2>
+			<int>383</int>
+			<vec2>-192 104</vec2>
+			<int>373</int>
 		</array>
 		<array name="doodads/wall/anatolia_fancy/fancy_cap_n.unit"><vec2>1008 256</vec2><int>245</int><vec2>-32 32</vec2><int>244</int></array>
 		<array name="items/ammo_bullets.unit">
-			<vec2>776 344</vec2>
-			<int>240</int>
-			<vec2>80 -56</vec2>
-			<int>241</int>
-			<vec2>784 352</vec2>
-			<int>242</int>
-			<vec2>176 40</vec2>
-			<int>243</int>
+			<vec2>120 168</vec2>
+			<int>223</int>
+			<vec2>80 168</vec2>
+			<int>222</int>
+			<vec2>160 168</vec2>
+			<int>221</int>
+			<vec2>176 -8</vec2>
+			<int>219</int>
 			<vec2>-344 -16</vec2>
 			<int>218</int>
 			<vec2>16 128</vec2>
 			<int>217</int>
 			<vec2>768 72</vec2>
 			<int>216</int>
-			<vec2>32 128</vec2>
-			<int>234</int>
+			<vec2>544 -72</vec2>
+			<int>239</int>
 			<vec2>-248 64</vec2>
 			<int>235</int>
 			<vec2>-320 112</vec2>
 			<int>215</int>
 			<vec2>80 88</vec2>
 			<int>214</int>
-			<vec2>792 344</vec2>
-			<int>211</int>
-			<vec2>80 -8</vec2>
-			<int>212</int>
 			<vec2>-248 -56</vec2>
 			<int>213</int>
-			<vec2>504 -72</vec2>
-			<int>224</int>
-			<vec2>-344 64</vec2>
-			<int>236</int>
+			<vec2>80 -56</vec2>
+			<int>241</int>
+			<vec2>776 344</vec2>
+			<int>240</int>
+			<vec2>784 352</vec2>
+			<int>242</int>
+			<vec2>176 40</vec2>
+			<int>243</int>
 			<vec2>752 72</vec2>
 			<int>237</int>
-			<vec2>-248 24</vec2>
-			<int>238</int>
-			<vec2>544 -72</vec2>
-			<int>239</int>
-			<vec2>160 168</vec2>
-			<int>221</int>
-			<vec2>80 168</vec2>
-			<int>222</int>
-			<vec2>120 168</vec2>
-			<int>223</int>
-			<vec2>176 -8</vec2>
-			<int>219</int>
-			<vec2>-344 24</vec2>
-			<int>225</int>
-			<vec2>-344 -56</vec2>
-			<int>220</int>
-			<vec2>464 -72</vec2>
-			<int>226</int>
-			<vec2>-320 128</vec2>
-			<int>227</int>
-			<vec2>80 40</vec2>
-			<int>228</int>
-			<vec2>-248 -16</vec2>
-			<int>229</int>
-			<vec2>760 80</vec2>
-			<int>230</int>
-			<vec2>176 -56</vec2>
-			<int>231</int>
-			<vec2>176 88</vec2>
-			<int>232</int>
+			<vec2>-344 64</vec2>
+			<int>236</int>
+			<vec2>32 128</vec2>
+			<int>234</int>
 			<vec2>-304 112</vec2>
 			<int>233</int>
+			<vec2>792 344</vec2>
+			<int>211</int>
+			<vec2>176 88</vec2>
+			<int>232</int>
+			<vec2>176 -56</vec2>
+			<int>231</int>
+			<vec2>760 80</vec2>
+			<int>230</int>
+			<vec2>-248 24</vec2>
+			<int>238</int>
+			<vec2>-248 -16</vec2>
+			<int>229</int>
+			<vec2>80 40</vec2>
+			<int>228</int>
+			<vec2>-320 128</vec2>
+			<int>227</int>
+			<vec2>464 -72</vec2>
+			<int>226</int>
+			<vec2>-344 -56</vec2>
+			<int>220</int>
+			<vec2>-344 24</vec2>
+			<int>225</int>
+			<vec2>80 -8</vec2>
+			<int>212</int>
+			<vec2>504 -72</vec2>
+			<int>224</int>
 		</array>
 		<array name="items/health_medium.unit"><vec2>744 -72</vec2><int>247</int><vec2>192 -152</vec2><int>248</int></array>
 		<array name="gui/fonts/font_agency16.fnt">
@@ -1022,8 +1004,6 @@
 			</array>
 		</array>
 		<array name="doodads/generic/container_crate_wood_16.unit">
-			<vec2>800 440</vec2>
-			<int>5</int>
 			<vec2>952 408</vec2>
 			<int>6</int>
 			<vec2>784 440</vec2>
@@ -1034,26 +1014,28 @@
 			<int>3</int>
 			<vec2>976 392</vec2>
 			<int>4</int>
+			<vec2>800 440</vec2>
+			<int>5</int>
 		</array>
-		<array name="doodads/special/color_anatolia_fancy_48.unit"><vec2>-88 -120</vec2><int>14</int><vec2>-120 -152</vec2><int>15</int><vec2>-120 -120</vec2><int>16</int><vec2>-88 -152</vec2><int>17</int></array>
-		<array name="doodads/wall/anatolia_fancy/fancy_cap_w.unit"><vec2>-224 80</vec2><int>303</int><vec2>144 -96</vec2><int>304</int><vec2>1040 32</vec2><int>305</int><vec2>-224 -96</vec2><int>302</int></array>
+		<array name="doodads/special/color_anatolia_fancy_48.unit"><vec2>-88 -120</vec2><int>14</int><vec2>-88 -152</vec2><int>17</int><vec2>-120 -120</vec2><int>16</int><vec2>-120 -152</vec2><int>15</int></array>
+		<array name="doodads/wall/anatolia_fancy/fancy_cap_w.unit"><vec2>1040 32</vec2><int>305</int><vec2>-224 -96</vec2><int>302</int><vec2>-224 80</vec2><int>303</int><vec2>144 -96</vec2><int>304</int></array>
 		<array name="doodads/terrain/grass_high_garden_dark.unit"><vec2>-128 -72</vec2><int>253</int><vec2>-136 -88</vec2><int>254</int></array>
 		<array name="items/weapon_shotgun_double.unit"><vec2>1072 176</vec2><int>246</int></array>
 		<array name="doodads/wall/anatolia_fancy/fancy_h_16.unit">
-			<vec2>-432 -48</vec2>
-			<int>49</int>
-			<vec2>752 320</vec2>
-			<int>48</int>
-			<vec2>-368 80</vec2>
-			<int>53</int>
-			<vec2>1024 512</vec2>
-			<int>54</int>
 			<vec2>-320 -96</vec2>
 			<int>52</int>
+			<vec2>1024 512</vec2>
+			<int>54</int>
+			<vec2>-368 80</vec2>
+			<int>53</int>
 			<vec2>1248 -96</vec2>
 			<int>51</int>
 			<vec2>-432 32</vec2>
 			<int>50</int>
+			<vec2>-432 -48</vec2>
+			<int>49</int>
+			<vec2>752 320</vec2>
+			<int>48</int>
 		</array>
 		<array name="doodads/terrain/flowers_32.unit">
 			<vec2>48 256</vec2>
