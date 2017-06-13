@@ -1,0 +1,5 @@
+<soundbank>
+	<sound category="sfx" name="healgun_loop" volume="1" is3d="true" looping="true">
+		<source res="sounds/healgun.wav" />
+	</sound>
+</soundbank>

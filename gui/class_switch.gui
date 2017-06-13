@@ -1,0 +1,37 @@
+<gui>
+	<sprites>
+		<sprite name="frame" texture="gui/class_switch.png">
+			<frame>0 0 274 114</frame>
+		</sprite>
+
+%include "gui/main_menu/scalablebutton_sprites.inc"
+	</sprites>
+
+	<doc>
+		<group>
+			<rect width="274" height="114" anchor="0.5 0.5">
+				<!-- The frame -->
+				<sprite src="frame" />
+
+				<!-- Title -->
+				<text offset="4 4" font="gui/fonts/font_hw8.fnt" text="CHOOSE CLASS" color="#F8941DFF" />
+
+				<!-- Medic -->
+				<rect offset="6 21" width="88" height="71">
+					<text font="gui/fonts/font_agency16_bold.fnt" color="#F8941DFF" text="MEDIC" anchor="0.5 0" offset="0 7" />
+					<text font="gui/fonts/font_hw8.fnt" color="#F8941DFF" text="Support your teammates with the healgun." width="84" align="center" anchor="0.5 0" offset="0 34" />
+				</rect>
+
+				<!-- Soldiers -->
+				<rect offset="106 21" width="162" height="71">
+					<text font="gui/fonts/font_agency16_bold.fnt" color="#F8941DFF" text="SOLDIERS" anchor="0.5 0" offset="0 7" />
+					<text font="gui/fonts/font_hw8.fnt" color="#F8941DFF" text="Push for victory!" width="84" align="center" anchor="0.5 0" offset="0 34" />
+				</rect>
+
+				<!-- Buttons -->
+				<scalebutton spriteset="scalebutton" id="class-medic" func="class medic" offset="5 94" width="90" text=".teamswitch.choose" font="gui/fonts/font_msref10_bold.fnt" />
+				<scalebutton spriteset="scalebutton" id="class-soldiers" func="class soldiers" offset="105 94" width="164" text=".teamswitch.choose" font="gui/fonts/font_msref10_bold.fnt" />
+			</rect>
+		</group>
+	</doc>
+</gui>

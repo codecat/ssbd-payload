@@ -1,9 +1,9 @@
-class PlayerHealgunHusk : PlayerGunHusk, IContinuousGun
+class PlayerHealgunHusk : PlayerGunHusk
 {
+	UnitPtr m_target;
+
 	bool m_attackDown;
 	bool m_attackDownPrev;
-
-	float m_shootingIntensity;
 
 	string m_holdFx;
 	UnitPtr m_holdFxUnit;
@@ -23,16 +23,14 @@ class PlayerHealgunHusk : PlayerGunHusk, IContinuousGun
 	{
 		super(owner, params);
 
-		m_holdFx = GetParamString(owner, params, "hold-fx");
-		m_shaftRange = GetParamFloat(owner, params, "shaft-range");
+		m_holdFx = GetParamString(owner, params, "beam-fx");
+		m_shaftRange = GetParamFloat(owner, params, "beam-range");
 
-		@m_holdLoopSound = Resources::GetSoundEvent(GetParamString(owner, params, "hold-loop-snd", false));
-		@m_holdEndSound = Resources::GetSoundEvent(GetParamString(owner, params, "hold-end-snd", false));
+		@m_holdLoopSound = Resources::GetSoundEvent(GetParamString(owner, params, "beam-loop-snd", false));
+		@m_holdEndSound = Resources::GetSoundEvent(GetParamString(owner, params, "beam-end-snd", false));
 
-		m_teamDmg = GetParamFloat(owner, params, "team-dmg", false, 0);
-
-		auto hitFx = GetParamString(owner, params, "shaft-hit-fx", false);
-		auto hitEffects = LoadEffects(owner, params, "shaft-hit-");
+		auto hitFx = GetParamString(owner, params, "beam-hit-fx", false);
+		auto hitEffects = LoadEffects(owner, params, "beam-hit-");
 		@m_shooter = HitscanShooter(hitEffects, null, hitFx, "", false);
 		@m_fakeShooter = HitscanShooter(null, null, hitFx, "", false);
 	}
@@ -47,138 +45,81 @@ class PlayerHealgunHusk : PlayerGunHusk, IContinuousGun
 		PropagateWeaponInformation(m_fakeShooter.m_missEffects, m_weaponIdHash);
 	}
 
+	float offsetZ = 70;
 
-	void ChangeIntensity(float intensity) { m_shootingIntensity = intensity; }
-
-	void StartShooting(int ammo)
+	void StartBeam(UnitPtr target)
 	{
-		m_plrHusk.m_record.SetAmmo(m_ammoType, ammo);
-		m_attackDown = true;
-	}
-
-	void StopShooting(int ammo)
-	{
-		m_plrHusk.m_record.SetAmmo(m_ammoType, ammo);
-		StopShaft();
-	}
-
-	void StopShaft()
-	{
-		m_attackDown = false;
-
 		if (m_holdFxUnit.IsValid())
+			StopBeam();
+
+		m_target = target;
+
+		Actor@ actor = cast<Actor>(target.GetScriptBehavior());
+		if (actor is null)
 		{
-			if (!m_holdFxUnit.IsDestroyed())
-				m_holdFxUnit.Destroy();
-			m_holdFxUnit = UnitPtr();
+			PrintError("Healgun target '" + target.GetDebugName() + "' is not an actor!");
+			return;
 		}
+
+		vec3 pos = m_plrHusk.m_unit.GetPosition();
+		pos.y -= Tweak::PlayerCameraHeight;
+
+		vec2 actorPos = xy(target.GetPosition());
+		vec2 playerPos = xy(pos);
+
+		vec2 actorDir = normalize(actorPos - playerPos);
+		m_holdDir = m_holdDirNext = atan(actorDir.y, actorDir.x);
+		m_holdLength = m_holdLengthNext = dist(playerPos, actorPos);
+
+		dictionary ePs = { { 'angle', m_holdDir }, { 'length', m_holdLength } };
+		m_holdFxUnit = PlayEffect(m_holdFx, xy(pos), ePs);
+		auto behavior = cast<EffectBehavior>(m_holdFxUnit.GetScriptBehavior());
+		behavior.m_looping = true;
+
+		if (m_holdLoopSound !is null)
+		{
+			@m_holdLoopSoundI = m_holdLoopSound.PlayTracked(pos + vec3(0, 0, offsetZ));
+			m_holdLoopSoundI.SetPaused(false);
+		}
+	}
+
+	void StopBeam()
+	{
+		if (!m_holdFxUnit.IsValid())
+			return;
+
+		if (!m_holdFxUnit.IsDestroyed())
+			m_holdFxUnit.Destroy();
+		m_holdFxUnit = UnitPtr();
 
 		if (m_holdLoopSoundI !is null)
-		{
 			m_holdLoopSoundI.Stop();
-			@m_holdLoopSoundI = null;
+		@m_holdLoopSoundI = null;
 
-			if (m_holdEndSound !is null)
-			{
-				vec3 pos = xyz(m_plrHusk.m_posTarget);
-				pos.y -= Tweak::PlayerCameraHeight;
-
-				PlaySound3D(m_holdEndSound, pos);
-			}
-		}
+		m_target = UnitPtr();
 	}
 
 	void Update(int dt, vec2 dir) override
 	{
-		bool attackPressed = false;
+		PlayerGunHusk::Update(dt, dir);
 
-		if (m_attackDown && !m_attackDownPrev)
-			attackPressed = true;
-
-		m_attackDownPrev = m_attackDown;
-
-		float facing = atan(dir.y, dir.x);
-		vec3 pos = xyz(m_plrHusk.m_posTarget);
-		pos.y -= Tweak::PlayerCameraHeight;
-
-		if (m_cooldownCount > 0)
-			m_cooldownCount -= dt;
-
-		if (m_attackDown)
+		if (m_target.IsValid())
 		{
-			if (m_holdLoopSoundI is null && m_holdLoopSound !is null)
-			{
-				@m_holdLoopSoundI = m_holdLoopSound.PlayTracked(pos);
-				m_holdLoopSoundI.SetLooped(true);
-				m_holdLoopSoundI.SetPaused(false);
-			}
+			vec2 actorPos = xy(m_target.GetPosition());
+			vec2 playerPos = xy(m_plrHusk.m_unit.GetPosition());
+			playerPos.y -= Tweak::PlayerCameraHeight;
 
-			float aimLength = m_shaftRange;
-			vec2 from = xy(pos); // + vec2(0, Tweak::PlayerCameraHeight);
-			vec2 endPos = from + dir * aimLength;
+			vec2 actorDir = normalize(actorPos - playerPos);
 
-			if (m_cooldownCount <= 0)
-			{
-				endPos = m_shooter.ShootHitscan(m_plrHusk, from, endPos, 0, m_shootingIntensity, m_teamDmg, true);
-				m_cooldownCount = m_shootCooldown;
-			}
-			else
-				endPos = m_fakeShooter.ShootHitscan(m_plrHusk, from, endPos, 0, 0, m_teamDmg, true);
+			m_holdDir = m_holdDirNext;
+			m_holdLength = m_holdLengthNext;
 
-
-			aimLength = length(endPos - from);
-
-			if (GetInput().Attack.Pressed)
-			{
-				m_holdDir = facing;
-				m_holdLength = aimLength;
-			}
-			else
-			{
-				m_holdDir = m_holdDirNext;
-				m_holdLength = m_holdLengthNext;
-			}
-
-			m_holdDirNext = facing;
-			m_holdLengthNext = aimLength;
+			m_holdDirNext = atan(actorDir.y, actorDir.x);
+			m_holdLengthNext = dist(playerPos, actorPos);
 
 			// deal with 360 to 0 wrapping
 			if (abs(m_holdDirNext - m_holdDir) > PI / 2.0)
-				m_holdDir = facing;
-
-			if (!m_holdFxUnit.IsValid())
-			{
-				dictionary ePs = { { 'angle', facing }, { 'length', aimLength } };
-				m_holdFxUnit = PlayEffect(m_holdFx, xy(pos), ePs);
-				auto behavior = cast<EffectBehavior>(m_holdFxUnit.GetScriptBehavior());
-				behavior.m_looping = true;
-			}
-			else
-			{
-				if (!m_holdFxUnit.IsDestroyed())
-				{
-					auto behavior = cast<EffectBehavior>(m_holdFxUnit.GetScriptBehavior());
-					if (behavior !is null)
-					{
-						behavior.SetParam("angle", facing);
-						behavior.SetParam("length", aimLength);
-					}
-				}
-			}
-
-			m_currAnim = (m_currAnim + 1) % m_anims.get_length();
-			m_plrHusk.SetShootingAnim(m_anims[m_currAnim].GetSceneName(facing), false);
-		}
-
-		if (!m_attackDown)
-		{
-			StopShaft();
-			m_plrHusk.SetShootingAnim(m_idleAnim.GetSceneName(facing), false);
-		}
-		else
-		{
-			if (m_holdLoopSoundI !is null)
-				m_holdLoopSoundI.SetPosition(pos);
+				m_holdDir = m_holdDirNext;
 		}
 	}
 
@@ -187,7 +128,7 @@ class PlayerHealgunHusk : PlayerGunHusk, IContinuousGun
 		float mul = idt / 33.0;
 
 		vec3 pos = m_plrHusk.m_unit.GetInterpolatedPosition(idt);
-		if (m_holdFxUnit.IsValid() and !m_holdFxUnit.IsDestroyed())
+		if (m_holdFxUnit.IsValid() && !m_holdFxUnit.IsDestroyed())
 		{
 			pos.y -= Tweak::PlayerCameraHeight;
 			m_holdFxUnit.SetPosition(pos.x, pos.y, pos.z);

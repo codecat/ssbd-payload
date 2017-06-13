@@ -8,8 +8,8 @@
 	<string name="class-husk">PlayerHealgunHusk</string>
 
 	<string name="beam-fx">effects/weapons/trail_healgun.effect</string>
-	<string name="beam-loop-snd">event:/weapons/shaft/fire</string>
 	<string name="beam-hit-fx">effects/weapons/hit_weapon_healgun.effect</string>
+	<string name="beam-loop-snd">sounds/payload.sbnk:healgun_loop</string>
 
 	<float name="beam-range">150</float>
 
@@ -38,8 +38,6 @@
 	<string name="offset">shoot-pos</string>
 
 	<int name="cooldown">200</int>
-
-	<string name="no-ammo-snd">event:/weapons/no-ammo</string>
 
 	<array name="icon">
 		<string>gui/icons.png</string>

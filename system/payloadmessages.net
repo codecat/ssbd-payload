@@ -20,4 +20,22 @@
 		<unit /> <!-- Target node -->
 		<unit /> <!-- Previous node -->
 	</message>
+
+	<message name="HealgunStart" namespace="PayloadHandler" delivery="ReliableOrdered">
+		<unit /> <!-- Target unit -->
+	</message>
+
+	<message name="HealgunStop" namespace="PayloadHandler" delivery="ReliableOrdered" />
+
+	<!-- Custom PlayerJoinTeam carrying a player class -->
+	<message name="PayloadPlayerJoinTeam" namespace="PayloadHandler" delivery="ReliableOrdered">
+		<int /> <!-- Team index -->
+		<int /> <!-- Player class -->
+	</message>
+
+	<!-- Let everyone know what a player is (confirmation roundtrip) -->
+	<message name="PayloadPlayerClass" namespace="PayloadHandler" delivery="ReliableOrdered">
+		<int /> <!-- Player peer -->
+		<int /> <!-- Player class -->
+	</message>
 </network>

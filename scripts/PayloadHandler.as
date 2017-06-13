@@ -1,5 +1,38 @@
 namespace PayloadHandler
 {
+	PlayerHusk@ GetPlayer(uint8 peer)
+	{
+		for (uint i = 0; i < g_players.length(); i++)
+		{
+			if (g_players[i].peer == peer)
+			{
+				if (g_players[i].actor is null)
+					return null;
+
+				if (g_players[i].local)
+				{
+					print("Player " + peer + " is not a husk on " + (Network::IsServer() ? "server" : "client"));
+					return null;
+				}
+
+				return cast<PlayerHusk>(g_players[i].actor);
+			}
+		}
+
+		return null;
+	}
+
+	PayloadPlayerRecord@ GetPlayerRecord(uint8 peer)
+	{
+		for (uint i = 0; i < g_players.length(); i++)
+		{
+			if (g_players[i].peer == peer)
+				return cast<PayloadPlayerRecord>(g_players[i]);
+		}
+
+		return null;
+	}
+
 	void GameStarting(uint8 peer, int tm)
 	{
 		Payload@ gm = cast<Payload>(g_gameMode);
@@ -50,5 +83,65 @@ namespace PayloadHandler
 	{
 		Payload@ gm = cast<Payload>(g_gameMode);
 		gm.SetWinner(false);
+	}
+
+	void HealgunStart(uint8 peer, UnitPtr target)
+	{
+		PlayerHusk@ player = GetPlayer(peer);
+		if (player is null)
+			return;
+
+		auto healgun = cast<PlayerHealgunHusk>(player.m_currWeapon);
+		if (healgun is null)
+		{
+			PrintError("Player " + peer + " is not holding a healgun");
+			return;
+		}
+
+		healgun.StartBeam(target);
+	}
+
+	void HealgunStop(uint8 peer, UnitPtr target)
+	{
+		PlayerHusk@ player = GetPlayer(peer);
+		if (player is null)
+			return;
+
+		auto healgun = cast<PlayerHealgunHusk>(player.m_currWeapon);
+		if (healgun is null)
+		{
+			PrintError("Player " + peer + " is not holding a healgun");
+			return;
+		}
+
+		healgun.StopBeam();
+	}
+
+	void PayloadPlayerJoinTeam(uint8 peer, int teamIndex, int playerClassIndex)
+	{
+		if (!Network::IsServer())
+			return;
+
+		PlayerHandler::PlayerJoinTeam(peer, teamIndex);
+
+		(Network::Message("PayloadPlayerClass") << playerClassIndex).SendToAll();
+	}
+
+	void PayloadPlayerClass(int peer, int playerClassIndex)
+	{
+		PayloadPlayerRecord@ record = GetPlayerRecord(peer);
+		if (record is null)
+		{
+			PrintError("Peer " + peer + " not found");
+			return;
+		}
+
+		record.playerClass = PlayerClass(playerClassIndex);
+
+		auto gm = cast<Payload>(g_gameMode);
+		gm.PlayerClassesUpdated();
+
+		if (record.local)
+			gm.HandleLocalPlayerClass(PlayerClass(playerClassIndex));
 	}
 }

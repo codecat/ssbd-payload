@@ -37,6 +37,7 @@ class Payload : TeamVersusGameMode
 	int m_tmInOvertime;
 
 	PayloadHUD@ m_payloadHUD;
+	PayloadClassSwitchWindow@ m_switchClass;
 
 	array<SValue@>@ m_switchedSidesData;
 
@@ -47,6 +48,8 @@ class Payload : TeamVersusGameMode
 		m_tmRespawnCountdown = 5000;
 
 		@m_payloadHUD = PayloadHUD(m_guiBuilder);
+		@m_switchTeam = PayloadTeamSwitchWindow(m_guiBuilder);
+		@m_switchClass = PayloadClassSwitchWindow(m_guiBuilder);
 	}
 
 	void UpdateFrame(int ms, GameInput& gameInput, MenuInput& menuInput) override
@@ -150,9 +153,59 @@ class Payload : TeamVersusGameMode
 		SetWinner(false);
 	}
 
+	bool ShouldFreezeControls() override
+	{
+		return m_switchClass.m_visible
+		    || TeamVersusGameMode::ShouldFreezeControls();
+	}
+
+	bool ShouldDisplayCursor() override
+	{
+		return m_switchClass.m_visible
+		    || TeamVersusGameMode::ShouldDisplayCursor();
+	}
+
 	bool CanSwitchTeams() override
 	{
 		return m_tmStarted == 0;
+	}
+
+	PlayerRecord@ CreatePlayerRecord() override
+	{
+		return PayloadPlayerRecord();
+	}
+
+	void HandleLocalPlayerClass(PlayerClass playerClass)
+	{
+		PayloadPlayerRecord@ record = cast<PayloadPlayerRecord>(GetLocalPlayerRecord());
+
+		if (playerClass == PlayerClass::Soldier)
+		{
+			// Nothing to do
+		}
+		else if (playerClass == PlayerClass::Medic)
+		{
+			record.AddWeapon("weapons/healgun.sval");
+		}
+	}
+
+	int GetPlayerClassCount(PlayerClass playerClass)
+	{
+		int ret = 0;
+		for (uint i = 0; i < g_players.length(); i++)
+		{
+			if (g_players[i].peer == 255)
+				continue;
+			auto record = cast<PayloadPlayerRecord>(g_players[i]);
+			if (record.playerClass == playerClass)
+				ret++;
+		}
+		return ret;
+	}
+
+	void PlayerClassesUpdated()
+	{
+		m_switchClass.PlayerClassesUpdated();
 	}
 
 	void SetWinner(bool attackers)
@@ -184,6 +237,8 @@ class Payload : TeamVersusGameMode
 		m_payloadHUD.Draw(sb, idt);
 
 		TeamVersusGameMode::RenderWidgets(player, idt, sb);
+
+		m_switchClass.Draw(sb, idt);
 	}
 
 	void GoNextMap() override

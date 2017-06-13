@@ -35,8 +35,8 @@ class PlayerHealgun : PlayerGun
 
 		m_beamRange = GetParamFloat(owner, params, "beam-range");
 
-		@m_holdLoopSound = Resources::GetSoundEvent(GetParamString(owner, params, "hold-loop-snd", false));
-		@m_holdEndSound = Resources::GetSoundEvent(GetParamString(owner, params, "hold-end-snd", false));
+		@m_holdLoopSound = Resources::GetSoundEvent(GetParamString(owner, params, "beam-loop-snd", false));
+		@m_holdEndSound = Resources::GetSoundEvent(GetParamString(owner, params, "beam-end-snd", false));
 
 		m_hitFx = GetParamString(owner, params, "beam-hit-fx", false);
 		@m_hitEffects = LoadEffects(owner, params, "beam-hit-");
@@ -76,6 +76,8 @@ class PlayerHealgun : PlayerGun
 		PlayerGun::Unequip();
 	}
 
+	float offsetZ = 70;
+
 	void StartBeam(vec3 pos)
 	{
 		if (m_holdFxUnit.IsValid())
@@ -85,6 +87,14 @@ class PlayerHealgun : PlayerGun
 		m_holdFxUnit = PlayEffect(m_holdFx, xy(pos), ePs);
 		auto behavior = cast<EffectBehavior>(m_holdFxUnit.GetScriptBehavior());
 		behavior.m_looping = true;
+
+		if (m_holdLoopSound !is null)
+		{
+			@m_holdLoopSoundI = m_holdLoopSound.PlayTracked(pos + vec3(0, 0, offsetZ));
+			m_holdLoopSoundI.SetPaused(false);
+		}
+
+		(Network::Message("HealgunStart") << m_hoverActor.m_unit).SendToAll();
 	}
 
 	void StopBeam()
@@ -95,6 +105,12 @@ class PlayerHealgun : PlayerGun
 		if (!m_holdFxUnit.IsDestroyed())
 			m_holdFxUnit.Destroy();
 		m_holdFxUnit = UnitPtr();
+
+		if (m_holdLoopSoundI !is null)
+			m_holdLoopSoundI.Stop();
+		@m_holdLoopSoundI = null;
+
+		(Network::Message("HealgunStop")).SendToAll();
 	}
 
 	void Update(int dt, vec2 dir, bool freezeControls) override
@@ -105,6 +121,9 @@ class PlayerHealgun : PlayerGun
 
 		vec3 pos = player.m_unit.GetPosition();
 		pos.y -= Tweak::PlayerCameraHeight;
+
+		if (m_holdLoopSoundI !is null)
+			m_holdLoopSoundI.SetPosition(pos + vec3(0, 0, offsetZ));
 
 		auto input = GetInput();
 
