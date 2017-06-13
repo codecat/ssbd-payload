@@ -175,8 +175,6 @@ class Payload : TeamVersusGameMode
 		return PayloadPlayerRecord();
 	}
 
-	// 2. Healing players doesn't work. Why does healing enemies work?
-
 	int GetPlayerClassCount(PlayerClass playerClass, TeamVersusScore@ team)
 	{
 		if (team is null)

@@ -218,6 +218,7 @@ class PlayerHealgun : PlayerGun
 				if (m_tmHealC <= 0)
 				{
 					m_tmHealC = m_tmHeal;
+					//TODO: PlayerHusk::Heal() does nothing. We need to handle this locally, this will propogate it to other clients!
 					m_hoverActor.Heal(m_healAmount);
 				}
 			}
