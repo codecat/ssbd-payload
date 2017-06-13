@@ -175,20 +175,6 @@ class Payload : TeamVersusGameMode
 		return PayloadPlayerRecord();
 	}
 
-	void HandleLocalPlayerClass(PlayerClass playerClass)
-	{
-		PayloadPlayerRecord@ record = cast<PayloadPlayerRecord>(GetLocalPlayerRecord());
-
-		if (playerClass == PlayerClass::Soldier)
-		{
-			// Nothing to do
-		}
-		else if (playerClass == PlayerClass::Medic)
-		{
-			record.AddWeapon("weapons/healgun.sval");
-		}
-	}
-
 	int GetPlayerClassCount(PlayerClass playerClass)
 	{
 		int ret = 0;
@@ -374,24 +360,28 @@ class Payload : TeamVersusGameMode
 	{
 		TeamVersusGameMode::SpawnPlayer(i, pos, unitId, team);
 
-		if (!g_players[i].local)
-			return;
+		PayloadPlayerRecord@ record = cast<PayloadPlayerRecord>(g_players[i]);
+		record.HandlePlayerClass();
 
-		bool localAttackers = (team == HashString("player_1"));
-		for (uint j = 0; j < g_teamForceFields.length(); j++)
+		if (g_players[i].local)
 		{
-			bool hasCollision = (localAttackers != g_teamForceFields[j].Attackers);
-
-			auto units = g_teamForceFields[j].Units.FetchAll();
-			for (uint k = 0; k < units.length(); k++)
+			//TODO: This doesn't work well
+			bool localAttackers = (team == HashString("player_1"));
+			for (uint j = 0; j < g_teamForceFields.length(); j++)
 			{
-				PhysicsBody@ body = units[k].GetPhysicsBody();
-				if (body is null)
+				bool hasCollision = (localAttackers != g_teamForceFields[j].Attackers);
+
+				auto units = g_teamForceFields[j].Units.FetchAll();
+				for (uint k = 0; k < units.length(); k++)
 				{
-					PrintError("PhysicsBody for unit " + units[k].GetDebugName() + "is null");
-					continue;
+					PhysicsBody@ body = units[k].GetPhysicsBody();
+					if (body is null)
+					{
+						PrintError("PhysicsBody for unit " + units[k].GetDebugName() + "is null");
+						continue;
+					}
+					body.SetActive(hasCollision);
 				}
-				body.SetActive(hasCollision);
 			}
 		}
 	}

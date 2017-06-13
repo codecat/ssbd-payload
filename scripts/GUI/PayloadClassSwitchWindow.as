@@ -21,9 +21,15 @@ class PayloadClassSwitchWindow : IWidgetHoster
 			{
 				if (!g_players[i].local)
 					continue;
+
+				auto record = cast<PayloadPlayerRecord>(g_players[i]);
+				record.playerClass = playerClass;
+
+				gm.PlayerClassesUpdated();
+
+				(Network::Message("PayloadPlayerClass") << record.peer << int(playerClass)).SendToAll();
+
 				gm.MovePlayerInTeam(i, score);
-				gm.HandleLocalPlayerClass(playerClass);
-				(Network::Message("PayloadPlayerClass") << g_players[i].peer << int(playerClass)).SendToAll();
 				break;
 			}
 		}

@@ -122,9 +122,21 @@ namespace PayloadHandler
 		if (!Network::IsServer())
 			return;
 
-		PlayerHandler::PlayerJoinTeam(peer, teamIndex);
+		PayloadPlayerRecord@ record = GetPlayerRecord(peer);
+		if (record is null)
+		{
+			PrintError("Peer " + peer + " not found");
+			return;
+		}
 
-		(Network::Message("PayloadPlayerClass") << playerClassIndex).SendToAll();
+		record.playerClass = PlayerClass(playerClassIndex);
+
+		auto gm = cast<Payload>(g_gameMode);
+		gm.PlayerClassesUpdated();
+
+		(Network::Message("PayloadPlayerClass") << peer << playerClassIndex).SendToAll();
+
+		PlayerHandler::PlayerJoinTeam(peer, teamIndex);
 	}
 
 	void PayloadPlayerClass(int peer, int playerClassIndex)
@@ -140,8 +152,5 @@ namespace PayloadHandler
 
 		auto gm = cast<Payload>(g_gameMode);
 		gm.PlayerClassesUpdated();
-
-		if (record.local)
-			gm.HandleLocalPlayerClass(PlayerClass(playerClassIndex));
 	}
 }
