@@ -15,6 +15,8 @@ class PayloadHUD : HUDVersus
 	Widget@ m_wWinnerAlert;
 	TextWidget@ m_wWinnerAlertText;
 
+	Sprite@ m_spriteClassMedic;
+
 	PayloadHUD(GUIBuilder@ b)
 	{
 		super(b, "gui/payload.gui");
@@ -33,6 +35,8 @@ class PayloadHUD : HUDVersus
 
 		@m_wWinnerAlert = m_widget.GetWidgetById("winner-alert");
 		@m_wWinnerAlertText = cast<TextWidget>(m_wWinnerAlert.GetWidgetById("text"));
+
+		@m_spriteClassMedic = m_def.GetSprite("class-medic");
 	}
 
 	void ReachedCheckpont()
@@ -159,5 +163,34 @@ class PayloadHUD : HUDVersus
 			m_wPayloadText.m_visible = false;
 
 		HUDVersus::Update(dt);
+	}
+
+	void DisplayPlayerName(int idt, SpriteBatch& sb, PayloadPlayerRecord@ record, PlayerHusk@ plr, vec2 pos)
+	{
+		auto gm = cast<Payload>(g_gameMode);
+		auto color = gm.ColorForPlayer(record);
+
+		if (record.playerClass == PlayerClass::Medic)
+			sb.DrawSprite(pos + vec2(-5, 12 /* -40 */), m_spriteClassMedic, g_menuTime, color);
+
+		auto localRecord = cast<PayloadPlayerRecord>(GetLocalPlayerRecord());
+		if (localRecord.playerClass == PlayerClass::Medic && localRecord.team == record.team)
+		{
+			//TODO: Replace pure percentage string with a nice bar
+			float health = record.CurrentHealthScalar();
+			int healthPercentage = int(health * 100.0f);
+
+			auto textHealth = gm.m_fntPlayerName.BuildText(healthPercentage + "%");
+
+			vec4 colorHealth = vec4(1, 1, 1, 0.5);
+			if (health < 0.33)
+				colorHealth = vec4(1, 0, 0, 1);
+			else if (health < 0.66)
+				colorHealth = vec4(1, 1, 0, 0.75);
+
+			textHealth.SetColor(colorHealth);
+
+			sb.DrawString(pos + vec2(-textHealth.GetWidth() / 2, 12), textHealth);
+		}
 	}
 }

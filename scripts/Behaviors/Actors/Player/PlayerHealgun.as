@@ -133,7 +133,7 @@ class PlayerHealgun : PlayerGun
 			float closestDistance = 99999.0f;
 
 			vec3 mousePos = ToWorldspace(input.MousePos);
-			auto arrUnits = g_scene.QueryCircle(xy(mousePos), 40, ~0, RaycastType::Any, true);
+			auto arrUnits = g_scene.QueryCircle(xy(mousePos), 30, ~0, RaycastType::Any, true);
 			for (uint i = 0; i < arrUnits.length(); i++)
 			{
 				UnitPtr unit = arrUnits[i];
@@ -141,6 +141,13 @@ class PlayerHealgun : PlayerGun
 				Actor@ actor = cast<Actor>(unit.GetScriptBehavior());
 				if (actor is null || actor is player)
 					continue;
+
+				PlayerHusk@ playerHusk = cast<PlayerHusk>(actor);
+				if (playerHusk !is null)
+				{
+					if (playerHusk.m_record.team != player.m_record.team)
+						continue;
+				}
 
 				float distance = dist(player.m_unit.GetPosition(), unit.GetPosition());
 				if (distance > closestDistance)
@@ -163,7 +170,7 @@ class PlayerHealgun : PlayerGun
 			m_hoverDistance = dist(player.m_unit.GetPosition(), m_hoverActor.m_unit.GetPosition());
 
 			m_hoverVisible = true;
-			array<RaycastResult>@ res = g_scene.Raycast(playerPos, actorPos, ~0, RaycastType::Any);
+			array<RaycastResult>@ res = g_scene.Raycast(playerPos, actorPos, ~0, RaycastType::Shot);
 			for (uint i = 0; i < res.length(); i++)
 			{
 				UnitPtr unit = res[i].FetchUnit(g_scene);

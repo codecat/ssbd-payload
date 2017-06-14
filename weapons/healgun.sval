@@ -13,6 +13,9 @@
 
 	<float name="beam-range">150</float>
 
+	<int name="heal-time">100</int>
+	<int name="heal-amount">2</int>
+
 	<array name="beam-hit-effects">
 		<dict>
 			<string name="class">Damage</string>

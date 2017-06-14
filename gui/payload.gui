@@ -19,6 +19,10 @@
 		<sprite name="bar-overtime-right" texture="gui/icons.png">
 			<frame>97 27 2 4</frame>
 		</sprite>
+
+		<sprite name="class-medic" texture="gui/payload.png">
+			<frame>0 108 10 10</frame>
+		</sprite>
 	</sprites>
 
 	<doc>

@@ -208,6 +208,13 @@ class Payload : TeamVersusGameMode
 		EndMatch();
 	}
 
+	void DisplayPlayerName(int idt, SpriteBatch& sb, PlayerRecord@ record, PlayerHusk@ plr, vec2 pos) override
+	{
+		TeamVersusGameMode::DisplayPlayerName(idt, sb, record, plr, pos);
+
+		m_payloadHUD.DisplayPlayerName(idt, sb, cast<PayloadPlayerRecord>(record), plr, pos);
+	}
+
 	void RenderFrame(int idt, SpriteBatch& sb) override
 	{
 		Player@ player = GetLocalPlayer();

@@ -19,6 +19,13 @@ class PlayerHealgunHusk : PlayerGunHusk
 	HitscanShooter@ m_shooter;
 	HitscanShooter@ m_fakeShooter;
 
+	Player@ m_healingPlayer;
+
+	int m_tmHeal;
+	int m_tmHealC;
+
+	int m_healAmount;
+
 	PlayerHealgunHusk(UnitPtr owner, SValue& params)
 	{
 		super(owner, params);
@@ -33,6 +40,9 @@ class PlayerHealgunHusk : PlayerGunHusk
 		auto hitEffects = LoadEffects(owner, params, "beam-hit-");
 		@m_shooter = HitscanShooter(hitEffects, null, hitFx, "", false);
 		@m_fakeShooter = HitscanShooter(null, null, hitFx, "", false);
+
+		m_tmHeal = GetParamInt(owner, params, "heal-time", false, 50);
+		m_healAmount = GetParamInt(owner, params, "heal-amount", false, 5);
 	}
 
 	void Initialize(string path) override
@@ -54,17 +64,20 @@ class PlayerHealgunHusk : PlayerGunHusk
 
 		m_target = target;
 
-		Actor@ actor = cast<Actor>(target.GetScriptBehavior());
+		Actor@ actor = cast<Actor>(m_target.GetScriptBehavior());
 		if (actor is null)
 		{
-			PrintError("Healgun target '" + target.GetDebugName() + "' is not an actor!");
+			PrintError("Healgun target '" + m_target.GetDebugName() + "' is not an actor!");
 			return;
 		}
+
+		@m_healingPlayer = cast<Player>(actor);
+		m_tmHealC = m_tmHeal;
 
 		vec3 pos = m_plrHusk.m_unit.GetPosition();
 		pos.y -= Tweak::PlayerCameraHeight;
 
-		vec2 actorPos = xy(target.GetPosition());
+		vec2 actorPos = xy(m_target.GetPosition());
 		vec2 playerPos = xy(pos);
 
 		vec2 actorDir = normalize(actorPos - playerPos);
@@ -96,6 +109,8 @@ class PlayerHealgunHusk : PlayerGunHusk
 			m_holdLoopSoundI.Stop();
 		@m_holdLoopSoundI = null;
 
+		@m_healingPlayer = null;
+
 		m_target = UnitPtr();
 	}
 
@@ -103,23 +118,33 @@ class PlayerHealgunHusk : PlayerGunHusk
 	{
 		PlayerGunHusk::Update(dt, dir);
 
-		if (m_target.IsValid())
-		{
-			vec2 actorPos = xy(m_target.GetPosition());
-			vec2 playerPos = xy(m_plrHusk.m_unit.GetPosition());
-			playerPos.y -= Tweak::PlayerCameraHeight;
+		if (!m_target.IsValid())
+			return;
 
-			vec2 actorDir = normalize(actorPos - playerPos);
+		vec2 actorPos = xy(m_target.GetPosition());
+		vec2 playerPos = xy(m_plrHusk.m_unit.GetPosition());
+		playerPos.y -= Tweak::PlayerCameraHeight;
 
+		vec2 actorDir = normalize(actorPos - playerPos);
+
+		m_holdDir = m_holdDirNext;
+		m_holdLength = m_holdLengthNext;
+
+		m_holdDirNext = atan(actorDir.y, actorDir.x);
+		m_holdLengthNext = dist(playerPos, actorPos);
+
+		// deal with 360 to 0 wrapping
+		if (abs(m_holdDirNext - m_holdDir) > PI / 2.0)
 			m_holdDir = m_holdDirNext;
-			m_holdLength = m_holdLengthNext;
 
-			m_holdDirNext = atan(actorDir.y, actorDir.x);
-			m_holdLengthNext = dist(playerPos, actorPos);
-
-			// deal with 360 to 0 wrapping
-			if (abs(m_holdDirNext - m_holdDir) > PI / 2.0)
-				m_holdDir = m_holdDirNext;
+		if (m_healingPlayer !is null)
+		{
+			m_tmHealC -= dt;
+			if (m_tmHealC <= 0)
+			{
+				m_tmHealC = m_tmHeal;
+				m_healingPlayer.Heal(m_healAmount);
+			}
 		}
 	}
 
